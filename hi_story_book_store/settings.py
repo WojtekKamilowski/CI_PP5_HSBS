@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hi-story-book-store.herokuapp.com',
+ALLOWED_HOSTS = ['hi-story-book-store-5899052efb65.herokuapp.com',
                  '8000-wojtekkamilowski-ci-pp5--046p9ms3nl.us2.codeanyapp.com']
 
 
