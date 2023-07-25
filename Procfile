@@ -1,0 +1,1 @@
+web: gunicorn hi_story_book_store.wsgi:application

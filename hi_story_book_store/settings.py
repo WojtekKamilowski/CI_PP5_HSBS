@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 if os.path.isfile('env.py'):
     import env
 from pathlib import Path
@@ -28,7 +29,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-wojtekkamilowski-ci-pp5--046p9ms3nl.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['hi-story-book-store.herokuapp.com',
+                 '8000-wojtekkamilowski-ci-pp5--046p9ms3nl.us2.codeanyapp.com']
 
 
 # Application definition
