@@ -3,7 +3,7 @@
 
 ![Mockup image](docs/responsive.png)
 
-[Live webpage]()
+[Live webpage](https://hi-story-book-store-5899052efb65.herokuapp.com/)
 
 ## About 
 
@@ -519,6 +519,18 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Fonts pair found on <a href="https://www.fontpair.co/pairings/playfair-display-lato">Fontpair</a>
 - 'Lato' font from <a href="https://fonts.google.com/specimen/Lato">Google Fonts</a>
 - 'Playfair Display' font from <a href="https://fonts.google.com/specimen/Playfair+Display?query=playfair">Google Fonts</a>
+- Ancient Europe book cover image from <a href="https://www.freepik.com/free-vector/vintage-roman-empire-poster-with-inscription-julius-caesar-coins-buildings-ancient-rome-civilization_9397964.htm#query=rome%20book%20cover&position=7&from_view=search&track=ais">Freepik</a>.
+- Ancient ROW book cover image from <a href="https://www.freepik.com/free-vector/archaeology-cartoon-composition-with-set-digging-tool-icons-ancient-findings-grunge-board-with-text-illustration_21253335.htm#query=mezopotamy%20history%20book%20cover&position=26&from_view=search&track=ais">Freepik</a>.
+- Medieval Europe book cover image from <a href="">Pexels</a>
+- Medieval ROW book cover image from <a href="">Pexels</a>
+- Reneissance Europe book cover image from <a href="https://www.pexels.com/photo/vitruvian-man-drawing-in-close-up-shot-12414385/">Pexels</a>
+- Reneissance ROW book cover image from <a href="https://www.pexels.com/photo/great-wall-of-china-2412603/">Pexels</a>
+- Early Industrial Revolution & Modern Era Europe book cover image from <a href="https://www.freeimages.com/photo/cotton-manufacturing-2424360">Freeimages</a> 
+- Early Industrial Revolution & Modern Era ROW book cover image from <a href="https://www.freeimages.com/photo/globe-australia-1174704">Freeimages</a>  
+- XX Century Europe book cover image from <a href="">Freeimages</a>
+- XX Century ROW book cover image from
+- Early XXI Century Europe book cover image from
+- Early XXI Century ROW book cover image from
 
 [Back to Table Of Contents](#table-of-contents)
 
