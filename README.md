@@ -117,11 +117,11 @@ As an Admin I want to:
 
 ### Colors
 
-- #505 from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
+- #505 & #FAFAFA from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
 <details>
     <summary>Contrast</summary> 
 
-![Colors](docs/colors/contrast.png)
+![Colors](docs/colors/contrast-1.png)
 
 </details>
 
@@ -506,6 +506,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 ### Media
 
 - Favicon from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
+- Homepage background image from <a href="https://www.freepik.com/free-vector/background-with-sand-hourglass-glass-timer_22753059.htm#query=time%20glass&position=8&from_view=search&track=ais">Freepik</a>.
 
 [Back to Table Of Contents](#table-of-contents)
 

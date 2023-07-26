@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #505;
+}
+
+.main-clr-thm {
+    color: #fafafa;
+    background-color: #505;
+}
+
+
+
+.cst-prpl {
+    color: #505;
+}
