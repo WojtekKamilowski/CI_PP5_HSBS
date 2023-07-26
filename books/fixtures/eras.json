@@ -47,20 +47,4 @@
             "friendly_name": "Early XXI Century"
         }
     },
-    {
-        "pk": 7,
-        "model": "books.era",
-        "fields": {
-            "name": "europe",
-            "friendly_name": "Europe"
-        }
-    },
-    {
-        "pk": 8,
-        "model": "books.era",
-        "fields": {
-            "name": "row",
-            "friendly_name": "Rest of the World"
-        }
-    },
 ]
