@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 ALLOWED_HOSTS = ['hi-story-book-store-5899052efb65.herokuapp.com',
-                 '8000-wojtekkamilowski-ci-pp5--046p9ms3nl.us2.codeanyapp.com']
+                 '8000-wojtekkamilowski-ci-pp5--g9v02mrj8r.us2.codeanyapp.com']
 
 
 # Application definition

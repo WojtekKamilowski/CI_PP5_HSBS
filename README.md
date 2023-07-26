@@ -117,6 +117,8 @@ As an Admin I want to:
 
 ### Colors
 
+The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is often considered as a simbol of royalty as historically it used to be very scarce & expensive so only wealthy people of high status could afford it. Roles of kings & emperors are often associated with a general history so the main color pallete aimed to match the store's theme.
+
 - #505 & #FAFAFA from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
 <details>
     <summary>Contrast</summary> 

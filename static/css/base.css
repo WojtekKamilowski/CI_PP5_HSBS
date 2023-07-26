@@ -10,14 +10,16 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#main {}
-
 h1,
 h2,
 h3,
 h4,
 h5 {
     font-family: 'Playfair Display', serif;
+}
+
+.text-black {
+    color: #000;
 }
 
 .main-clr-thm {
