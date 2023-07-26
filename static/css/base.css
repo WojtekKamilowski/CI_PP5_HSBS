@@ -7,6 +7,15 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #505;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
 }
 
 .main-clr-thm {

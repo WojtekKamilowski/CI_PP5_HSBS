@@ -130,6 +130,13 @@ As an Admin I want to:
 
 ### Fonts
 
+'Lato' - main font with sans-serif as its fallback font.
+
+'Playfair Display' - h1 - h5 font with serif for fallback.
+
+'Lato' font from <a href="https://fonts.google.com/specimen/Lato">Google Fonts</a>
+'Playfair Display' font from <a href="https://fonts.google.com/specimen/Playfair+Display?query=playfair">Google Fonts</a>
+
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -507,6 +514,9 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - Favicon from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
 - Homepage background image from <a href="https://www.freepik.com/free-vector/background-with-sand-hourglass-glass-timer_22753059.htm#query=time%20glass&position=8&from_view=search&track=ais">Freepik</a>.
+- Fonts pair found on <a href="https://www.fontpair.co/pairings/playfair-display-lato">Fontpair</a>
+- 'Lato' font from <a href="https://fonts.google.com/specimen/Lato">Google Fonts</a>
+- 'Playfair Display' font from <a href="https://fonts.google.com/specimen/Playfair+Display?query=playfair">Google Fonts</a>
 
 [Back to Table Of Contents](#table-of-contents)
 
