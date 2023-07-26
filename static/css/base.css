@@ -14,8 +14,19 @@ body {
     background-color: #505;
 }
 
-
-
 .cst-prpl {
     color: #505;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #505;
+}
+
+footer {
+    padding-top: 2vh;
+    background-color: #fafafa;
 }
