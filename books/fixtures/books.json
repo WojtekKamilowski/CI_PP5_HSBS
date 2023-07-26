@@ -4,12 +4,12 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000000",
-            "name": "Roman Empire: Ancient Civilization",
+            "name": "Roman Empire: Ancient Civilization | John Smith 2018",
             "description": "Roman Empire: Ancient Civilization by John Smith edition 2018y is a comprehensive, 1000 pages book describing the everyday life and politcal affairs of the Roman Empire from it's early rise to the eventual downfall in 476y a.c.",
             "price": 29.99,
             "era": 1,
             "rating": 4.6,
-            "image_url": "https://raw.githubusercontent.com/WojtekKamilowski/CI_PP5_HSBS/main/media/ancient-europe-cover.jpg",
+            "image_url": "",
             "image": "ancient-europe-cover.jpg"
         }
     },
@@ -18,12 +18,12 @@
         "model": "books.book",
         "fields": {
             "sku": "00000000001",
-            "name": "Historical Discoveries by Indiana Jones edition 1983y, 300 pages book about archeology, describing the methods of reading the past from excavated artefact or former everyday use objects.",
-            "description": "Historical Discoveries",
+            "name": "Historical Discoveries | Indiana Jones 1983",
+            "description": "Historical Discoveriesby Indiana Jones edition 1983y, 300 pages book about archeology, describing the methods of reading the past from excavated artefact or former everyday use objects.",
             "price": 15.99,
             "category": 1,
             "rating": 4.2,
-            "image_url": "https://github.com/WojtekKamilowski/CI_PP5_HSBS/blob/main/media/ancient-row-cover.jpg?raw=true",
+            "image_url": "",
             "image": "ancient-row-cover.jpg"
         }
     },
@@ -32,12 +32,12 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000002",
-            "name": "Ragnarok: Viking Raides",
-            "description": "Ragnarok: Viking Raides 250 pages book by Jonathan Lock covering the times of the Viking Age (793 to 1066 CE).",
+            "name": "Ragnarok: Viking Raides | Jonathan Lock 2020",
+            "description": "Ragnarok: Viking Raides 250 pages book by Jonathan Lock, 2020y covering the times of the Viking Age (793 to 1066 CE).",
             "price": 25.99,
             "category": 2,
             "rating": 4.7,
-            "image_url": "https://raw.githubusercontent.com/WojtekKamilowski/CI_PP5_HSBS/main/media/medieval-europe-cover.jpg",
+            "image_url": "",
             "image": "medieval-europe-cover.jpg"
         }
     },
@@ -46,12 +46,12 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000003",
-            "name": "The Mongol Empire during the reign of Kublai Khan",
-            "description": "The Mongol Empire during the reign of Kublai Khan describes history of the XII Century Mongol Empire and legacy of Kublai Khan",
+            "name": "The Mongol Empire during the reign of Kublai Khan | Andrew Teacher 2019",
+            "description": "The Mongol Empire during the reign of Kublai Khan Andrew Teacher, 2019y describes history of the XII Century Mongol Empire and legacy of Kublai Khan",
             "price": 169.99,
             "category": 2,
             "rating": 3.0,
-            "image_url": "https://raw.githubusercontent.com/WojtekKamilowski/CI_PP5_HSBS/main/media/medieval-row-cover.jpg",
+            "image_url": "",
             "image": "medieval-row-cover.jpg"
         }
     },
@@ -60,12 +60,12 @@
         "model": "books.book",
         "fields": {
             "sku": "00000000004",
-            "name": "",
-            "description": "",
+            "name": "Leonardo Da Vinci: the great polymath of the Reneissance | Lucas Darwin 2021",
+            "description": "Leonardo Da Vinci: the great polymath of the Reneissance, 200 pages, 2021y by Lucas Darwin takes a closer look on the biography of the great inventor of the Reneissance.",
             "price": 69.99,
             "category": 3,
             "rating": 5.0,
-            "image_url": "h",
+            "image_url": "",
             "image": "reneissance-europe-cover.jpg"
         }
     },
@@ -74,8 +74,8 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000005",
-            "name": "",
-            "description": "",
+            "name": "Crossing the Great Wall of China & besiege of Beijing | Lao Xingi 2017",
+            "description": "Crossing the Great Wall of China & besiege of Beijing 120 pages book by Lao Xingi 2017y takes a closer look of Altan Khan's campaign.",
             "price": 30.99,
             "category": 3,
             "rating": 4.7,
@@ -88,8 +88,8 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000006",
-            "name": "",
-            "description": "",
+            "name": "Textile manufacture during the British Industrial Revolution | Bruce Baldwin 2015",
+            "description": "Textile manufacture during the British Industrial Revolution is a 232 pages book by Bruce Baldwin 2015y that describes the expansion of the textile industry from 1700s to 1800s years.",
             "price": 59.0,
             "category": 4,
             "rating": 4.4,
@@ -102,8 +102,8 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000007",
-            "name": "",
-            "description": "",
+            "name": "Settlement Development in 19th century Australia | Theodora Rutwell 2011",
+            "description": "Settlement Development in 19th century Australia by Theodora Rutwell 2011 describes the history of the indigenous and colonial peoples of the Australian continent during the 50-year period which preceded the foundation of the Commonwealth of Australia in 1901.",
             "price": 36.99,
             "category": 4,
             "rating": 4.5,
@@ -116,8 +116,8 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000008",
-            "name": "",
-            "description": "",
+            "name": "Countdown to Blitzkrieg | Emmanuela Johnson 2007",
+            "description": "Countdown to Blitzkrieg by Emmanuela Johnson 2007y is a 187 page book describing the preparations of the Third Reich to launch series of military campaigns that shocked and conquered major part of Europe during the early years of World War 2 and how the Allies responded to oppose it.",
             "price": 19.99,
             "category": 5,
             "rating": 4.7,
@@ -130,8 +130,8 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000009",
-            "name": "",
-            "description": "",
+            "name": "Behind the Windows | Sammuel Ruth 2014",
+            "description": "Behind the Windows | Sammuel Ruth 2014 is a history describing the foundation and development of Microsoft.",
             "price": 33.99,
             "category": 5,
             "rating": 4.4,
@@ -144,8 +144,8 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000010",
-            "name": "",
-            "description": "",
+            "name": "Poland Joining the Europe Union | Tomasz Ogorek 2014",
+            "description": "Poland Joining the Europe Union by Tomasz Ogorek, 2014y, a 360 pages position published on the 10th anniversary of Poland's EU membership, describes the route from 1989 Poland's systematic change to become a member country of the Europe Union in 2004.",
             "price": 29.99,
             "category": 6,
             "rating": 3.0,
@@ -158,13 +158,13 @@
         "model": "books.book",
         "fields": {
             "sku": "0000000011",
-            "name": "",
-            "description": "",
+            "name": "2007 - 2009 the Great Recession | Giorgina Apollo 2020",
+            "description": "2007 - 2009 the Great Recession by Giorgina Apollo 2020y edition. 450 book on the causes and impact of the great recession 2007 - 2009y.",
             "price": 19.99,
             "category": 6,
             "rating": 4.6,
             "image_url": "",
             "image": "xxi-europe-cover.jpg"
         }
-    },
+    }
 ]
