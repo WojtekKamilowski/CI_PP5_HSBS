@@ -1,0 +1,66 @@
+[
+    {
+        "pk": 1,
+        "model": "books.era",
+        "fields": {
+            "name": "ancient",
+            "friendly_name": "Ancient Times"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "books.era",
+        "fields": {
+            "name": "medieval",
+            "friendly_name": "Medieval"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "books.era",
+        "fields": {
+            "name": "renaissance",
+            "friendly_name": "Renaissance"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "books.era",
+        "fields": {
+            "name": "industrial",
+            "friendly_name": "Early Industrial Revolution & Modern Era"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "books.era",
+        "fields": {
+            "name": "xxc",
+            "friendly_name": "XX Century"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "books.era",
+        "fields": {
+            "name": "xxic",
+            "friendly_name": "Early XXI Century"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "books.era",
+        "fields": {
+            "name": "europe",
+            "friendly_name": "Europe"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "books.era",
+        "fields": {
+            "name": "row",
+            "friendly_name": "Rest of the World"
+        }
+    },
+]
