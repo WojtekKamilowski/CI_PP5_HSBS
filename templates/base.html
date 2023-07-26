@@ -31,11 +31,11 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -146,7 +146,7 @@
             </div>
         </div>
         <div class="row">
-            <nav class="navbar navbar-expand-lg w-100">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -197,10 +197,16 @@
         <!-- About, Social, Pages & Contact -->
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <h5 class="text-center"><a href="#"><strong>About Us</strong></a></h5>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li>
+                            <h5 class="text-center"><a href="#"><strong>About Us</strong></a></h5>
+                        </li>
+                        <li class="text-center"><a href=" #">Who we are</a></li>
+                        <li class="text-center"><a href=" #">HiStory Club</a></li>
+                    </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-xs-12">
                     <ul>
                         <li>
                             <h5 class="text-center"><strong>Check Our Profiles on:</strong></h5>
@@ -216,7 +222,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-xs-12">
                     <ul>
                         <li>
                             <h5 class="text-center"><strong>Explore Our Website:</strong></h5>
@@ -225,14 +231,14 @@
                         <li class="text-center"><a href=" #">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-xs-12">
                     <ul>
                         <li>
                             <h5 class="text-center"><strong>Contact:</strong></h5>
                         </li>
-                        <li><a href="#">Contact us using our form</a>, or by:</li>
-                        <li>Phone: +353 085 123 4567, or by:</li>
-                        <li>E-mail: contact@history-books.com</li>
+                        <li class="text-center"><u><a href="#">Contact us using our form</a></u>, or by:</li>
+                        <li class="text-center">Phone: +353 085 123 4567, or by:</li>
+                        <li class="text-center">E-mail: contact@history-books.com</li>
                     </ul>
                 </div>
             </div>
