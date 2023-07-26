@@ -75,7 +75,7 @@
             <!-- Nav logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font cst-prpl my-0"><strong>Hi</strong>Story</h2>
+                    <h2 class="cst-prpl my-0"><strong>Hi</strong>Story</h2>
                 </a>
             </div>
             <!-- Nav center for links-->
@@ -95,7 +95,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto pt-2">
                 <!-- Col for account and cart options-->
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -132,7 +132,7 @@
                             href="#">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
-                                <p class="my-0 cart-amount">
+                                <p class="my-0">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -145,17 +145,17 @@
                 </ul>
             </div>
         </div>
-        <div class="row second-nav">
-            <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col my-secondary cst-prpl">
-                <h4 class="logo-font my-1 ">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+        <div id="delivery-banner" class="row text-center pb-3">
+            <div class="col cst-prpl">
+                <h4 class="my-1 ">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
             </div>
         </div>
     </header>
@@ -226,7 +226,7 @@
                 <div class="col-3">
                     <ul>
                         <li>
-                            <h5 class="text-center"><strong>Contact</strong></h5>
+                            <h5 class="text-center"><strong>Contact:</strong></h5>
                         </li>
                         <li><a href="#">Contact us using our form</a>, or by:</li>
                         <li>Phone: +353 085 123 4567, or by:</li>

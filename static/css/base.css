@@ -3,12 +3,14 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background.jpg') no-repeat center center local;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 270px);
     color: #505;
     font-family: 'Lato', sans-serif;
 }
+
+#main {}
 
 h1,
 h2,
@@ -33,6 +35,10 @@ li {
 
 a {
     color: #505;
+}
+
+header {
+    background-color: #fafafa;
 }
 
 footer {
