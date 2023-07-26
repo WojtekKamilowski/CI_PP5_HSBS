@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models import IntegerField, Model
+import datetime
 
 # Inspired by Code Institue's "Boutique Ado" Walkthrough Project
 
@@ -20,7 +22,9 @@ class Book(models.Model):
     era = models.ForeignKey(
         'Era', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=260, null=True, blank=True)
-    name = models.CharField(max_length=260)
+    name = models.CharField(max_length=260, null=True, blank=True)
+    author = models.CharField(max_length=260)
+    published = models.DateField(null=True, blank=False)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
