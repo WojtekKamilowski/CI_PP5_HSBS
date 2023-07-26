@@ -70,7 +70,7 @@
         <div id="topnav" class="row nav-bg-color pt-lg-2 d-none d-lg-flex">
             <!-- Nav logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="#" class="nav-link main-logo-link">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-white my-0"><strong>Hi</strong>Story</h2>
                 </a>
             </div>
@@ -81,7 +81,7 @@
                         <input class="form-control border border-black rounded-0" type="text" name="q"
                             placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-danger border border-black rounded-0" type="submit"
+                            <button class="form-control btn purple border border-black rounded-0" type="submit"
                                 aria-label="Search our books">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
@@ -147,8 +147,6 @@
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-white"></span>
                 </button>
-                {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
@@ -211,9 +209,9 @@
                 <div class="col-xs-12 col-md-4">
                     <h5 class="footer-heading"><strong>Contact</strong></h5>
                     <ul class="contact-list">
-                        <li>Phone: +353 085 123 4567</li>
+                        <li><a href="#">Contact us via form here</a>, or by:</li>
+                        <li>Phone: +353 085 123 4567, or by:</li>
                         <li>E-mail: contact@history-books.com</li>
-                        <li><a href="#">Contact Form</a></li>
                     </ul>
                 </div>
             </div>
@@ -237,7 +235,6 @@
             <div class="row">
                 <div class="col-sm-12 align-self-center">
                     <small>Created by Kamil Wojciechowski.<br>
-                        <span style="font-size: 14px;">&#128075;</span></small>
                 </div>
             </div>
         </div>
