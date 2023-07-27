@@ -64,6 +64,10 @@ header {
     object-fit: contain;
 }
 
+.book-container {
+    min-height: 60vh;
+}
+
 footer {
     padding-top: 2vh;
     background-color: #fafafa;
