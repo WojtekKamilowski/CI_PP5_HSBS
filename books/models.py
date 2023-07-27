@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models import IntegerField, Model
 import datetime
+from django.core.validators import MinValueValidator
 
 # Inspired by Code Institue's "Boutique Ado" Walkthrough Project
 
@@ -25,6 +26,9 @@ class Book(models.Model):
     name = models.CharField(max_length=260, null=True, blank=True)
     author = models.CharField(max_length=260)
     published = models.DateField(null=True, blank=False)
+    pages = models.IntegerField(null=True, blank=True, validators=[
+        MinValueValidator(1)
+    ])
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(

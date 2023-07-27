@@ -1,3 +1,4 @@
+<!-- Based on Code Institue's "Boutique Ado" Walkthrough Project -->
 {% extends "base.html" %}
 {% load static %}
 
@@ -31,6 +32,7 @@
                 <p class="mb-0">Title: {{ book.name }}</p>
                 <p class="mb-0">Author: {{ book.author }}</p>
                 <p class="mb-0">Published: {{ book.published }}</p>
+                <p class="mb-0">Number of pages: {{ book.pages }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ book.price }}</p>
                 {% if book.rating %}
                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ book.rating }} / 5</small>

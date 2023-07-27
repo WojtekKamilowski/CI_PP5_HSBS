@@ -16,6 +16,7 @@ class BookAdmin(admin.ModelAdmin):
         'image',
         'author',
         'published',
+        'pages',
     )
 
     ordering = ('sku',)
