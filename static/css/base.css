@@ -56,6 +56,14 @@ header {
     z-index: -1;
 }
 
+/* From Stackoverflow */
+.contain-bk-img {
+    width: 350px;
+    height: 200px;
+    border: 1pt solid #000;
+    object-fit: contain;
+}
+
 footer {
     padding-top: 2vh;
     background-color: #fafafa;

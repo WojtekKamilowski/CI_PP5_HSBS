@@ -511,6 +511,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Some of the code based on <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
 - base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">razor-sharp</a>
+  
+- object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
 
 ### Media
 
@@ -526,7 +528,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Reneissance Europe book cover image from <a href="https://www.pexels.com/photo/vitruvian-man-drawing-in-close-up-shot-12414385/">Pexels</a>
 - Reneissance ROW book cover image from <a href="https://www.pexels.com/photo/great-wall-of-china-2412603/">Pexels</a>
 - Early Industrial Revolution & Modern Era Europe book cover image from <a href="https://www.freeimages.com/photo/cotton-manufacturing-2424360">Freeimages</a> 
-- Early Industrial Revolution & Modern Era ROW book cover image from <a href="https://www.freeimages.com/photo/globe-australia-1174704">Freeimages</a>  
+- Early Industrial Revolution & Modern Era ROW book cover image from <a href="https://www.pexels.com/photo/paper-map-of-australia-placed-on-wall-6564832/">Pexels</a>  
 - XX Century Europe book cover image from <a href="https://pixabay.com/illustrations/microsoft-windows-window-to-dye-257885/">Pixabay</a>
 - XX Century ROW book cover image from
 - Early XXI Century Europe book cover image from <a href="https://www.freeimages.com/download/eu-polish-flags-636220">Freeimages</a>

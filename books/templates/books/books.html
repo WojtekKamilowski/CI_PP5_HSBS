@@ -28,13 +28,13 @@
                     <div class="card h-100 border-0">
                         {% if book.image %}
                         <a href="">
-                            <img class="card-img-top img-fluid h-85 mb-2" src="{{ book.image.url }}"
+                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ book.image.url }}"
                                 alt="{{ book.name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid h-85 mb-2" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ book.name }}">
+                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img"
+                                src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
                         </a>
                         {% endif %}
                         <div class="card-footer bg-white pt-0 border-0 text-left">
