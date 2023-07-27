@@ -11,7 +11,7 @@
             "price": 29.99,
             "era": 1,
             "rating": 4.6,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445843/ancient-europe-cover_jwqzop.jpg",
             "image": "ancient-europe-cover.jpg"
         }
     },
@@ -27,7 +27,7 @@
             "price": 15.99,
             "era": 1,
             "rating": 4.2,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445951/ancient-row-cover_t28dwf.jpg",
             "image": "ancient-row-cover.jpg"
         }
     },
@@ -43,7 +43,7 @@
             "price": 25.99,
             "era": 2,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445746/medieval-europe-cover_tgcsuc.jpg",
             "image": "medieval-europe-cover.jpg"
         }
     },
@@ -59,7 +59,7 @@
             "price": 169.99,
             "era": 2,
             "rating": 3.0,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445745/medieval-row-cover_a2q5ph.jpg",
             "image": "medieval-row-cover.jpg"
         }
     },
@@ -75,7 +75,7 @@
             "price": 69.99,
             "era": 3,
             "rating": 5.0,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445682/reneissance-europe-cover_qlg2l0.jpg",
             "image": "reneissance-europe-cover.jpg"
         }
     },
@@ -91,7 +91,7 @@
             "price": 30.99,
             "era": 3,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690446126/reneissance-row-cover_yezmcc.jpg",
             "image": "reneissance-row-cover.jpg.jpg"
         }
     },
@@ -107,7 +107,7 @@
             "price": 59.0,
             "era": 4,
             "rating": 4.4,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690446030/industrial-europe-cover_qhsjua.jpg",
             "image": "industrial-europe-cover.jpg"
         }
     },
@@ -123,7 +123,7 @@
             "price": 36.99,
             "era": 4,
             "rating": 4.5,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690446138/industrial-row-cover_w2idxi.jpg",
             "image": "industrial-row-cover.jpg.jpg"
         }
     },
@@ -139,7 +139,7 @@
             "price": 19.99,
             "era": 5,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690446152/xx-europe-cover_pvkftw.jpg",
             "image": "xx-europe-cover.jpg"
         }
     },
@@ -155,7 +155,7 @@
             "price": 33.99,
             "era": 5,
             "rating": 4.4,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445746/xx-row-cover_aic4co.jpg",
             "image": "xx-row-cover.jpg"
         }
     },
@@ -171,7 +171,7 @@
             "price": 29.99,
             "era": 6,
             "rating": 3.0,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690446167/xxi-europe-cover_gd6yf6.jpg",
             "image": "xxi-europe-cover.jpg"
         }
     },
@@ -187,7 +187,7 @@
             "price": 19.99,
             "era": 6,
             "rating": 4.6,
-            "image_url": "",
+            "image_url": "https://res.cloudinary.com/dwczzqdrv/image/upload/v1690445747/xxi-row-cover_t4zm5p.jpg",
             "image": "xxi-europe-cover.jpg"
         }
     }

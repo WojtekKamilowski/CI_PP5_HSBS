@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+/* Based on Code Institue's "Boutique Ado" Walkthrough Project */
 body {
     background: url('/media/homepage_background.jpg') no-repeat center center local;
     background-size: cover;
@@ -18,6 +19,7 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
 .text-black {
     color: #000 !important;
 }
@@ -41,6 +43,17 @@ a {
 
 header {
     background-color: #fafafa;
+}
+
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 footer {
