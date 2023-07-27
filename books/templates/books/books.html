@@ -28,19 +28,19 @@
                     <div class="card h-100 border-0">
                         {% if book.image %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ book.image.url }}" alt="{{ book.name }}">
+                            <img class="card-img-top img-fluid h-85 mb-2" src="{{ book.image.url }}"
+                                alt="{{ book.name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                            <img class="card-img-top img-fluid h-85 mb-2" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ book.name }}">
                         </a>
                         {% endif %}
-                        <div class="card-body pb-0">
-                            <p class="mb-0">{{ book.name }}</p>
-                        </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
+                                    <p class="mb-0">{{ book.name }} | {{ book.author }} {{ book.published }}</p>
                                     <p class="lead mb-0 text-left font-weight-bold">${{ book.price }}</p>
                                     {% if book.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ book.rating }} /
