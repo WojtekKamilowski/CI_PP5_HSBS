@@ -64,9 +64,9 @@ header {
     object-fit: contain;
 }
 
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
 .book-container,
-.cart-container {
+.cart-container,
+.signup-container {
     min-height: 60vh;
 }
 
@@ -79,8 +79,13 @@ header {
     right: 10px;
 }
 
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
 .btt-link {
     cursor: pointer;
+}
+
+.signup input {
+    width: 45%;
 }
 
 footer {
