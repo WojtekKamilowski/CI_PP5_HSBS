@@ -450,7 +450,8 @@ Testing user stories:
 
 | Bug  | Fix  |
 | ------- | ------- |
-|  |  |
+| Books Images uploaded to the root directory | Add MEDIA_URL = '/media/' & MEDIA_ROOT = os.path.join(BASE_DIR, 'media') to settings.py |
+| | |
 
 
 [Back to Table Of Contents](#table-of-contents)
