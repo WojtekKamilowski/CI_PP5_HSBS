@@ -507,9 +507,9 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 ## Credits 
 
-- Parts of the code inspired by the knowledge from my Project Portfolio 4:<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN">My Pantry Note</a>.
+- Parts of the code inspired by the knowledge from my Project Portfolio 4:<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN">My Pantry Note</a>
 
-- Some of the code based on <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
+- Parts of code based on <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
 - base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">razor-sharp</a>
   

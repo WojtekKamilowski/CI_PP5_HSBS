@@ -65,7 +65,8 @@ header {
 }
 
 /* From Code Institue's "Boutique Ado" Walkthrough Project */
-.book-container {
+.book-container,
+.cart-container {
     min-height: 60vh;
 }
 
