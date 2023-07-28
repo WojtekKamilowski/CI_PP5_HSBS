@@ -72,3 +72,19 @@ footer {
     padding-top: 2vh;
     background-color: #fafafa;
 }
+
+/* Media queries */
+
+/* Smaller h3 for small screens */
+@media (max-width: 360px) {
+    .era-badge-name {
+        font-size: 150%;
+    }
+}
+
+/* Smaller h3 for extra small screens */
+@media (max-width: 230px) {
+    .era-badge-name {
+        font-size: 90%;
+    }
+}
