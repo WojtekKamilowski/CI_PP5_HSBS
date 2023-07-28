@@ -20,6 +20,19 @@
         </div>
     </div>
     <div class="row">
+        <div class="col text-center mt-3">
+            {% for e in current_eras %}
+            <span class="p-2 mt-2 badge badge-white text-black rounded-0">
+                <h3>
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    {{ e.friendly_name}}
+                    <i class="fa-solid fa-hourglass-half"></i>
+                </h3>
+            </span>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
         <div class="book-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
@@ -45,7 +58,7 @@
                                     {% if book.era %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted" href="{% url 'books' %}?era={{ book.era.name }}">
-                                            <i class="fa-solid fa-hourglass-start"></i> {{ book.era.friendly_name }}
+                                            <i class="fa-solid fa-hourglass-half"></i> {{ book.era.friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}
