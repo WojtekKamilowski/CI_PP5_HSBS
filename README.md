@@ -513,6 +513,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">razor-sharp</a>
   
 - object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
+  
+- Dropright main-nav submenu for sorting by lowest & highest price based on <a href="https://getbootstrap.com/docs/4.6/components/dropdowns/">Bootstrap</a>
 
 ### Media
 
