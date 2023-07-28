@@ -64,8 +64,22 @@ header {
     object-fit: contain;
 }
 
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
 .book-container {
     min-height: 60vh;
+}
+
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
 }
 
 footer {
