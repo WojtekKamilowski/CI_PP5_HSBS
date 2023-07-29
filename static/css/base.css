@@ -58,8 +58,8 @@ header {
 
 /* From Stackoverflow */
 .contain-bk-img {
-    width: 350px;
-    height: 200px;
+    width: 400px;
+    height: 500px;
     border: 1pt solid #000;
     object-fit: contain;
 }

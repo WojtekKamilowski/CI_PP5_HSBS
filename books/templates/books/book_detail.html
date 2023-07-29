@@ -14,15 +14,16 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+        <div class="col-12 col-md-6 col-lg-3 offset-lg-2">
             <div class="image-container my-5">
                 {% if book.image %}
                 <a href="{{ book.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ book.image.url }}" alt="{{ book.name }}">
+                    <img class="card-img-top img-fluid contain-bk-img" src="{{ book.image.url }}" alt="{{ book.name }}">
                 </a>
                 {% else %}
                 <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                    <img class="card-img-top img-fluid contain-bk-img" src="{{ MEDIA_URL }}noimage.png"
+                        alt="{{ book.name }}">
                 </a>
                 {% endif %}
             </div>
@@ -47,6 +48,47 @@
                 <small class="text-muted">No Rating</small>
                 {% endif %}
                 <p class="mt-3">{{ book.description }}</p>
+                <form class="form" action="{% url 'add_to_cart' book.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group input-group-{{ book.id }}">
+                                    <div class="input-group-prepend">
+                                        <button
+                                            class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ book.id }}"
+                                            data-item_id="{{ book.id }}">
+                                            <span class="icon">
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <input class="form-control qty_input id_qty_{{ book.id }}" type="number"
+                                        name="quantity" value="1" min="1" max="99" data-item_id="{{ book.id }}">
+                                    <div class="input-group-append">
+                                        <button
+                                            class="increment-qty btn btn-black rounded-0 increment-qty_{{ book.id }}"
+                                            data-item_id="{{ book.id }}">
+                                            <span class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" class="text-uppercase main-clr-thm" value="Add to Shopping Cart">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                    <div class="mt-3">
+                        <a href="{% url 'books' %}" class="text-uppercase">
+                            <i class="fa-solid fa-book-open"></i> Find more books now
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
