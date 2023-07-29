@@ -84,6 +84,22 @@ header {
     cursor: pointer;
 }
 
+
+/* Based on Codersblock */
+.cart-in {
+    color: #fafafa;
+    background-color: #505;
+    box-shadow:
+        inset 60px 0 120px #505,
+        /* left magenta */
+        inset -60px 0 120px #0ff;
+    /* right cyan */
+}
+
+.cart-in:hover {
+    color: #EEEEFF;
+}
+
 .signup input {
     width: 45%;
 }

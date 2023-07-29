@@ -127,6 +127,15 @@ The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is 
 
 </details>
 
+- #EEEEFF from <a href="https://www.eggradients.com/shades-of-white">Eggradients</a>.
+
+<details>
+    <summary>Contrast</summary>
+
+![Colors](docs/colors/contrast-1.png)
+
+</details>
+
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -517,6 +526,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
   
 - Dropright main-nav submenu for sorting by lowest & highest price based on <a href="https://getbootstrap.com/docs/4.6/components/dropdowns/">Bootstrap</a>
 
+- Shadowed shopping cart with items in it from <a href="https://codersblock.com/blog/creating-glow-effects-with-css/">Codersblock</a>
+
 ### Media
 
 - Favicon from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
@@ -536,6 +547,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - XX Century ROW book cover image from
 - Early XXI Century Europe book cover image from <a href="https://www.freeimages.com/download/eu-polish-flags-636220">Freeimages</a>
 - Early XXI Century ROW book cover image from <a href="https://pixabay.com/illustrations/bad-business-collage-crisis-19907/">Pixabay</a>
+
 
 [Back to Table Of Contents](#table-of-contents)
 
