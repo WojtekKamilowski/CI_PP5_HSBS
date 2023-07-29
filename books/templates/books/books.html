@@ -122,5 +122,13 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script src="{% static 'js/script.js' %}"></script>
+<script type="text/javascript">
+    /* 
+    * From Code Institue's "Boutique Ado" Walkthrough Project
+    * Brings back to the top of the books list
+    */
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
+    });
+</script>
 {% endblock %}

@@ -60,6 +60,14 @@ header {
     z-index: -1;
 }
 
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
 /* From Stackoverflow */
 .contain-bk-img {
     width: 400px;
