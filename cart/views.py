@@ -36,3 +36,27 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+
+def update_cart(request, item_id):
+    """
+    Updates the quantity of the book as entered
+    """
+
+    book = get_object_or_404(Book, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
+    cart = request.session.get('cart', {})
+
+    if quantity > 0:
+        cart[item_id] = quantity
+        messages.success(request,
+                         (f'Updated {book.name} '
+                          f'quantity to {cart[item_id]}'))
+    else:
+        cart.pop(item_id)
+        messages.success(request,
+                         (f'Removed {book.name} '
+                          f'from your cart'))
+
+    request.session['cart'] = cart
+    return redirect(reverse('view_cart'))

@@ -53,7 +53,7 @@
                             <p class="my-0">${{ item.book.price }}</p>
                         </td>
                         <td class="py-3 w-25">
-                            {{ item.quantity }}
+                            {% include "cart/quantity-form.html" %}
                         </td>
                         <td class="py-3">
                             <p class="my-0">${{ item.book.price | calc_subtotal:item.quantity }}</p>
@@ -97,4 +97,17 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
+    })
+</script>
+
+<script type="text/javascript">
+    
+</script>
 {% endblock %}
