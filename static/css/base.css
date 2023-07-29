@@ -29,6 +29,10 @@ h5 {
     background-color: #505;
 }
 
+.main-clr-thm:hover {
+    color: #EEEEFF;
+}
+
 .cst-prpl {
     color: #505;
 }
@@ -62,6 +66,7 @@ header {
     height: 500px;
     border: 1pt solid #000;
     object-fit: contain;
+
 }
 
 .book-container,
