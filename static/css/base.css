@@ -69,6 +69,11 @@ header {
 
 }
 
+.ct-img {
+    width: 100%;
+    height: 180px;
+}
+
 .book-container,
 .cart-container,
 .signup-container {
@@ -115,6 +120,13 @@ footer {
 }
 
 /* Media queries */
+
+/* Hide cart image for small screenss */
+@media (max-width: 460px) {
+    .ct-img {
+        display: none;
+    }
+}
 
 /* Smaller h3 for small screens */
 @media (max-width: 360px) {
