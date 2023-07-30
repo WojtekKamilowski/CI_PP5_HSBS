@@ -1,9 +1,10 @@
 <div class="toast rounded-0 border-top-0" data-autohide="false">
     <div class="arrow-up arrow-success"></div>
     <div class="w-100 bg-success"></div>
-    <div class="toast-header main-clr-thm">
-        <strong class="text-center">Processed successfully!</strong>
-        <button type=" button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
+    <div class="py-2 px-2 text-center main-clr-thm">
+        <strong>Processed successfully!</strong>
+        <button type="button" class="btn mb-1 main-clr-thm fs-2 border border-white" data-dismiss="toast"
+            aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
@@ -43,13 +44,14 @@
                     </p>
                 </strong>
                 {% if free_delivery_delta > 0 %}
-                <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
-                    Add more books for at least <strong>${{ free_delivery_delta }}</strong> to get them delivered for
-                    free!
+                <p class="my-2 p-2 bg-delivery text-black text-center">
+                    Add more books for at least <strong>${{ free_delivery_delta }}</strong> to get them delivered
+                    <strong class="fs-3 text-uppercase"><u>for
+                            free</u>!</strong>
                 </p>
                 {% endif %}
                 <a href="{% url 'view_cart' %}" class="btn main-clr-thm">
-                    <span class=" text-uppercase">Go To Secure Checkout</span>
+                    <span class="text-uppercase">Go To Secure Checkout</span>
                     <span class="icon">
                         <i class="fas fa-lock"></i>
                     </span>
