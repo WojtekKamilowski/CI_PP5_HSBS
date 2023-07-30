@@ -544,7 +544,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - Parts of code based on <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
-- base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">razor-sharp</a>
+- base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>
   
 - object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
   
