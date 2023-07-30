@@ -87,8 +87,20 @@ header {
     height: 180px;
 }
 
-.update-link {
+.update-link,
+.cst-info {
     color: #0F3860;
+}
+
+/* Inspired by Code Institue's "Boutique Ado" Walkthrough Project */
+.custom-toast {
+    max-height: 80vh;
+    overflow: scroll;
+}
+
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
+.toast-capper {
+    height: 2px;
 }
 
 .book-container,
