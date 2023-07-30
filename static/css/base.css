@@ -29,11 +29,6 @@ h5 {
     background-color: #505;
 }
 
-.btn:hover,
-.cart-in:hover {
-    color: #FFF642;
-}
-
 .cst-prpl {
     color: #505;
 }
@@ -59,6 +54,11 @@ header {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+.btn:hover,
+.cart-in:hover {
+    color: #FFF642;
 }
 
 /* From Code Institue's "Boutique Ado" Walkthrough Project */
@@ -107,7 +107,9 @@ header {
 }
 
 /* From Code Institue's "Boutique Ado" Walkthrough Project */
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
