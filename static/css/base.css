@@ -88,7 +88,8 @@ header {
 }
 
 .update-link,
-.cst-info {
+.cst-info,
+.checkout-save {
     color: #0F3860;
 }
 
