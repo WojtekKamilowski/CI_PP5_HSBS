@@ -147,6 +147,14 @@ footer {
     background-color: #fafafa;
 }
 
+/* Checkout from Code Institue's "Boutique Ado" Walkthrough Project */
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
+}
+
 /* Media queries */
 
 /* Hide cart image for small screenss */
