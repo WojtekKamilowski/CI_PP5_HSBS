@@ -36,8 +36,7 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save(commit=False)
-            order.save()
+            order = order_form.save()
             for item_id, item_data in cart.items():
                 try:
                     book = Book.objects.get(id=item_id)
@@ -59,8 +58,7 @@ def checkout(request):
 
             # Save the details to the user's profile if all is OK
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success',
-                                    args=[order.order_number]))
+            return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, ('There was an error with your form. '
                                      'Please double check your information.'))
