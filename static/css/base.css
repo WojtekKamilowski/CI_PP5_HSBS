@@ -148,11 +148,33 @@ footer {
 }
 
 /* Checkout from Code Institue's "Boutique Ado" Walkthrough Project */
-
 #payment-form .form-control,
 #card-element {
     color: #000;
     border: 1px solid #000;
+}
+
+
+/* Based on Code Institue's "Boutique Ado" Walkthrough Project */
+#loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0F3860;
+    z-index: 9999;
+    opacity: 0.5;
+}
+
+/* From Code Institue's "Boutique Ado" Walkthrough Project */
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
 }
 
 /* Media queries */

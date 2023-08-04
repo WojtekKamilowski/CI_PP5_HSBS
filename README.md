@@ -548,7 +548,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - JavaScript code to update quantity on click & move the screen back to the top of the books list from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
-- .overlay, .text-black, #payment-form, .form-control & #card-element CSS from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
+- .overlay, .text-black, #payment-form, .form-control & #card-element & .loading-spinner CSS from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
 - ready function in checkout.apps.py from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
