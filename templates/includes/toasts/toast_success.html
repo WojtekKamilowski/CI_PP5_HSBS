@@ -1,6 +1,6 @@
 <!-- Inspired by Code Institue's "Boutique Ado" Walkthrough Project -->
 <div class="custom-toast toast rounded-0 border-top-0" data-autohide="true" data-delay="30000">
-    <div class="arrow-up arrow-success"></div>
+    <div class="arrow-success"></div>
     <div class="w-100 toast-capper bg-success "></div>
     <div class="py-2 px-2 text-center main-clr-thm">
         <strong>Processed successfully!</strong>
@@ -47,8 +47,8 @@
                 {% if free_delivery_delta > 0 %}
                 <p class="my-2 p-2 bg-delivery text-black text-center">
                     Add more books for at least <strong>${{ free_delivery_delta }}</strong> to get them delivered
-                    <strong class="fs-3 text-uppercase"><u>for
-                            free</u>!</strong>
+                    <strong class="fs-3 text-uppercase">for
+                        free!</strong>
                 </p>
                 {% endif %}
                 <a href="{% url 'view_cart' %}" class="btn main-clr-thm">
