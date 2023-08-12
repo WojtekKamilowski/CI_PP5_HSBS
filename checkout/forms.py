@@ -1,10 +1,23 @@
 from django import forms
 from .models import Order
 
-# From Code Institue's "Boutique Ado" Walkthrough Project
+
+# Based on Code Institue's "Boutique Ado" Walkthrough Project
 
 
 class OrderForm(forms.ModelForm):
+    # From Stackoverflow
+    full_name = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 50}))
+
+    # Based on Stackoverflow
+    phone_number = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[0-9]+', 'title': 'Enter digits only', 'maxlength': 20}))
+
+    # Based on Stackoverflow
+    town_or_city = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 40}))
+
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',

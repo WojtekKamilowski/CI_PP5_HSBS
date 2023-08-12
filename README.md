@@ -280,6 +280,10 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 
 - [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 - [Summernote](https://summernote.org/)
+- [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/)* 
+
+* Used for updating phone_number model in checkout.models.py, migrations made & migrated during tests & changed back to CharField to better suit the project needs.
+
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -553,6 +557,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
   
 - webhooks.py based on: <a href="https://stripe.com/docs/webhooks">Stripe</a>, <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a> & <a href="https://github.com/ArronBeale/CI_PP5_tee_time/blob/main/checkout/webhooks.py">Teetime</a>
 
+- checkout.froms.py widgets in OrderForm based on <a href="https://docs.djangoproject.com/en/4.2/ref/forms/widgets/">Django</a> & <a href="https://stackoverflow.com/questions/48822759/override-in-the-widget-attributes-the-max-length-set-on-the-model">Stackoverflow</a>, additionally part of code also from <a href="https://stackoverflow.com/questions/17165147/how-can-i-make-a-django-form-field-contain-only-alphanumeric-characters">Stackoverflow</a>
+
 - Parts of the code inspired by the knowledge from my Project Portfolio 4:<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN">My Pantry Note</a>
 
 - base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>
@@ -562,6 +568,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Dropright main-nav submenu for sorting by lowest & highest price based on <a href="https://getbootstrap.com/docs/4.6/components/dropdowns/">Bootstrap</a>
 
 - Shadowed shopping cart with items in it from <a href="https://codersblock.com/blog/creating-glow-effects-with-css/">Codersblock</a>
+  
 
 ### Media
 
