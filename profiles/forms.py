@@ -6,6 +6,14 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    # Based on Stackoverflow
+    default_phone_number = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[0-9]+', 'title': 'Enter digits only', 'maxlength': 20}))
+
+    # Based on Stackoverflow
+    default_town_or_city = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 40}))
+
     class Meta:
         model = UserProfile
         exclude = ('user',)

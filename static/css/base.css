@@ -111,6 +111,11 @@ header {
     min-height: 60vh;
 }
 
+.em-confirm-container,
+.logout-container {
+    min-height: 40vh;
+}
+
 /* From Code Institue's "Boutique Ado" Walkthrough Project */
 .btt-button {
     height: 42px;

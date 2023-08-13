@@ -39,12 +39,12 @@
             {% include "socialaccount/snippets/login_extra.html" %}
 
             {% else %}
-            <p class="my-4">{% blocktrans %}If you have not created an account yet, then please
+            <p class="my-4 offset-3 mx-3">{% blocktrans %}If you have not created an account yet, then please
                 <a href="{{ signup_url }}"><u>sign up</u></a> first.{% endblocktrans %}
             </p>
             {% endif %}
             <hr>
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <form class="login offset-3 mx-3" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
