@@ -1,0 +1,1 @@
+Your HiStory Order Confirmed & on the way! | Order Number {{ order.order_number }}
