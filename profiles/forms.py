@@ -7,12 +7,16 @@ from .models import UserProfile
 
 class UserProfileForm(forms.ModelForm):
     # Based on Stackoverflow
-    default_phone_number = forms.CharField(required=True, widget=forms.TextInput(
+    default_phone_number = forms.CharField(required=False, widget=forms.TextInput(
         attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[0-9]+', 'title': 'Enter digits only', 'maxlength': 20}))
 
     # Based on Stackoverflow
-    default_town_or_city = forms.CharField(required=True, widget=forms.TextInput(
+    default_town_or_city = forms.CharField(required=False, widget=forms.TextInput(
         attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 40}))
+
+    # Based on Stackoverflow
+    default_county = forms.CharField(required=False, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 80}))
 
     class Meta:
         model = UserProfile
@@ -32,14 +36,14 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address2': 'Street Address 2',
             'default_county': 'County, State or Locality',
         }
-        # From Teetime
+        # Based on Teetime
         aria_labels = {
-            'default_phone_number': 'Phone number of the user',
-            'default_postcode': 'Postal code of the user',
-            'default_town_or_city': 'Town or city of the user',
-            'default_address1': 'Street address 1 of the user',
-            'default_address2': 'Street address 2 of the user',
-            'default_county': 'County, state, or locality of the user',
+            'default_phone_number': 'Delivery phone number of the user',
+            'default_postcode': 'Delivery postal code of the user',
+            'default_town_or_city': 'Delivery town or city of the user',
+            'default_street_address1': 'Delivery street address 1 of the user',
+            'default_street_address2': 'Delivery street address 2 of the user',
+            'default_county': 'Delivery county, state, or locality of the user',
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
@@ -50,7 +54,8 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = ('border-black '
-                                                        'rounded-0 '
-                                                        'profile-form-input')
-            self.fields[field].label = False
+                self.fields[field].widget.attrs['aria-label'] = aria_labels[
+                    field
+                ]
+            else:
+                self.fields[field].label = False

@@ -18,6 +18,10 @@ class OrderForm(forms.ModelForm):
     town_or_city = forms.CharField(required=True, widget=forms.TextInput(
         attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 40}))
 
+    # Based on Stackoverflow
+    county = forms.CharField(required=False, widget=forms.TextInput(
+        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 80}))
+
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
