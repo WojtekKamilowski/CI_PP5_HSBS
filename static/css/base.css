@@ -193,6 +193,12 @@ footer {
     color: #0F3860;
 }
 
+/* Based on Code Institue's "Boutique Ado" Walkthrough Project */
+.order-history {
+    max-height: 40vh;
+    overflow: scroll;
+}
+
 /* Media queries */
 
 /* Hide cart image for small screenss */
