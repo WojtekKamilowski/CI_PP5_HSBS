@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div>
+    <h2 class="main-clr-thm text-center py-2">Books Offer Management</h2>
+</div>
+<div class="row">
+    <div class="col text-center mt-3">
+        <span class="p-2 mt-2 badge badge-white text-black">
+            <h3 class="era-badge-name">
+                <i class="fa-solid fa-hourglass-half"></i>
+                Add a new book
+                <i class="fa-solid fa-hourglass-half"></i>
+            </h3>
+        </span>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'add_book' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right mb-4">
+                    <a class="btn main-clr-thm" href="{% url 'books' %}">Cancel</a>
+                    <button class="btn main-clr-thm" type=" submit">Add Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

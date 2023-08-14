@@ -3,6 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Book, Era
+from .forms import BookForm
+
 
 # Create your views here.
 
@@ -75,3 +77,28 @@ def book_detail(request, book_id):
     }
 
     return render(request, 'books/book_detail.html', context)
+
+
+def add_book(request):
+    """
+    Add  new book to the store offer
+    """
+    if request.method == 'POST':
+        form = BookForm(request.POST, request.FILES)
+        if form.is_valid():
+            book = form.save()
+            messages.success(request, 'Book added successfully ')
+            return redirect(reverse('book_detail', args=[book.id]))
+        else:
+            messages.error(request,
+                           ('Failed to add book. '
+                            'Please try again & ensure the form is valid.'))
+    else:
+        form = BookForm()
+
+    template = 'books/add_book.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
