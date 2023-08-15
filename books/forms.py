@@ -2,7 +2,11 @@ from django import forms
 from .models import Book, Era
 
 
-# Based on Code Institue's "Boutique Ado" Walkthrough Project
+# Inspired by Code Institue's "Boutique Ado" Walkthrough Project
+
+
+class DateInput(forms.DateInput):
+    input_type = "date"
 
 
 class BookForm(forms.ModelForm):
@@ -10,6 +14,10 @@ class BookForm(forms.ModelForm):
     class Meta:
         model = Book
         fields = '__all__'
+
+        widgets = {
+            "published": DateInput(),
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
