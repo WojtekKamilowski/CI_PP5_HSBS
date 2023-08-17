@@ -1,12 +1,13 @@
+# 3rd Party imports
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+# Internal imports
 from .models import Book, Era
 from .forms import BookForm
 
-
-# Create your views here.
 
 # Based on Code Institue's "Boutique Ado" Walkthrough Project
 
@@ -79,10 +80,16 @@ def book_detail(request, book_id):
     return render(request, 'books/book_detail.html', context)
 
 
+@login_required
 def add_book(request):
     """
     View to add a new book to the store offer
     """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry, it is restricted option for store administration.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = BookForm(request.POST, request.FILES)
         if form.is_valid():
@@ -104,10 +111,16 @@ def add_book(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_book(request, book_id):
     """
     View to edit selected book from the store
     """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry, it is restricted option for store administration.')
+        return redirect(reverse('home'))
+
     book = get_object_or_404(Book, pk=book_id)
     if request.method == 'POST':
         form = BookForm(request.POST, request.FILES, instance=book)
@@ -132,10 +145,16 @@ def edit_book(request, book_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_book(request, book_id):
     """
     View to delete chosen book from the store
     """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry, it is restricted option for store administration.')
+        return redirect(reverse('home'))
+
     book = get_object_or_404(Book, pk=book_id)
     if request.method == "POST":
         book.delete()
