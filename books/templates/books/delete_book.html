@@ -30,13 +30,7 @@
         <div class="col-12 col-md-6">
             <form method="POST">
                 {% csrf_token %}
-                {% for field in form %}
-                {% if field.name != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
-                {% endfor %}
+                {{ form | crispy }}
                 <p class="text-danger text-uppercase text-center mt-5">
                     Are you you sure you want to delete this book: {{ book.name }} ?
                 </p>
