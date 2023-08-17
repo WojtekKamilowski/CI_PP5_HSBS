@@ -19,7 +19,7 @@
         <span class="p-2 mt-2 badge badge-white text-black">
             <h3 class="era-badge-name">
                 <i class="fa-solid fa-hourglass-half"></i>
-                Add a new book
+                Edit a new book
                 <i class="fa-solid fa-hourglass-half"></i>
             </h3>
         </span>
@@ -28,7 +28,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{% url 'add_book' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_book' book.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'image' %}
@@ -39,7 +39,7 @@
                 {% endfor %}
                 <div class="text-right mb-4">
                     <a class="btn main-clr-thm" href="{% url 'books' %}">Cancel</a>
-                    <button class="btn main-clr-thm" type=" submit">Add Product</button>
+                    <button class="btn main-clr-thm" type=" submit">Update Product</button>
                 </div>
             </form>
         </div>
