@@ -22,7 +22,8 @@ class Era(models.Model):
 class Book(models.Model):
     era = models.ForeignKey(
         'Era', null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=260, null=True, blank=True)
+    sku = models.CharField(max_length=260, null=True,
+                           blank=False, unique=True)
     name = models.CharField(max_length=260, null=True, blank=True)
     author = models.CharField(max_length=260)
     published = models.DateField(null=True, blank=False)

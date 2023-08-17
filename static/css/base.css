@@ -112,7 +112,8 @@ header {
 }
 
 .em-confirm-container,
-.logout-container {
+.logout-container,
+.delete-container {
     min-height: 40vh;
 }
 

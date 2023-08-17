@@ -130,3 +130,21 @@ def edit_book(request, book_id):
     }
 
     return render(request, template, context)
+
+
+def delete_book(request, book_id):
+    """
+    View to delete chosen book from the store
+    """
+    book = get_object_or_404(Book, pk=book_id)
+    if request.method == "POST":
+        book.delete()
+        messages.success(request, f'Book: {book.name} has been deleted!')
+        return redirect(reverse('books'))
+
+    template = 'books/delete_book.html'
+    context = {
+        'book': book,
+    }
+
+    return render(request, template, context)

@@ -17,6 +17,10 @@ class BookForm(forms.ModelForm):
 
         widgets = {
             "published": DateInput(),
+            "author": forms.TextInput(
+                attrs={'class': 'form-control', 'autocomplete': 'off',
+                       'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 260}
+            )
         }
 
     def __init__(self, *args, **kwargs):
