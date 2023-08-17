@@ -489,7 +489,7 @@ Testing user stories:
 | ------- | ------- |
 | Books Images uploaded to the root directory | Add MEDIA_URL = '/media/' & MEDIA_ROOT = os.path.join(BASE_DIR, 'media') to settings.py |
 | Webhook HTTP status code 500 for payment_intent.succeeded | review the code for typos & add import stripe |
-| | |
+| Item quantity form on the cart page does not responding as expected  | Review the code and add missig input attributes |
 
 
 [Back to Table Of Contents](#table-of-contents)
