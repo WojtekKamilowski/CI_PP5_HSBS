@@ -7,9 +7,8 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="row main-clr-thm">
-    <div class="col text-center mt-3">
+    <div class="col text-center mt-3 mx-1">
         <h2>{% trans "Verify Your E-mail Address" %}</h2>
-        </h2>
         <hr class="w-50 mb-1">
     </div>
 </div>
@@ -17,7 +16,8 @@
 <div class="em-confirm-container mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container">
-            <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the
+            <p class="offset-3 mx-3">{% blocktrans %}We have sent an e-mail to you for verification. Follow the link
+                provided to finalize the
                 signup
                 process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}
             </p>
