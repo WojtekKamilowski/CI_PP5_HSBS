@@ -490,7 +490,7 @@ Testing user stories:
 | Books Images uploaded to the root directory | Add MEDIA_URL = '/media/' & MEDIA_ROOT = os.path.join(BASE_DIR, 'media') to settings.py |
 | Webhook HTTP status code 500 for payment_intent.succeeded | review the code for typos & add import stripe |
 | Item quantity form on the cart page does not responding as expected  | Review the code and add missig input attributes |
-| | |
+| Books Pagination not working for search queries, on era tabs & when sorting books list | update variables & remove pagination for search queries, on era tabs & when sorting books list as 'Page' object has no related attributes |
 
 
 [Back to Table Of Contents](#table-of-contents)
@@ -599,6 +599,9 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 [Back to Table Of Contents](#table-of-contents)
 
 ## Further Developments
+
+- Add pagination feature for search queries, on era tabs & when sorting books list. Possibly by starting with fixing error: 'Page' object has no attribute 'ordered'
+initial solutions research started on <a href="https://stackoverflow.com/questions/22426502/page-object-has-no-attribute-ordered-exception">Stackoverflow</a>
 
 
 [Back to Table Of Contents](#table-of-contents)

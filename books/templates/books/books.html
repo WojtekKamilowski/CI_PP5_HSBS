@@ -37,15 +37,17 @@
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6">
                     <p class="text-muted mt-3 text-center text-md-left">
-                        {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        {% if search_term or current_eras or current_sorting != 'None_None' %}
                         <span class="small"><a href="{% url 'books' %}">Books Home</a> | </span>
-                        {% endif %}
                         {% if books|length == 1 %}
-                        {{ books|length }} Book{% if search_term %} found for <strong>" {{ search_term }}"</strong>
+                        {{ books_list|length }} Book{% if search_term %} found for <strong>" {{ search_term }}"</strong>
                         {% endif %}
                         {% else %}
-                        {{ books|length }} Books{% if books_list.paginator.num_pages > 1 %}(all pages){% endif %}
-                        {% if search_term %} found for <strong>" {{ search_term }}"</strong>
+                        {{ books_list|length }} Books{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong> {% endif %}
+                        {% endif %}
+                        {% else %}
+                        {{ books|length }} Books{% if books_list.paginator.num_pages > 1 %}(all pages)
                         {% endif %}
                         {% endif %}
                     </p>
@@ -122,10 +124,10 @@
 </div>
 <!-- Paginator from Codemy.com -->
 <nav aria-label="Page navigation example">
+    {% if books_list.paginator.num_pages %}
     <p class="text-muted text-center">
         Page {{ books_list.number }} of {{ books_list.paginator.num_pages }}
     </p>
-    {% if books_list.paginator.num_pages > 1 %}
     <ul class="pagination justify-content-center">
         {% if books_list.has_previous %}
         <li class="page-item"><a class="btn main-clr-thm" href="?page=1">&laquo First</a></li>

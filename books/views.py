@@ -25,7 +25,7 @@ def all_books(request):
     sort = None
     direction = None
 
-    # Set up Pagination from Codemy.com
+    # Set up Pagination
     p = Paginator(books, 8)
     page = request.GET.get('page')
     books_list = p.get_page(page)
@@ -37,17 +37,17 @@ def all_books(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                books = books.annotate(lower_name=Lower('name'))
+                books_list = books.annotate(lower_name=Lower('name'))
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            books = books.order_by(sortkey)
+            books_list = books.order_by(sortkey)
 
         if 'era' in request.GET:
             eras = request.GET['era'].split(',')
-            books = books.filter(era__name__in=eras)
+            books_list = books.filter(era__name__in=eras)
             eras = Era.objects.filter(name__in=eras)
 
         if 'q' in request.GET:
@@ -59,7 +59,7 @@ def all_books(request):
 
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query)
-            books = books.filter(queries)
+            books_list = books.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
