@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.core.paginator import Paginator
 # Internal imports
 from .models import Book, Era
 from .forms import BookForm
@@ -23,6 +24,12 @@ def all_books(request):
     eras = None
     sort = None
     direction = None
+
+    # Set up Pagination from Codemy
+    p = Paginator(books, 8)
+    page = request.GET.get('page')
+    books_list = p.get_page(page)
+    nums = "a" * books_list.paginator.num_pages
 
     if request.GET:
         if 'sort' in request.GET:
@@ -58,6 +65,8 @@ def all_books(request):
 
     context = {
         'books': books,
+        'books_list': books_list,
+        'nums': nums,
         'search_term': query,
         'current_eras': eras,
         'current_sorting': current_sorting,
