@@ -562,6 +562,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - checkout.froms.py widgets in OrderForm based on <a href="https://docs.djangoproject.com/en/4.2/ref/forms/widgets/">Django</a> & <a href="https://stackoverflow.com/questions/48822759/override-in-the-widget-attributes-the-max-length-set-on-the-model">Stackoverflow</a>, additionally part of code also from <a href="https://stackoverflow.com/questions/17165147/how-can-i-make-a-django-form-field-contain-only-alphanumeric-characters">Stackoverflow</a>
 
+- Books List pagination from YouTube by <a href="https://www.youtube.com/watch?v=N-PB-HMFmdo">Codemy.com</a>
+
 - Parts of the code inspired by the knowledge from my Project Portfolio 4:<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN">My Pantry Note</a>
 
 - base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>

@@ -25,7 +25,7 @@ def all_books(request):
     sort = None
     direction = None
 
-    # Set up Pagination from Codemy
+    # Set up Pagination from Codemy.com
     p = Paginator(books, 8)
     page = request.GET.get('page')
     books_list = p.get_page(page)

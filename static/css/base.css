@@ -207,6 +207,14 @@ footer {
     .ct-img {
         display: none;
     }
+
+    .logo-font {
+        font-size: 100%;
+    }
+
+    #new-book-btn {
+        padding: 5px;
+    }
 }
 
 /* Smaller h3 for small screens */
