@@ -202,8 +202,13 @@ footer {
 
 /* Media queries */
 
-/* Hide cart image for small screenss */
-@media (max-width: 460px) {
+@media (min-width: 992px) {
+    #home-tab {
+        display: none !important;
+    }
+}
+
+@media (max-width: 466px) {
     .ct-img {
         display: none;
     }
@@ -214,6 +219,15 @@ footer {
 
     #new-book-btn {
         padding: 5px;
+    }
+
+    .message-container {
+        width: 50%;
+        height: 50%;
+    }
+
+    .qty_input {
+        padding: 0 5vw;
     }
 }
 
