@@ -59,8 +59,10 @@ header {
 .error-page {
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
     background: url('/media/error_background.png') no-repeat center center local;
-    z-index: 99999999999999;
+    z-index: -1;
 }
 
 .btn:hover,
