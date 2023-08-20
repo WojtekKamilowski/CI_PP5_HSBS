@@ -491,6 +491,7 @@ Testing user stories:
 | Webhook HTTP status code 500 for payment_intent.succeeded | review the code for typos & add import stripe |
 | Item quantity form on the cart page does not responding as expected  | Review the code and add missig input attributes |
 | Books Pagination not working for search queries, on era tabs & when sorting books list | update variables & remove pagination for search queries, on era tabs & when sorting books list as 'Page' object has no related attributes |
+| 404 Custom Page not displayed 500 Error instead | delete views & url for the 404 error, keep 404.html |
 
 
 [Back to Table Of Contents](#table-of-contents)
