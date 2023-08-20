@@ -100,6 +100,11 @@
             <div class="col-12 col-lg-4 my-auto pt-2">
                 <!-- Col for account and cart options-->
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    {% if request.user.is_authenticated %}
+                    <li>
+                        <p>Logged in as: {{ user.username }}</p>
+                    </li>
+                    {% endif %}
                     <li class="list-inline-item dropdown">
                         <a class="nav-link" href="#" id="dt-user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">

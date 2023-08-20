@@ -52,18 +52,15 @@ header {
     top: 0;
     left: 0;
     position: fixed;
-    background: url('/media/error_background.jpg') no-repeat center center local;
+    background: white;
     z-index: -1;
 }
 
 .error-page {
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+    background: url('/media/error_background.jpg') no-repeat center center local;
+    z-index: 99999999999999;
 }
 
 .btn:hover,
