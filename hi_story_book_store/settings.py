@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['hi-story-book-store-5899052efb65.herokuapp.com',
                  '8000-wojtekkamilowski-ci-pp5--g9v02mrj8r.us2.codeanyapp.com']

@@ -161,6 +161,19 @@ The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is 
 
 ![Colors](docs/colors/contrast-5.png)
 
+</details>
+
+- #294A08 <a hred="https://coolors.co/contrast-checker/294a08-ffffff">Coolors</a>.
+
+<details>
+    <summary>Contrast</summary>
+
+![Colors](docs/colors/contrast-6.png)
+
+</details>
+
+https://coolors.co/contrast-checker/294a08-ffffff
+
 [Back to Table Of Contents](#table-of-contents)
 
 ### Fonts
