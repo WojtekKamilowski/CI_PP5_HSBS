@@ -61,7 +61,8 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: url('/media/error_background.png') no-repeat center center local;
+    position: fixed;
+    background: yellow;
     z-index: -1;
 }
 
@@ -207,6 +208,15 @@ footer {
 .order-history {
     max-height: 40vh;
     overflow: scroll;
+}
+
+/* Mailchimp */
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
 }
 
 /* Media queries */
