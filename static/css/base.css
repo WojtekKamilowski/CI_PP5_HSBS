@@ -59,7 +59,7 @@ header {
 .error-page {
     height: 100%;
     width: 100%;
-    background: url('/media/error_background.jpg') no-repeat center center local;
+    background: url('/media/error_background.png') no-repeat center center local;
     z-index: 99999999999999;
 }
 
