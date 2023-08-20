@@ -30,10 +30,9 @@
             {% if request.user.is_authenticated %}
             <div><i class="fas fa-user fa-lg"></i></div>
             <p class="my-0">My Account</p>
-            <p class="text-black">Logged in as: {{ user.username }}</p>
             {% else %}
             <div><i class="fas fa-user fa-lg cst-prpl"></i></div>
-            <p class="my-0 cst-prpl">Login / Sign Up</p>
+            <p class="my-0 cst-prpl">Log/Reg</p>
             {% endif %}
         </div>
     </a>
@@ -66,3 +65,8 @@
         </div>
     </a>
 </li>
+{% if request.user.is_authenticated %}
+<div>
+    <p class="text-black">Logged-in as: {{ user.username }}</p>
+</div>
+{% endif %}
