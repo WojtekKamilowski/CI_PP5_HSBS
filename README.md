@@ -627,6 +627,12 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Add pagination feature for search queries, on era tabs & when sorting books list. Possibly by starting with fixing error: 'Page' object has no attribute 'ordered'
 initial solutions research started on <a href="https://stackoverflow.com/questions/22426502/page-object-has-no-attribute-ordered-exception">Stackoverflow</a>
 
+- Add functionalities to add,update & delete blog posts from the website without using django admin by superusers.
+  
+- Add functionalities to add,update & delete all users'post comments from the website without using django admin by superusers.
+  
+- Add functionalities to add,update & delete user's own post comments.
+
 
 [Back to Table Of Contents](#table-of-contents)
 

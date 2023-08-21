@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 # Internal imports
 from profiles.models import UserProfile
 from .models import Post, Comment
-from .forms import PostForm, CommentForm
+from .forms import CommentForm
 
 
 class Posts(generic.ListView):
@@ -15,64 +15,6 @@ class Posts(generic.ListView):
     queryset = Post.objects.all().order_by('-created_on')
     template_name = 'blog/blog.html'
     paginate_by = 4
-
-    @login_required
-    def add_post(request):
-        """
-        Displays form to create a new post
-        """
-        if not request.user.is_superuser:
-            messages.error(
-                request, 'Sorry, it is restricted option for store administration.')
-            return redirect(reverse('home'))
-
-        form = PostForm(data=request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.save()
-            messages.success(request, "Post added!")
-            return redirect("blog")
-
-        return render(request, "blog/add_post.html", {"form": form})
-
-    @login_required
-    def edit_post(request, slug):
-        """
-        View to edit post
-        """
-        if not request.user.is_superuser:
-            messages.error(
-                request, 'Sorry, it is restricted option for store administration.')
-            return redirect(reverse('home'))
-
-        post = get_object_or_404(Post, slug=slug)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                form.save()
-                messages.success(request, "Post edit completed!")
-                return redirect("blog")
-        form = PostForm(request.POST, instance=post)
-        context = {"form": form}
-        return render(request, "blog/edit_post.html", context)
-
-    @login_required
-    def delete_post(request, slug):
-        """
-        Deletes post with option to confirm
-        """
-        if not request.user.is_superuser:
-            messages.error(
-                request, 'Sorry, it is restricted option for store administration.')
-            return redirect(reverse('home'))
-
-        post = get_object_or_404(Post, slug=slug)
-        if request.method == "POST":
-            post.delete()
-            messages.success(request, "Post has been deleted!")
-            return redirect("blog")
-        return render(request, "blog/delete_post.html",
-                      {"post": post})
 
 
 class PostDetail(View):
@@ -103,7 +45,7 @@ class PostDetail(View):
         """
         Posts comment
         """
-        queryset = Post.objects.filter(status=1)
+        queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by("-created_on")
         username = request.user
@@ -134,6 +76,7 @@ class PostDetail(View):
             "username": username,
         }
         return render(request, template, context)
+
 
 class PostLike(View):
     """

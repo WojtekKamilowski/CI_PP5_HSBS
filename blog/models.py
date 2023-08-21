@@ -6,7 +6,6 @@ import datetime
 
 
 # Create your models here.
-STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
@@ -19,10 +18,9 @@ class Post(models.Model):
                                related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
-    post_image = models.ImageField(blank=True)
+    post_image = models.ImageField(null=True, blank=True)
     blog_excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.BooleanField(choices=STATUS, default=0)
     likes = models.ManyToManyField(UserProfile,
                                    related_name='blogpost_like',
                                    blank=True)
@@ -57,4 +55,4 @@ class Comment(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f"Comment {self.body} by {self.username.username}"
+        return f"Comment {self.body} by {self.username}"
