@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Contact Box -->
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row main-clr-thm">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Contact Us</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md d-flex flex-column">
+            <form method="POST" class="mx-3 mt-4">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div>
+                    <p>
+                        <button type="submit" class="btn main-clr-thm">
+                            Submit your message <i class="fa-solid fa-check"></i>
+                        </button>
+                    </p>
+                </div>
+            </form>
+            <!-- Find new book button -->
+            <div class="mb-5 d-flex justify-content-left">
+                <a href="{% url 'books' %}" class="my-2 text-uppercase btn main-clr-thm ml-3">
+                    <span>
+                        <i class="fa-solid fa-book-open"></i> Find your book now
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

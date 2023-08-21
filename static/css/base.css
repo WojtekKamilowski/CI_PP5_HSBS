@@ -117,7 +117,8 @@ header {
 .book-container,
 .cart-container,
 .signup-container,
-.login-container {
+.login-container,
+.received-container {
     min-height: 60vh;
 }
 

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Received Box -->
+<div class="overlay"></div>
+<div class="row">
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md d-flex flex-column received-container">
+        <h2 class="text-center mt-5">Your message has been received!</h2>
+        <div>
+            <p class="text-center my-4">
+                We will review it & send our response to the submitted email address as soon as possible!
+            </p>
+        </div>
+        <!-- Find new book button -->
+        <div class="ms-3 mb-5 d-flex justify-content-left">
+            <a href="{% url 'books' %}" class="my-2 text-uppercase btn main-clr-thm ml-3">
+                <span>
+                    <i class="fa-solid fa-book-open"></i> Find your book now
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+{%endblock%}
