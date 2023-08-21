@@ -294,7 +294,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 
 - [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 - [Summernote](https://summernote.org/)
-- [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/)* 
+- [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/)*
 
 * Used for updating phone_number model in checkout.models.py, migrations made & migrated during tests & changed back to CharField to better suit the project needs.
 
@@ -582,6 +582,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Parts of the code inspired by the knowledge from my Project Portfolio 4:<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN">My Pantry Note</a>
 
 - base.html inspired by <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>
+
+- Parts of blog app inspired by <a href="https://github.com/Alan-Bushell/razor-sharp/tree/main/blog">'Razor Sharp'</a> 
   
 - object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
   

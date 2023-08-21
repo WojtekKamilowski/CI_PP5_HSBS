@@ -124,7 +124,8 @@ header {
 .login-container,
 .received-container,
 .delivery-container,
-.about-container {
+.about-containe,
+.blog-container {
     min-height: 60vh;
 }
 

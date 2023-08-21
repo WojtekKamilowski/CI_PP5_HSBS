@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row main-clr-thm">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">HiStory Blog</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="container blog-container">
+        <div class="row">
+            <!--Blog Entries-->
+            {% for post in post_list %}
+            <div class="col-xs-12 col-md-4">
+                <div class="card mt-3">
+                    <img class="card-img-top" src=" {{ post.post_image.url }}" alt="Card image cap"
+                        style="height: 300px;">
+                    <div class="card-body">
+                        <a href="{% url 'post_detail' post.slug %}">
+                            <h5 class="card-title">{{post.post_title}}</h5>
+                        </a>
+                        <span><i class="fa-solid fa-heart">{{ likes }}</i></span>
+                        <p class="card-text">{{post.excerpt}}</p>
+
+                        <p class="card-text"><small class="text-muted">{{post.created_on}}</small></p>
+                        <p class="card-text"><small class="text-muted">Author: {{post.author.username}}</small></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+<div class="btt-button shadow-sm rounded-0 border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fa-solid fa-up-long text-black mx-auto my-auto"></i>
+    </a>
+</div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    /* 
+    * From Code Institue's "Boutique Ado" Walkthrough Project
+    * Brings back to the top of the books list
+    */
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
+    });
+</script>
+{% endblock %}
