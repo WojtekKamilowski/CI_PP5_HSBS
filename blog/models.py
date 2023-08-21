@@ -6,6 +6,7 @@ import datetime
 
 
 # Create your models here.
+STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
@@ -21,6 +22,7 @@ class Post(models.Model):
     post_image = models.ImageField(blank=True)
     blog_excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
+    status = models.BooleanField(choices=STATUS, default=0)
     likes = models.ManyToManyField(UserProfile,
                                    related_name='blogpost_like',
                                    blank=True)
