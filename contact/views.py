@@ -54,3 +54,4 @@ class ContactMessage(View):
             return render(request, "contact/received.html")
 
         return render(request, "contact/contact.html", {"form": form})
+    

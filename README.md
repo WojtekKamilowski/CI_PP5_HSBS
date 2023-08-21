@@ -270,6 +270,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 - [jQuery](https://jquery.com/)
 - [WAVE](https://wave.webaim.org/)
 - [amiresponsive?](https://ui.dev/amiresponsive?)
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/download.php?lang=en&token=jIR86oYCsiIVTzYSP6sF8FlsimURJVCo#)
 
 [Back to Table Of Contents](#table-of-contents)
 
