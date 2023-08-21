@@ -37,6 +37,10 @@ li {
     list-style-type: none;
 }
 
+.bullet-list {
+    list-style-type: disc;
+}
+
 a {
     color: #505;
 }
@@ -119,7 +123,8 @@ header {
 .signup-container,
 .login-container,
 .received-container,
-.delivery-container {
+.delivery-container,
+.about-container {
     min-height: 60vh;
 }
 

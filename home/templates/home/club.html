@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Privacy Policy Box -->
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row main-clr-thm">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">HiStory Club</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-10 container d-flex flex-column mt-5 delivery-container">
+            <h3>Take an action!</h3>
+            <p>
+                Our HiStory Club is a non-profit organization whose goal is to contribute the history.
+                We are active in various way, examples of our activities are:
+            </p>
+            <ul>
+                <li class="bullet-list">History monuments Restorations,</li>
+                <li class="bullet-list">Writing petitions to various governmental/non-governmental organizations to
+                    found new history
+                    monuments in the forgotten places of important events/ important history figures,</li>
+                <li class="bullet-list">Organizing crowd-funding actions to support archeological works,</li>
+                <li class="bullet-list">Holding seminars/ webinars on various historical subjects.</li>
+            </ul>
+            <p>If you are interested let us know & join us, using <u><a href="{% url 'contact' %}">our contact
+                        form</a></u>. We are looking for all kinds of people with different knowledge/skills background,
+                it is enough if you are simply interested in subjects related to history.</p>
+        </div>
+    </div>
+</div>
+{%endblock%}

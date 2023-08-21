@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Privacy Policy Box -->
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row main-clr-thm">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Who We Are</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-xl-6 container d-flex flex-column mt-5 about-container">
+            <h3>HiStory</h3>
+            <p>
+                We are team of history passionate & professionals who had an idea for a dedicated history book store
+                when studying at the Trinity College Dublin, Department of History.
+                Our goal was to create a unique online space where you can find many books & expand your knowledge
+                either if it is for academic research or purely for leisure.
+                Buying books from our website you support local historicians community, contribute to the development of
+                the history academic field and help us to popularize history.
+                If you are interested to volunteer & actively support our mission read
+                <a href="{% url 'club' %}"><u>more here</u></a>.
+            </p>
+        </div>
+    </div>
+</div>
+{%endblock%}
