@@ -62,7 +62,6 @@
                         <div class="col-1">
                             {% with comments.count as total_comments %}
                             <strong class="text-secondary"><i class="far fa-comments"></i>
-                                <!-- Our total_comments variable goes before the closing strong tag -->
                                 {{ total_comments }}</strong>
                             {% endwith %}
                         </div>
@@ -77,23 +76,18 @@
         </div>
         <div class="row">
             <div class="col-md-8 card mb-4  mt-3 ">
-                <h3>Comments:</h3>
+                <h3 class="mt-1">Comments:</h3>
                 <div class="card-body">
-                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                     {% for comment in comments %}
                     <div class="comments" style="padding: 10px;">
-                        <img src="{{comment.username.userprofile.profile_picture.url}}" class="comment-photo">
                         <p class="font-weight-bold">
-                            <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                            {{ comment.username.username }} wrote:
+                            {{ comment.username }} commented:
                         </p>
-                        <!-- The body of the comment goes before the | -->
                         {{ comment.body | linebreaks }}
-                        <p>Posted: {{ comment.created_on|date:"SHORT_DATE_FORMAT"}} at
+                        <p>Date posted: {{ comment.created_on|date:"SHORT_DATE_FORMAT"}} at
                             {{comment.created_on|date:"G:i a"}}
                         </p>
                     </div>
-                    <!-- for loop ends here -->
                     <hr>
                     {% endfor %}
 
@@ -102,8 +96,8 @@
             <div class="col-md-4 card mb-4  mt-3 ">
                 <div class="card-body">
                     {% if user.is_authenticated %}
-                    <h3>Leave a comment:</h3>
-                    <p>Posting as: {{ user.username }}</p>
+                    <h3>Comment this post:</h3>
+                    <p>Add a comment as: {{ user.username }}</p>
                     <form method="POST" style="margin-top: 1.3em;">
                         {{ comment_form | crispy }}
                         {% csrf_token %}

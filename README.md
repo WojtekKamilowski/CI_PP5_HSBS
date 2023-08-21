@@ -506,6 +506,8 @@ Testing user stories:
 | Item quantity form on the cart page does not responding as expected  | Review the code and add missig input attributes |
 | Books Pagination not working for search queries, on era tabs & when sorting books list | update variables & remove pagination for search queries, on era tabs & when sorting books list as 'Page' object has no related attributes |
 | 404 Custom Page not displayed 500 Error instead | delete views & url for the 404 error, keep 404.html |
+| Post likes cannot be added, Extending the user model: SimpleLazyObject error | use the profile when you check/add/remove likes |
+| IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
 
 
 [Back to Table Of Contents](#table-of-contents)
@@ -590,6 +592,11 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Dropright main-nav submenu for sorting by lowest & highest price based on <a href="https://getbootstrap.com/docs/4.6/components/dropdowns/">Bootstrap</a>
 
 - Shadowed shopping cart with items in it from <a href="https://codersblock.com/blog/creating-glow-effects-with-css/">Codersblock</a>
+
+- Post likes bug fix from <a href="https://stackoverflow.com/questions/44458764/extending-the-user-model-simplelazyobject-error-when-using-user-is-authenticate">Stackoverflow</a>
+
+- Adding comments bug fix from <a href="https://stackoverflow.com/questions/71892594/integrityerror-exception-value-with-db-relations-in-django-on-form-submission">Stackoverflow</a>
+
   
 
 ### Media
