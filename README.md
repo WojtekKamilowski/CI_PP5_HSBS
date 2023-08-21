@@ -581,7 +581,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - Parts of the code inspired by the knowledge from my Project Portfolio 4:<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN">My Pantry Note</a>
 
-- base.html accordingly updated & customized for this project based on <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>
+- base.html inspired by <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>
   
 - object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
   

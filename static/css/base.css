@@ -231,6 +231,10 @@ footer {
     color: #294A08 !important;
 }
 
+.refferal_badge {
+    max-width: 100%;
+}
+
 /* Media queries */
 
 @media (min-width: 992px) {
@@ -239,7 +243,7 @@ footer {
     }
 }
 
-@media (max-width: 466px) {
+@media (max-width: 500px) {
     .ct-img {
         display: none;
     }
