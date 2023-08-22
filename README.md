@@ -633,7 +633,6 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
   
 - Add functionalities to add,update & delete user's own post comments.
 
-
 [Back to Table Of Contents](#table-of-contents)
 
 ## Acknowledgements
