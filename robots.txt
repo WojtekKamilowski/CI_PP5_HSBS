@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://hi-story-book-store-5899052efb65.herokuapp.com/sitemap.xml
