@@ -23,7 +23,7 @@ Store specialized selling history books where passionates & proffessionals can f
     - [User Requirements and Expectations](#user-requirements-and-expectations)
     - [User Stories](#user-stories)
       - [Users](#users)
-      - [Site Owner](#site-owner)
+      - [Site Admin](#site-admin)
     - [Agile Methodologies](#agile-methodologies)
   - [Design](#design)
     - [Design Choices](#design-choices)
@@ -80,17 +80,39 @@ Store specialized selling history books where passionates & proffessionals can f
 
 ### User Stories
 
+- [User Stories on Github Issues](https://github.com/WojtekKamilowski/CI_PP5_HSBS/issues)
+
 #### Users
 
 As a User I want to:
 
+1. Sign up so that I can login with my own account.
+2. Login so that I can access my account profile.
+3. View books list so that I can see what books the store sales.
+4. View book details so that I can check if the book is one that I am looking for.
+5. Search for a book so that I can find book I am looking for without checking the entire list.
+6. Access categorized catalogue of books so that only books from a required category are displayed.
+7. Sort books so that I see books sorted in a required order.
+8. Add books to shopping cart so that I can have all books I wish to buy listedin place.
+9. Update the list of items in my shopping cart so that the correct list is ready for checkout.
+10. Remove items from the shopping cart so that the shopping cart matches my final purchase decission.
+11. Check-out so that I can finalize the purchase of my items.
+12. See the list of all books offered paginated so that I can easier review the offer.
+17. Contact site admins so that I can communicate feedback/complaints/suggestions.
+18. Read about the website so that I know who offers me the products for sale.
 
 [Back to Table Of Contents](#table-of-contents)
 
-#### Site Owner
+#### Site Admin
 
 As an Admin I want to:
 
+13. Add books to the store offer so that the store can sell online the new books available in the store.
+14. Edit book details so that user can see books offered by the store with up to date details.
+15. Delete books from the store's offer so that users cannot see books that are no longer available for sale.
+16. Set up a custom 404 page so that users can be easily redirected to the books list from a non-existing page, increasing their offer viewing time and the likely-hood of buying a book.
+19. Invite users to related non-profit group to engage outside the web so that it helps to build brand and supports the growth of regular customers base.
+20. Offer users looking for more content a blog section so that they can access more engaging content related to the potential users' hobbies sot that they can be possibly retained longer on the website increasing the chance of making some extra purchase than originally intended by a user.
 
 [Back to Table Of Contents](#table-of-contents)
 
