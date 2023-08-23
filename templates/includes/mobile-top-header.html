@@ -1,7 +1,7 @@
 <!-- Based on Code Institue's "Boutique Ado" Walkthrough Project -->
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">
+        aria-expanded="false" aria-label="Search our books">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg"></i></div>
             <p class="my-0">Search</p>
@@ -10,9 +10,11 @@
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'books' %}">
             <div class="input-group w-100">
-                <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our site">
+                <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our site"
+                    aria-label="Search our books">
                 <div class="input-group-append">
-                    <button class="form-control form-control btn main-clr-thm border rounded-0" type="submit">
+                    <button class="form-control form-control btn main-clr-thm border rounded-0" type="submit"
+                        aria-label="Search our books">
                         <span class="icon">
                             <i class="fas fa-search"></i>
                         </span>
