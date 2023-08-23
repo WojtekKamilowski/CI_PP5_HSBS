@@ -143,14 +143,26 @@ As an Admin I want to:
 
 ### Agile Methodologies
 
-<a href="">Github Project</a>
+<a href="https://github.com/users/WojtekKamilowski/projects/4/views/1">Github Project</a>
 
-<a href="">User Stories</a>
+<a href="https://github.com/WojtekKamilowski/CI_PP5_HSBS/issues">User Stories</a>
+
+<a href="https://github.com/WojtekKamilowski/CI_PP5_HSBS/milestones?state=closed">Epics</a>
+
+![Kanban](docs/agile/epics.png)
 
 <details>
     <summary>Kanban</summary>
     
-![Kanban](docs/agile/kanban.png)
+![Kanban](docs/agile/kanban-1.png)
+![Kanban](docs/agile/kanban-2.png)
+![Kanban](docs/agile/kanban-3.png)
+![Kanban](docs/agile/kanban-4.png)
+![Kanban](docs/agile/kanban-5.png)
+![Kanban](docs/agile/kanban-6.png)
+![Kanban](docs/agile/kanban-7.png)
+![Kanban](docs/agile/kanban-8.png)
+![Kanban](docs/agile/kanban-9.png)
 
 </details>
 
@@ -160,7 +172,8 @@ As an Admin I want to:
 
 ### Design Choices
 
-
+The main design choice was to create an open space feeling website with a contemporary approach towards the users.
+The name HiStory was chosen to represent openness, welcoming them to shop on our website by simpy saying 'hi'. The store is dedicated for sales of books store which is why the standard category names were replaced by historical era times.
 
 ### Colors
 
@@ -185,19 +198,12 @@ The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is 
 
 - #30d5c from <a href="https://www.color-meanings.com/colors-that-go-with-purple/">Color Meanings</a>.
 
-<details>
-    <summary>Contrast</summary>
-
-![Colors](docs/colors/contrast-3.png)
-
-</details>
-
 - #FFF642 from <a href="https://coolors.co/contrast-checker/fff642-550055">Coolors</a>.
 
 <details>
     <summary>Contrast</summary>
 
-![Colors](docs/colors/contrast-4.png)
+![Colors](docs/colors/contrast-3.png)
 
 </details>
 
@@ -206,7 +212,7 @@ The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is 
 <details>
     <summary>Contrast</summary>
 
-![Colors](docs/colors/contrast-5.png)
+![Colors](docs/colors/contrast-4.png)
 
 </details>
 
@@ -215,11 +221,9 @@ The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is 
 <details>
     <summary>Contrast</summary>
 
-![Colors](docs/colors/contrast-6.png)
+![Colors](docs/colors/contrast-5.png)
 
 </details>
-
-https://coolors.co/contrast-checker/294a08-ffffff
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -238,7 +242,23 @@ https://coolors.co/contrast-checker/294a08-ffffff
 
 ### Structure
 
-T
+The website consists of seven django applications:
+
+1. home
+2. books
+3. cart
+4. checkout
+5. profile
+6. contact
+7. blog
+
+The logo is the name of the website placed on the top left corner(desktop only), 
+In the central part of the header there is a search input so users can easily start shopping, knowing more/less what they are looking for.
+For users who are more interested to view the offer first and see what is available for sale there is a number of ways to view the full, sorted or categorized books list. Such structure is aimed to bring the users as quickly as possible to the offered products increasing the chance of making the purchase. 
+User can categorize books list by:
+1. Price - lowest or highest. In certain situations it is expected users may want to buy cheaper or more expensive books.
+2. Rating - as default they appear from the higher rating as it is expected that users would be less likely to by books with lower ratings.
+3. Oldest Times & Newest Times - it is expected that some users may be more interest to buy history books describing newer or older period of history.
 
 ### Wireframes
 
@@ -680,6 +700,8 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 - Add functionalities to add,update & delete all users'post comments from the website without using django admin by superusers.
   
 - Add functionalities to add,update & delete user's own post comments.
+  
+- Add additional product app where the items listed for sale would be related to the book store(complementary sales), however with different details than books usually have, for example bookmarks or reading torches, HiStory t-shirts and other gadgets etc.
 
 [Back to Table Of Contents](#table-of-contents)
 
