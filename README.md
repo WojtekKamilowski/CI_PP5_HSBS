@@ -640,6 +640,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - XX Century ROW book cover image from
 - Early XXI Century Europe book cover image from <a href="https://www.freeimages.com/download/eu-polish-flags-636220">Freeimages</a>
 - Early XXI Century ROW book cover image from <a href="https://pixabay.com/illustrations/bad-business-collage-crisis-19907/">Pixabay</a>
+- Image for egyptian blog post <a href="https://www.pexels.com/photo/egyptian-symbols-3199399/">Pexels</a>
 
 
 [Back to Table Of Contents](#table-of-contents)
