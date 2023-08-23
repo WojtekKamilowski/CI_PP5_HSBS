@@ -62,8 +62,19 @@ Store specialized selling history books where passionates & proffessionals can f
 
 ### User Goals
 
+- Purchase books(related user stories: 3, 4, 5, 8, 9, 10, 11)
+- Find books offered for sale (related user stories: 3, 5, 6, 7)
+- Get to known the details of books offered for sale (related user stories: 3, 4)
+- Find information about the store (related user stories: 14)
+- Use own account (related user stories: 1, 2)
+- Easily navigate through the website (related user stories: 5, 6, 7, 12)
+- Communicate with the website's administration (related user stories: 13)
 
 ### Business Owner Goals
+
+- Keep the books offer up to date (related user stories: 15, 16, 17)
+- Retain users on the website increasing the chance for sales(related user stories: 18, 20)
+- Keep the users engaged to build customers relationship(related user stories: 17)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -71,10 +82,24 @@ Store specialized selling history books where passionates & proffessionals can f
 
 ### Target Audience
 
-
+- people who are looking to buy history books
+- people whose hobby is history
+- people who would like to expand their knowledge of history
+  
 [Back to Table Of Contents](#table-of-contents)
 
 ### User Requirements and Expectations
+
+- Accessible and responsive website.
+- Intuitive website with a layout allowing to easily navigate through it.
+- Easy access to Create, Read, Update & Delete functionalities.
+- Links and features that function in accordance with their intended purpose.
+- Connection with the community on the social media platforms.
+- A contact form to contact the website owner.
+- Adding to shopping cart.
+- Updating shopping cart.
+- Option to register and save delivery details.
+- Secure checkout.
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -98,8 +123,8 @@ As a User I want to:
 10. Remove items from the shopping cart so that the shopping cart matches my final purchase decission.
 11. Check-out so that I can finalize the purchase of my items.
 12. See the list of all books offered paginated so that I can easier review the offer.
-17. Contact site admins so that I can communicate feedback/complaints/suggestions.
-18. Read about the website so that I know who offers me the products for sale.
+13. Contact site admins so that I can communicate feedback/complaints/suggestions.
+14. Read about the website so that I know who offers me the products for sale.
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -107,10 +132,10 @@ As a User I want to:
 
 As an Admin I want to:
 
-13. Add books to the store offer so that the store can sell online the new books available in the store.
-14. Edit book details so that user can see books offered by the store with up to date details.
-15. Delete books from the store's offer so that users cannot see books that are no longer available for sale.
-16. Set up a custom 404 page so that users can be easily redirected to the books list from a non-existing page, increasing their offer viewing time and the likely-hood of buying a book.
+15. Add books to the store offer so that the store can sell online the new books available in the store.
+16. Edit book details so that user can see books offered by the store with up to date details.
+17. Delete books from the store's offer so that users cannot see books that are no longer available for sale.
+18. Set up a custom 404 page so that users can be easily redirected to the books list from a non-existing page, increasing their offer viewing time and the likely-hood of buying a book.
 19. Invite users to related non-profit group to engage outside the web so that it helps to build brand and supports the growth of regular customers base.
 20. Offer users looking for more content a blog section so that they can access more engaging content related to the potential users' hobbies sot that they can be possibly retained longer on the website increasing the chance of making some extra purchase than originally intended by a user.
 
