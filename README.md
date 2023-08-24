@@ -15,6 +15,13 @@ Store specialized selling history books where passionates & proffessionals can f
 - [HiStory Books Store](#history-books-store)
   - [About](#about)
   - [Table of Contents](#table-of-contents)
+  - [Business Model](#business-model)
+    - [Purpose of the Application](#purpose-of-the-application)
+    - [Core Business Intents](#core-business-intents)
+    - [Marketing Strategies](#marketing-strategies)
+  - [Marketing Techniques](#marketing-techniques)
+    - [Social Media Platform](#social-media-platform)
+    - [Newsletter Signup Form](#newsletter-signup-form)
   - [Project Goals](#project-goals)
     - [User Goals](#user-goals)
     - [Business Owner Goals](#business-owner-goals)
@@ -57,6 +64,35 @@ Store specialized selling history books where passionates & proffessionals can f
     - [Media](#media)
   - [Further Developments](#further-developments)
   - [Acknowledgements](#acknowledgements)
+
+## Business Model
+
+### Purpose of the Application
+
+The business is a B2C e-commerce platform with the main goal of selling tangible product: books listed online on the website.
+The store is dedicated to sell history books so the primary customer the business targets are people interested in history, 
+but also people who would like to start reading history books or maybe buy them as a gift for someone. 
+The payment type employed is: SINGLE PAYMENT
+The transaction is finished & delivery order is created once a single payment is made. 
+
+### Core Business Intents
+
+
+### Marketing Strategies
+
+The main marketing strategy is a mix of both online & offline marketing. 
+
+The online marketing strategy campaign includes regular short posting on social media platform: Facebook.
+The posts on Facebooks conent address memory of important history events, relating to movies in historical theme encouraging the followers to confront movies that picture a history event or figure with the knowledge that can be found in the literature. Sharing links to the blog posts posted on the websites blog. Interacting with the followers in the comments sections under the Facebook posts. Online marketing is also to be carried using the contact emails received via the newsletter form, regular newsletter to be sent informing about event such sales.
+
+
+The offline marketing strategy is to engage with the users outside the web via the HiStory Book Club, a non-profit organization working to promote history as a hobby. 
+
+## Marketing Techniques
+
+### Social Media Platform
+
+### Newsletter Signup Form
 
 ## Project Goals
 
@@ -702,6 +738,8 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 - Add functionalities to add,update & delete user's own post comments.
   
 - Add additional product app where the items listed for sale would be related to the book store(complementary sales), however with different details than books usually have, for example bookmarks or reading torches, HiStory t-shirts and other gadgets etc.
+  
+- Expand books app to include books in a digital form such audio-books & e-books.
 
 [Back to Table Of Contents](#table-of-contents)
 
