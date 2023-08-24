@@ -96,6 +96,7 @@ The content of posts is to address the memory of important history events or fig
 
 <a href="https://www.facebook.com/profile.php?id=61550506871142">Facebook</a>
 
+![social-media-platform](docs/social/page.png)
 ![social-media-platform](docs/social/post.png)
 
 ### Newsletter Signup Form
@@ -309,6 +310,13 @@ User can categorize books list by:
 3. Oldest Times & Newest Times - it is expected that some users may be more interest to buy history books describing newer or older period of history.
 
 ### Wireframes
+
+<details>
+    <summary>Facebook Page</summary> 
+
+![Wireframes](docs/wireframes/facebook.png)
+
+</details>
 
 <details>
     <summary>Desktop</summary> 
