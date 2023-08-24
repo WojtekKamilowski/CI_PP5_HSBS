@@ -74,6 +74,7 @@ The store is dedicated to sell history books so the primary customer the busines
 but also people who would like to start reading history books or maybe buy them as a gift for someone. 
 The payment type employed is: SINGLE PAYMENT
 The transaction is finished & delivery order is created once a single payment is made. 
+The available payment option is payment by card, implemented using <a href="https://stripe.com/ie">Stripe</a>
 
 ### Core Business Intents
 
@@ -82,9 +83,7 @@ The transaction is finished & delivery order is created once a single payment is
 
 The main marketing strategy is a mix of both online & offline marketing. 
 
-The online marketing strategy campaign includes regular short posting on social media platform: Facebook.
-The posts on Facebooks conent address memory of important history events, relating to movies in historical theme encouraging the followers to confront movies that picture a history event or figure with the knowledge that can be found in the literature. Sharing links to the blog posts posted on the websites blog. Interacting with the followers in the comments sections under the Facebook posts. Online marketing is also to be carried using the contact emails received via the newsletter form, regular newsletter to be sent informing about event such sales.
-
+The online marketing strategy campaign includes regular short posting on social media platform: Facebook, but also to be carried using the contact emails received via the newsletter form thanks to which regular newsletters can be sent to the subscribes informing them about important events, e.g. sales.
 
 The offline marketing strategy is to engage with the users outside the web via the HiStory Book Club, a non-profit organization working to promote history as a hobby. 
 
@@ -92,7 +91,20 @@ The offline marketing strategy is to engage with the users outside the web via t
 
 ### Social Media Platform
 
+HiStory Books Store has its own page on Facebook. 
+The content of posts is to address the memory of important history events or figures, often to be related to pieces of culture & pop-culture e.g. movies in historical theme. The goal is to encourage the followers to confront the content of those pieces of culture which picture a history event or figure with the knowledge that can be found in the literature. Sharing links to the blog posts posted on the websites blog. Interacting with the followers in the comments sections under the Facebook posts which would be aimed to drive constructive discussion feeding the algorithm to increase the popularity of the page amongst Facebook users.
+
+<a href="https://www.facebook.com/profile.php?id=61550506871142">Facebook</a>
+
+![social-media-platform](docs/social/post.png)
+
 ### Newsletter Signup Form
+
+HiStory Books Store uses Mailchimp to collect email addresses from users who would like to subscribe for store's newsletter. 
+It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. 
+The newsletter content is to inform about sales or new books added to the store available on website.
+
+![Features](docs/features/newsletter-form.png)
 
 ## Project Goals
 
@@ -374,6 +386,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 - [WAVE](https://wave.webaim.org/)
 - [amiresponsive?](https://ui.dev/amiresponsive?)
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/download.php?lang=en&token=jIR86oYCsiIVTzYSP6sF8FlsimURJVCo#)
+- [Stripe](https://stripe.com/ie)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -722,6 +735,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Early XXI Century Europe book cover image from <a href="https://www.freeimages.com/download/eu-polish-flags-636220">Freeimages</a>
 - Early XXI Century ROW book cover image from <a href="https://pixabay.com/illustrations/bad-business-collage-crisis-19907/">Pixabay</a>
 - Image for egyptian blog post <a href="https://www.pexels.com/photo/egyptian-symbols-3199399/">Pexels</a>
+- Facebook cover photo <a href="https://www.pexels.com/photo/closeup-photography-of-book-page-folding-forming-heart-1083633/">Pexels</a>
 
 
 [Back to Table Of Contents](#table-of-contents)
@@ -740,6 +754,8 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 - Add additional product app where the items listed for sale would be related to the book store(complementary sales), however with different details than books usually have, for example bookmarks or reading torches, HiStory t-shirts and other gadgets etc.
   
 - Expand books app to include books in a digital form such audio-books & e-books.
+
+- Add more payment options, e.g. Paypal
 
 [Back to Table Of Contents](#table-of-contents)
 
