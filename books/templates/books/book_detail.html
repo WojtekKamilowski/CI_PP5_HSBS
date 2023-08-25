@@ -33,7 +33,9 @@
                 <p class="mb-0">Title: {{ book.name }}</p>
                 <p class="mb-0">Author: {{ book.author }}</p>
                 <p class="mb-0">Published: {{ book.published }}</p>
+                {% if book.pages %}
                 <p class="mb-0">Number of pages: {{ book.pages }}</p>
+                {% endif %}
                 {% if book.era %}
                 <p class="small mt-1 mb-0">
                     <a class="text-muted" href="{% url 'books' %}?era={{ book.era.name }}">

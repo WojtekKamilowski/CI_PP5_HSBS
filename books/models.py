@@ -24,7 +24,7 @@ class Book(models.Model):
         'Era', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=260, null=True,
                            blank=False, unique=True)
-    name = models.CharField(max_length=260, null=True, blank=True)
+    name = models.CharField(max_length=260, null=True, blank=False)
     author = models.CharField(max_length=260)
     published = models.DateField(null=True, blank=False)
     pages = models.IntegerField(null=True, blank=True, validators=[

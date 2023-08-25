@@ -23,6 +23,9 @@ class BookForm(forms.ModelForm):
                        'title': 'Enter characters only', 'maxlength': 260}
             ),
         }
+        labels = {
+            'name': 'Title',
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
