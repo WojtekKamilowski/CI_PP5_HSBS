@@ -85,7 +85,11 @@ The main marketing strategy is a mix of both online & offline marketing.
 
 The online marketing strategy campaign includes regular short posting on social media platform: Facebook, but also to be carried using the contact emails received via the newsletter form thanks to which regular newsletters can be sent to the subscribes informing them about important events, e.g. sales.
 
-The offline marketing strategy is to engage with the users outside the web via the HiStory Book Club, a non-profit organization working to promote history as a hobby. 
+The offline marketing strategy is to engage with the users outside the web via the HiStory Book Club, a non-profit organization working to promote history as a hobby.
+
+The strategy was chosen taking into account the store is a new business with limited budget so it must be done at a relatively low cost. Online marketing via Facebook is to be carried out by a staff member who is responsible for the Facebook page activities. 
+
+Offline marketing is based on a non-profit activities that aim to make the brand present during subject-related events and visible for people who could potentially be looking to buy history books. During the events, the participants will be able to support the activities of the HiStory Club by contributing in a voluntary crowd-funding action to organize future events gathering history enthusiasts.
 
 ## Marketing Techniques
 
@@ -763,7 +767,11 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
   
 - Expand books app to include books in a digital form such audio-books & e-books.
 
-- Add more payment options, e.g. Paypal
+- Add more payment options, e.g. Paypal.
+
+- Add books rating system available for users with admins confirmation.
+  
+- Visualize rating with filling stars.
 
 [Back to Table Of Contents](#table-of-contents)
 
