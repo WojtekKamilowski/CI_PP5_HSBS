@@ -25,6 +25,9 @@ class BookForm(forms.ModelForm):
         }
         labels = {
             'name': 'Title',
+            'pages': 'Number of Pages',
+            'sku': 'SKU Number',
+            'published': 'Publication Date',
         }
 
     def __init__(self, *args, **kwargs):

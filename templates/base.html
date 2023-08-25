@@ -112,7 +112,7 @@
                             <a href="#" class="dropdown-item">Admin Panel</a>
                             {% endif %}
                             {% if user.is_staff %}
-                            <a href="{% url 'add_book' %}" class="dropdown-item">Books Management</a>
+                            <a href="{% url 'add_book' %}" class="dropdown-item">Add New Book</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
