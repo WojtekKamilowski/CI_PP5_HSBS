@@ -433,22 +433,18 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 
 <details>
 
-<summary>Logo and Website Name</summary>
+<summary>Header</summary>
 
+It is included on all pages. Contains: website name that is clickable link to Home page which is a common feature on many websites so users expect it.
+There is search queries form, navigation bar, Authentication & Cart icons.
+Header is responsive: the website name, nav-bar and search queries form are not displayed for smaller screens.
+Instead of website name there is Home link included in the drop-down burger menu which also contains the navigation links. 
+User stories covered: 11, 15.
 
-![Features](docs/features/logo-name.png)
-
-</details>
-
-<details>
-
-<summary>Navigation Bar</summary>
-
-
-![Features](docs/features/nav-bar.png)
-![Features](docs/features/nav-bar-loggedin.png)
+![Features](docs/features/header.png)
 
 </details>
+
 
 <details>
 
