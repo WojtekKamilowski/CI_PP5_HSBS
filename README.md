@@ -438,8 +438,9 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 It is included on all pages. Contains: website name that is clickable link to Home page which is a common feature on many websites so users expect it.
 There is search queries form, navigation bar, Authentication & Cart icons.
 Header is responsive: the website name, nav-bar and search queries form are not displayed for smaller screens.
-Instead of website name there is Home link included in the drop-down burger menu which also contains the navigation links. 
-User stories covered: 11, 15.
+Instead of the clickable website name there is Home link included in the drop-down burger menu which also contains the navigation links.
+Search queries form is displayed after clicking the magnifying glass icon & the Authentication icon has shorter under-description.
+User stories covered: 1, 2, 3, 4, 5, 6, 7.
 
 ![Features](docs/features/header.png)
 
@@ -450,6 +451,13 @@ User stories covered: 11, 15.
 
 <summary>Footer</summary>
 
+It is included on all pages. It is divided in sections: About Us, Check Our Profiles on, Explore Our Website & Contact.
+About Us included links to Who We Are & HiStory Club pages.
+Check Our Profiles on with links to Pinterest, YouTube & Facebook.
+Explore Our Website links to Books & Blog.
+Contact with contact details and link to the contact page.
+Footer is responsive: the sections are displayed verticaly for mobile screens.
+User stories covered: 13, 14, 19, 20.
 
 ![Features](docs/features/footer.png)
 
@@ -457,10 +465,10 @@ User stories covered: 11, 15.
 
 <details>
 
-<summary>Register</summary>
+<summary>Sign Up</summary>
 
 
-![Features](docs/features/register.png)
+![Features](docs/features/signup.png)
 
 </details>
 
@@ -578,6 +586,12 @@ User stories covered: 11, 15.
 
 List of devices used to test the website:
 
+- HP Pavilion 14
+- Acer Nitro 5 without and with an external monitor (HP V22)
+- Sony Xperia L2
+- Motorola Moto G20
+
+The website was also tested using Google Chrome Developer Tools, Toggle Device Toolbar simulating view from a few different listed devices, including popular amongst users iPad and iPhone 5.
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -611,9 +625,17 @@ Following browsers were used to test the website:
 
 Testing user stories:
 
+1. As a User I want to sign up so that I can login with my own account.
+
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| |  |  |  |
+| Header | Click on Authentication icon, select Register option from the drop-down menu  | The sign up page is laoded | Works as expected |
+| Sign Up | Fill up the form, click the sign up button, go to your e-mail inbox, click on the link from the email message, click on the confirm button  | Success message is displayed: You have confirmed emailaddress@email.com & the sign in page is loaded | Works as expected |
+
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+|  |  |  |  |
 
 ![Manual Testing](docs/testing/manual/1.png)
 
