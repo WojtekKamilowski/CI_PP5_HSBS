@@ -438,7 +438,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 - [django-storages](https://django-storages.readthedocs.io/en/latest/)
 - [django-countries](https://pypi.org/project/django-countries/)
 - [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/)*
-* Used for updating phone_number model in checkout.models.py, migrations made & migrated during tests & changed back to CharField to better suit the project needs.
+  *Used for updating phone_number model in checkout.models.py, migrations made & migrated during tests & changed back to CharField to better suit the project needs.
 
 
 [Back to Table Of Contents](#table-of-contents)
@@ -618,7 +618,8 @@ User stories covered: 13.
 <summary>Blog</summary>
 
 Implemented in the blog application.
-Contains a list of blog posts published by the site admins, where users can 
+Contains a list of blog posts published by the site admins, where users can add comments & likes.
+Users cannot edit or delete comments, also cannot undo likes without contactig the admins: please see [Further Developments](#further-development)
 Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
 User stories covered: 20.
 
@@ -921,6 +922,8 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 - Add functionalities to add,update & delete all users'post comments from the website without using django admin by superusers.
   
 - Add functionalities to add,update & delete user's own post comments.
+
+- Undo post like when clicking on the like icon.
   
 - Add additional product app where the items listed for sale would be related to the book store(complementary sales), however with different details than books usually have, for example bookmarks or reading torches, HiStory t-shirts and other gadgets etc.
   
