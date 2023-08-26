@@ -171,7 +171,7 @@ As a User I want to:
 5. Search for a book so that I can find book I am looking for without checking the entire list.
 6. Access categorized catalogue of books so that only books from a required category are displayed.
 7. Sort books so that I see books sorted in a required order.
-8. Add books to shopping cart so that I can have all books I wish to buy listedin place.
+8. Add books to shopping cart so that I can have all books I wish to buy listed together.
 9. Update the list of items in my shopping cart so that the correct list is ready for checkout.
 10. Remove items from the shopping cart so that the shopping cart matches my final purchase decission.
 11. Check-out so that I can finalize the purchase of my items.
@@ -466,6 +466,11 @@ User stories covered: 13, 14, 19, 20.
 <details>
 
 <summary>Sign Up</summary>
+
+From Allauth & customised.
+Located on the signup page, included a form to signup using e-mail & creating own username & password.
+It displays on dektop, laptop, tablet & mobile screens as intended. 
+User stories covered: 1.
 
 
 ![Features](docs/features/signup.png)
