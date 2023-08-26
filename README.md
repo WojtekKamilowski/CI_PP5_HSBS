@@ -499,6 +499,8 @@ User stories covered: 14.
 
 </details>
 
+<details>
+
 <summary>HiStory Club</summary>
 
 Included on the club page. 
@@ -510,9 +512,11 @@ User stories covered: 19.
 
 </details>
 
+<details>
+
 <summary>Books</summary>
 
-Implemented in the Books application.
+Implemented in the books application.
 Displays a paginated All Books list. Allows users to search, sort & categorize by era the list of books.
 Includes page with book details for each offered position. 
 Site admins access books management section to add, delete & update the offered books on the store.
@@ -527,6 +531,19 @@ User stories covered: 3, 4, 5, 6, 7, 8, 12, 15, 16, 17.
 ![Features](docs/features/books-add.png)
 ![Features](docs/features/books-edit.png)
 ![Features](docs/features/books-delete.png)
+
+</details>
+
+<details>
+
+<summary>Cart</summary>
+
+Implemented in the cart application.
+Shows list of items added to the shopping cart with all pre-checkout details (price, quanitity etc.).
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens. on mobile screens the books image is hidden.
+User stories covered: 8, 9, 10.
+
+![Features](docs/features/cart.png)
 
 </details>
 
