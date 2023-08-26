@@ -9,7 +9,7 @@ Order Total: ${{ order.order_total }}
 Delivery: ${{ order.delivery_cost }}
 Grand Total: ${{ order.grand_total }}
 
-We will post your order to {{ order.street_address1 }}, {{ order.street_address2 }} in {{ order.town_or_city }}, {{ order.country }}.
+We will post your order to {{ order.street_address1 }}, {{ if order.street_address2 }} {{ order.street_address2 }} {{ endif }} in {{ order.town_or_city }}, {{ order.country }}.
 
 Your recorded contact number is: {{ order.phone_number }}.
 

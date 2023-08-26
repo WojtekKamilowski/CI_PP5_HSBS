@@ -199,6 +199,7 @@ As an Admin I want to:
 18. Set up a custom 404 page so that users can be easily redirected to the books list from a non-existing page, increasing their offer viewing time and the likely-hood of buying a book.
 19. Invite users to related non-profit group to engage outside the web so that it helps to build brand and supports the growth of regular customers base.
 20. Offer users looking for more content a blog section so that they can access more engaging content related to the potential users' hobbies sot that they can be possibly retained longer on the website increasing the chance of making some extra purchase than originally intended by a user.
+21. Collect email addresses from users who want to subscribe for newsletter so that I can use them for informing the subscribers about sales etc
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -471,6 +472,21 @@ User stories covered: 13, 14, 19, 20.
 ![Features](docs/features/footer.png)
 
 </details>
+
+details>
+
+<summary>Newsletter Signup Form</summary>
+
+It is included on the home page.
+Collects email addresses from users who want to subscribe for Newsletter.
+It is responsive.
+User stories covered: 21. 
+
+![Features](docs/features/newsletter-form.png)
+![Features](docs/features/subscribed.png)
+
+</details>
+
 
 <details>
 
