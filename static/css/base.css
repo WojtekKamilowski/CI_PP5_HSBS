@@ -96,6 +96,10 @@ header {
 
 }
 
+.blog-card {
+    height: 450px;
+}
+
 .contain-pst-img {
     width: 600px;
     height: 300px;
@@ -125,7 +129,8 @@ header {
     height: 2px;
 }
 
-.book-details-container {
+.book-details-container,
+.contact-container {
     min-height: 70vh;
 }
 

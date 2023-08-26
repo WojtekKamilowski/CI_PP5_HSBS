@@ -3,7 +3,7 @@
 
 ![Mockup image](docs/responsive.png)
 
-[Live webpage](https://hi-story-book-store-5899052efb65.herokuapp.com/)
+<a href="https://hi-story-book-store-5899052efb65.herokuapp.com/" target="_blank">LIVE WEBPAGE</a>
 
 ## About 
 
@@ -554,9 +554,9 @@ User stories covered: 8, 9, 10.
 
 Part of the checkout application.
 Includes a form to collect delivery details and payment section built using <a href="https://stripe.com/ie">Stripe</a>.
-There are <a href="https://stripe.com/docs/webhooks">Stripe Webhooks</a> in place. Order confirmation sent to the user after compliting the checkout process.
+There are <a href="https://stripe.com/docs/webhooks">Stripe Webhooks</a> in place. Order confirmation email are sent to the user after completing the checkout process.
 Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
-User stories covered: .
+User stories covered: 11.
 
 ![Features](docs/features/chekout.png)
 ![Features](docs/features/order.png)
@@ -565,6 +565,61 @@ User stories covered: .
 
 </details>
 
+<details>
+
+<summary>Profile</summary>
+
+Implemented in the profiles application.
+Includes a form to collect default delivery details and a table with order history.
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+User stories covered: 2.
+
+![Features](docs/features/profile.png)
+
+</details>
+
+<details>
+
+<summary>Contact</summary>
+
+Implemented in the contact application.
+Includes a form to collect name, email & contact message from the contacting user.
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+User stories covered: 13.
+
+![Features](docs/features/contact.png)
+![Features](docs/features/contact-sent.png)
+![Features](docs/features/contact-received.png)
+
+</details>
+
+<details>
+
+<summary>Blog</summary>
+
+Implemented in the blog application.
+Contains a list of blog posts published by the site admins, where users can 
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+User stories covered: 20.
+
+![Features](docs/features/blog.png)
+![Features](docs/features/post.png)
+
+</details>
+
+<details>
+
+<summary>Customised 404 page</summary>
+
+Code on the 404.html page
+Contains error message displayed on a yellow colour background instantly informing user something is not right.
+To maximise possibility of sales there is FIND YOUR BOOK NOW button linking to all books list
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+User stories covered: 18.
+
+![Features](docs/features/404.png)
+
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -829,6 +884,9 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Early XXI Century ROW book cover image from <a href="https://pixabay.com/illustrations/bad-business-collage-crisis-19907/">Pixabay</a>
 - Image for egyptian blog post <a href="https://www.pexels.com/photo/egyptian-symbols-3199399/">Pexels</a>
 - Facebook cover photo <a href="https://www.pexels.com/photo/closeup-photography-of-book-page-folding-forming-heart-1083633/">Pexels</a>
+- Image for US blog post <a href="https://www.pexels.com/photo/the-statue-of-liberty-69205/">Pexels</a>
+- Image for Roman blog post <a href="https://www.pexels.com/photo/administration-ancient-arches-architecture-356966/">Pexels</a>
+- Image for China blog post <a href="https://www.pexels.com/photo/gazebo-near-trees-during-day-3018977/">Pexels</a>
 
 
 [Back to Table Of Contents](#table-of-contents)
