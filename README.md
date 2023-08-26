@@ -46,6 +46,7 @@ Store specialized selling history books where passionates & proffessionals can f
     - [Libraries \& Frameworks](#libraries--frameworks)
     - [Django Packages](#django-packages)
   - [Features](#features)
+  - [Search Engine Optimization](#search-engine-optimization)
   - [Validation](#validation)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
@@ -78,6 +79,7 @@ The available payment option is payment by card, implemented using <a href="http
 
 ### Core Business Intents
 
+[Back to Table Of Contents](#table-of-contents)
 
 ### Marketing Strategies
 
@@ -91,6 +93,8 @@ The strategy was chosen taking into account the store is a new business with lim
 
 Offline marketing is based on a non-profit activities that aim to make the brand present during subject-related events and visible for people who could potentially be looking to buy history books. During the events, the participants will be able to support the activities of the HiStory Club by contributing in a voluntary crowd-funding action to organize future events gathering history enthusiasts.
 
+[Back to Table Of Contents](#table-of-contents)
+
 ## Marketing Techniques
 
 ### Social Media Platform
@@ -103,6 +107,8 @@ The content of posts is to address the memory of important history events or fig
 ![social-media-platform](docs/social/page.png)
 ![social-media-platform](docs/social/post.png)
 
+[Back to Table Of Contents](#table-of-contents)
+
 ### Newsletter Signup Form
 
 HiStory Books Store uses Mailchimp to collect email addresses from users who would like to subscribe for store's newsletter. 
@@ -110,6 +116,8 @@ It is on purpose very simple, just enough that a user enters email address & cli
 The newsletter content is to inform about sales or new books added to the store available on website.
 
 ![Features](docs/features/newsletter-form.png)
+
+[Back to Table Of Contents](#table-of-contents)
 
 ## Project Goals
 
@@ -465,40 +473,16 @@ User stories covered: 13, 14, 19, 20.
 
 <details>
 
-<summary>Sign Up</summary>
+<summary>Authentication</summary>
 
-From Allauth & customised.
-Located on the signup page, included a form to signup using e-mail & creating own username & password.
-It displays on dektop, laptop, tablet & mobile screens as intended. 
-User stories covered: 1.
-
+From Allauth.
+Includes customised signup, signin, email confirmation & password reset pages that display on dektop, laptop, tablet & mobile screens as intended. 
+User stories covered: 1, 2.
 
 ![Features](docs/features/signup.png)
-
-</details>
-
-<details>
-
-<summary>Login</summary>
-
-![Features](docs/features/login.png)
-
-</details>
-
-<details>
-
-<summary>Password Reset</summary>
-
-
-![Features](docs/features/password-reset.png)
-
-</details>
-
-<details>
-
-<summary>Password Change</summary>
-
-![Features](docs/features/password-change.png)
+![Features](docs/features/signin.png)
+![Features](docs/features/email.png)
+![Features](docs/features/password.png)
 
 </details>
 
@@ -506,11 +490,49 @@ User stories covered: 1.
 
 <summary>About</summary>
 
+Included on the about.html
+Describes the history of the founding of the store, convincing users why to shop from the store & includes a link to HiStory Club.
+Displays on dektop, laptop, tablet & mobile screens as intended.
+User stories covered: 14.
+
+![Features](docs/features/about.png)
 
 </details>
 
+<summary>HiStory Club</summary>
+
+Included on the club page. 
+Describes the non-profit organization managed by the store owners & inviting users to join it by expressing their interest via the contact page.
+Displays on dektop, laptop, tablet & mobile screens as intended.
+User stories covered: 19.
+
+![Features](docs/features/club.png)
+
+</details>
+
+<summary>Books</summary>
+
+Implemented in the Books application.
+Displays a paginated All Books list. Allows users to search, sort & categorize by era the list of books.
+Includes page with book details for each offered position. 
+Site admins access books management section to add, delete & update the offered books on the store.
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens.
+User stories covered: 3, 4, 5, 6, 7, 8, 12, 15, 16, 17.
+
+![Features](docs/features/all-books.png)
+![Features](docs/features/book-details.png)
+![Features](docs/features/cat-books.png)
+![Features](docs/features/sort-books.png)
+![Features](docs/features/search-books.png)
+![Features](docs/features/books-add.png)
+![Features](docs/features/books-edit.png)
+![Features](docs/features/books-delete.png)
+
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
+
+## Search Engine Optimization
 
 ## Validation
 

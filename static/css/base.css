@@ -125,13 +125,17 @@ header {
     height: 2px;
 }
 
+.book-details-container {
+    min-height: 70vh;
+}
+
 .book-container,
 .cart-container,
 .signup-container,
 .login-container,
 .received-container,
 .delivery-container,
-.about-containe,
+.about-container,
 .blog-container {
     min-height: 60vh;
 }
