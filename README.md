@@ -926,7 +926,9 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 
 - Add books rating system available for users with admins confirmation.
   
-- Visualize rating with filling stars.
+- Visualize rating with proportionally filling stars.
+
+- Add settings option for users profile.
 
 [Back to Table Of Contents](#table-of-contents)
 
