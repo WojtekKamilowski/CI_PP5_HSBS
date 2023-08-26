@@ -84,8 +84,7 @@
                         {% if user.is_authenticated %}
                         <label class="form-check-label" for="id-save-info">Save this delivery information to my
                             profile</label>
-                        <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info"
-                            checked>
+                        <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
                         {% else %}
                         <label class="form-check-label" for="id-save-info">
                             <a class="checkout-save" href="{% url 'account_signup' %}"><u>Create an account</u></a> or
@@ -108,13 +107,13 @@
                 </fieldset>
 
                 <div class="submit-button text-right mt-5 mb-2">
-                    <a href="{% url 'view_cart' %}" class="btn main-clr-thm">
+                    <a href="{% url 'view_cart' %}" class="btn main-clr-thm mt-2">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="font-weight-bold">Adjust Your Shopping Cart</span>
                     </a>
-                    <button id="submit-button" class="btn main-clr-thm">
+                    <button id="submit-button" class="btn main-clr-thm mt-2">
                         <span class="font-weight-bold">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>

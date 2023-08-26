@@ -404,7 +404,8 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 - [TinyPNG](https://tinypng.com/)
 - [jQuery](https://jquery.com/)
 - [WAVE](https://wave.webaim.org/)
-- [amiresponsive?](https://ui.dev/amiresponsive?)
+- [TechSini](https://techsini.com/multi-mockup/index.php)
+- [Ignore X-Frame headers](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe/related)
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/download.php?lang=en&token=jIR86oYCsiIVTzYSP6sF8FlsimURJVCo#)
 - [Stripe](https://stripe.com/ie)
 
@@ -539,13 +540,31 @@ User stories covered: 3, 4, 5, 6, 7, 8, 12, 15, 16, 17.
 <summary>Cart</summary>
 
 Implemented in the cart application.
-Shows list of items added to the shopping cart with all pre-checkout details (price, quanitity etc.).
+Shows list of items added to the shopping cart with all details to be reviews before checkout(price, quanitity etc.).
 Feature is responsive & displays on dektop, laptop, tablet & mobile screens. on mobile screens the books image is hidden.
 User stories covered: 8, 9, 10.
 
 ![Features](docs/features/cart.png)
 
 </details>
+
+<details>
+
+<summary>Checkout</summary>
+
+Part of the checkout application.
+Includes a form to collect delivery details and payment section built using <a href="https://stripe.com/ie">Stripe</a>.
+There are <a href="https://stripe.com/docs/webhooks">Stripe Webhooks</a> in place. Order confirmation sent to the user after compliting the checkout process.
+Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+User stories covered: .
+
+![Features](docs/features/chekout.png)
+![Features](docs/features/order.png)
+![Features](docs/features/order-email.png)
+![Features](docs/features/webhook.png)
+
+</details>
+
 
 [Back to Table Of Contents](#table-of-contents)
 
