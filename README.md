@@ -322,6 +322,8 @@ User can categorize books list by:
 2. Rating - as default they appear from the higher rating as it is expected that users would be less likely to by books with lower ratings.
 3. Oldest Times & Newest Times - it is expected that some users may be more interest to buy history books describing newer or older period of history.
 
+[Back to Table Of Contents](#table-of-contents)
+
 ### Wireframes
 
 <details>
@@ -432,8 +434,10 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 
 - [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 - [Summernote](https://summernote.org/)
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [django-storages](https://django-storages.readthedocs.io/en/latest/)
+- [django-countries](https://pypi.org/project/django-countries/)
 - [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/)*
-
 * Used for updating phone_number model in checkout.models.py, migrations made & migrated during tests & changed back to CharField to better suit the project needs.
 
 
