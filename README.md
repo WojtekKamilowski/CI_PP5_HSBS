@@ -337,6 +337,28 @@ User can categorize books list by:
     <summary>Desktop</summary> 
 
 ![Wireframes](docs/wireframes/1.a-home-notloggedin-desktop.png)
+![Wireframes](docs/wireframes/2.b-home-loggedin-desktop.png)
+![Wireframes](docs/wireframes/3.c-home-signup-desktop.png)
+![Wireframes](docs/wireframes/4.d-home-email-confirm-desktop.png)
+![Wireframes](docs/wireframes/5.e-home-email-confirmed-desktop.png)
+![Wireframes](docs/wireframes/6.f-home-signin-desktop.png)
+![Wireframes](docs/wireframes/7.g-home-about-desktop.png)
+![Wireframes](docs/wireframes/8.h-home-club-desktop.png)
+![Wireframes](docs/wireframes/9.i-home-privacy-desktop.png)
+![Wireframes](docs/wireframes/10.j-home-delivery-desktop.png)
+![Wireframes](docs/wireframes/11.k-books-all-desktop.png)
+![Wireframes](docs/wireframes/12.l-books-sorted-desktop.png)
+![Wireframes](docs/wireframes/13.m-books-era-desktop.png)
+![Wireframes](docs/wireframes/14.n-books-search-desktop.png)
+![Wireframes](docs/wireframes/15.o-books-details-desktop.png)
+![Wireframes](docs/wireframes/16.p-books-add-desktop.png)
+![Wireframes](docs/wireframes/17.r-cart-desktop.png)
+![Wireframes](docs/wireframes/18.s-checkout-desktop.png)
+![Wireframes](docs/wireframes/19.t-order-desktop.png)
+![Wireframes](docs/wireframes/20.u-profile-desktop.png)
+![Wireframes](docs/wireframes/21.v-contact-desktop.png)
+![Wireframes](docs/wireframes/22.w-blog-desktop.png)
+![Wireframes](docs/wireframes/23.x-post-desktop.png)
 
 </details>
 
@@ -345,8 +367,29 @@ User can categorize books list by:
 <details>
     <summary>Tablet</summary> 
 
-![Wireframes](docs/wireframes/12.l-home-tablet.png)
-
+![Wireframes](docs/wireframes/24.y-home-notloggedin-tablet.png)
+![Wireframes](docs/wireframes/25.z-home-loggedin-tablet.png)
+![Wireframes](docs/wireframes/26.aa-home-signup-tablet.png)
+![Wireframes](docs/wireframes/27.bb-home-email-confirm-tablet.png)
+![Wireframes](docs/wireframes/28.cc-home-email-confirmed-tablet.png)
+![Wireframes](docs/wireframes/29.dd-home-signin-tablet.png)
+![Wireframes](docs/wireframes/30.ee-home-about-tablet.png)
+![Wireframes](docs/wireframes/31.ff-home-club-tablet.png)
+![Wireframes](docs/wireframes/32.gg-home-privacy-tablet.png)
+![Wireframes](docs/wireframes/33.hh-home-delivery-tablet.png)
+![Wireframes](docs/wireframes/34.ii-books-all-tablet.png)
+![Wireframes](docs/wireframes/35.jj-books-sorted-tablet.png)
+![Wireframes](docs/wireframes/36.kk-books-era-tablet.png)
+![Wireframes](docs/wireframes/37.ll-books-search-tablet.png)
+![Wireframes](docs/wireframes/38.mm-books-details-tablet.png)
+![Wireframes](docs/wireframes/39.nn-books-add-tablet.png)
+![Wireframes](docs/wireframes/40.oo-cart-tablet.png)
+![Wireframes](docs/wireframes/41.pp-checkout-tablet.png)
+![Wireframes](docs/wireframes/42.rr-order-tablet.png)
+![Wireframes](docs/wireframes/43.ss-profile-tablet.png)
+![Wireframes](docs/wireframes/44.tt-contact-tablet.png)
+![Wireframes](docs/wireframes/45.uu-blog-tablet.png)
+![Wireframes](docs/wireframes/46.vv-post-tablet.png)
 
 </details>
 
@@ -355,7 +398,29 @@ User can categorize books list by:
 <details>
     <summary>Mobile</summary> 
 
-![Wireframes](docs/wireframes/25.aa-home-mobile.png)
+![Wireframes](docs/wireframes/47.ww-home-notloggedin-mobile.png)
+![Wireframes](docs/wireframes/48.xx-home-loggedin-mobile.png)
+![Wireframes](docs/wireframes/49.yy-home-signup-mobile.png)
+![Wireframes](docs/wireframes/50.zz-home-email-confirm-mobile.png)
+![Wireframes](docs/wireframes/51.aaa-home-email-confirmed-mobile.png)
+![Wireframes](docs/wireframes/52.bbb-home-signin-mobile.png)
+![Wireframes](docs/wireframes/53.ccc-home-about-mobile.png)
+![Wireframes](docs/wireframes/54.ddd-home-club-mobile.png)
+![Wireframes](docs/wireframes/55.eee-home-privacy-mobile.png)
+![Wireframes](docs/wireframes/56.ffff-home-delivery-mobile.png)
+![Wireframes](docs/wireframes/57.ggg-books-all-mobile.png)
+![Wireframes](docs/wireframes/58.hhh-books-sorted-mobile.png)
+![Wireframes](docs/wireframes/59.iii-books-era-mobile.png)
+![Wireframes](docs/wireframes/60.jjj-books-search-mobile.png)
+![Wireframes](docs/wireframes/61.kkk-books-details-mobile.png)
+![Wireframes](docs/wireframes/62.lll-books-add-mobile.png)
+![Wireframes](docs/wireframes/63.mmm-cart-mobile.png)
+![Wireframes](docs/wireframes/64.nnn-checkout-mobile.png)
+![Wireframes](docs/wireframes/65.ooo-order-mobile.png)
+![Wireframes](docs/wireframes/66.ppp-profile-mobile.png)
+![Wireframes](docs/wireframes/67.rrr-contact-mobile.png)
+![Wireframes](docs/wireframes/68.sss-blog-mobile.png)
+![Wireframes](docs/wireframes/69.ttt-post-mobile.png)
 
 </details>
 
@@ -793,7 +858,6 @@ Testing user stories:
 | 404 Custom Page not displayed 500 Error instead | delete views & url for the 404 error, keep 404.html |
 | Post likes cannot be added, Extending the user model: SimpleLazyObject error | use the profile when you check/add/remove likes |
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
-
 
 [Back to Table Of Contents](#table-of-contents)
 
