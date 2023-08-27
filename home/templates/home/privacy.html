@@ -204,8 +204,7 @@
                 are
                 effective immediately, after they are posted on this page.</p>
 
-            <p>Our Privacy Policy was created with the help of the <a
-                    href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
+            <p>Our Privacy Policy was created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
 
             <h3>Contact Us</h3>
 
@@ -216,4 +215,21 @@
         </div>
     </div>
 </div>
+<div class="btt-button shadow-sm rounded-0 border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fa-solid fa-up-long text-black mx-auto my-auto"></i>
+    </a>
+</div>
 {%endblock%}
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    /* 
+    * From Code Institue's "Boutique Ado" Walkthrough Project
+    * Brings back to the top of the books list
+    */
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0,0);
+    });
+</script>
+{% endblock %}
