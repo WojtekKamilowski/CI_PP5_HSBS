@@ -20,15 +20,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col-12 text-center mt-3">
             {% for e in current_eras %}
-            <span class="p-2 mt-2 badge badge-white text-black">
-                <h3 class="era-badge-name">
-                    <i class="fa-solid fa-hourglass-half"></i>
+            <div class="p-2 mt-2 mx-2 badge badge-white text-black d-flex flex-row justify-content-center align-items-center">
+                <i class="fa-solid fa-hourglass-half mx-2"></i>
+                <h3 class="era-badge-name text-wrap">
                     {{ e.friendly_name}}
-                    <i class="fa-solid fa-hourglass-half"></i>
                 </h3>
-            </span>
+                <i class="fa-solid fa-hourglass-half mx-2"></i>
+            </div>
             {% endfor %}
         </div>
     </div>
@@ -59,13 +59,11 @@
                     <div class="card h-100 border-0">
                         {% if book.image %}
                         <a href="{% url 'book_detail' book.id %}">
-                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ book.image.url }}"
-                                alt="{{ book.name }}">
+                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ book.image.url }}" alt="{{ book.name }}">
                         </a>
                         {% else %}
                         <a href="{% url 'book_detail' book.id %}">
-                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img"
-                                src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
                         </a>
                         {% endif %}
                         <div class="card-footer bg-white pt-0 border-0 text-left">
@@ -172,7 +170,7 @@
     * Brings back to the top of the books list
     */
     $('.btt-link').click(function (e) {
-        window.scrollTo(0, 0);
+        window.scrollTo(0,0);
     });
 </script>
 {% endblock %}

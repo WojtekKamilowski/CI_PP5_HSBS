@@ -93,11 +93,14 @@ header {
     height: 500px;
     border: 1px solid #000;
     object-fit: contain;
+}
 
+.fa-hourglass-half {
+    font-size: 200%;
 }
 
 .blog-card {
-    height: 600px;
+    height: 620px;
 }
 
 .contain-pst-img {
@@ -286,7 +289,7 @@ footer {
 /* Smaller h3 for small screens */
 @media (max-width: 360px) {
     .era-badge-name {
-        font-size: 150%;
+        font-size: 130%;
     }
 }
 
