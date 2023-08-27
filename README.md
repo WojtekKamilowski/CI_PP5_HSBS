@@ -1,4 +1,4 @@
-# HiStory Books Store
+# HiStory Book Store
 (Developer: Kamil Wojciechowski)
 
 ![Mockup image](docs/responsive.png)
@@ -7,12 +7,12 @@
 
 ## About 
 
-HiStory Book Store - 5th Portfolio Project for Diploma in Full Stack Software Development with Code Institute. E-commerce history books store website built using Django.
+HiStory Book Store - 5th Portfolio Project for Diploma in Full Stack Software Development with Code Institute. E-commerce history book store website built using Django.
 Store specialized selling history books where passionates & proffessionals can find their next HiStory to read. 
 
 ## Table of Contents
 
-- [HiStory Books Store](#history-books-store)
+- [HiStory Book Store](#history-book-store)
   - [About](#about)
   - [Table of Contents](#table-of-contents)
   - [Business Model](#business-model)
@@ -39,6 +39,7 @@ Store specialized selling history books where passionates & proffessionals can f
     - [Structure](#structure)
     - [Wireframes](#wireframes)
   - [Models Diagrams](#models-diagrams)
+  - [Amazon Web Services](#amazon-web-services)
   - [Messages and Interaction With Users](#messages-and-interaction-with-users)
   - [Admin Panel/Superuser](#admin-panelsuperuser)
   - [Technologies Used](#technologies-used)
@@ -99,7 +100,7 @@ Offline marketing is based on a non-profit activities that aim to make the brand
 
 ### Social Media Platform
 
-HiStory Books Store has its own page on Facebook. 
+HiStory Book Store has its own page on Facebook. 
 The content of posts is to address the memory of important history events or figures, often to be related to pieces of culture & pop-culture e.g. movies in historical theme. The goal is to encourage the followers to confront the content of those pieces of culture which picture a history event or figure with the knowledge that can be found in the literature. Sharing links to the blog posts posted on the websites blog. Interacting with the followers in the comments sections under the Facebook posts which would be aimed to drive constructive discussion feeding the algorithm to increase the popularity of the page amongst Facebook users.
 
 <a href="https://www.facebook.com/profile.php?id=61550506871142">Facebook</a>
@@ -111,7 +112,7 @@ The content of posts is to address the memory of important history events or fig
 
 ### Newsletter Signup Form
 
-HiStory Books Store uses Mailchimp to collect email addresses from users who would like to subscribe for store's newsletter. 
+HiStory Book Store uses Mailchimp to collect email addresses from users who would like to subscribe for store's newsletter. 
 It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. 
 The newsletter content is to inform about sales or new books added to the store available on website.
 
@@ -487,13 +488,46 @@ Implemented models as per diagram:
 
 [Back to Table Of Contents](#table-of-contents)
 
+## Amazon Web Services
+
+AWS in use for hosting media & static files in a S3 Bucket created for this project.
+
+![Amazon](docs/aws.png)
+
+
+[Back to Table Of Contents](#table-of-contents)
+
 ## Messages and Interaction With Users
 
 <details>
     <summary>Messages updating the user on interactions status.</summary> 
 
-- Login
-![Messages and Interaction With Users](docs/messages/login.png)
+- Sign up: confirmation e-mail sent
+![Messages and Interaction With Users](docs/messages/confirmation-sent.png)
+
+- Sign up: e-mail confirmed
+![Messages and Interaction With Users](docs/messages/email-confirmed.png)
+
+- Sign in
+![Messages and Interaction With Users](docs/messages/signin.png)
+
+- Sign Out
+![Messages and Interaction With Users](docs/messages/signout.png)
+
+- Newsletter
+![Messages and Interaction With Users](docs/messages/newsletter.png)
+
+- Add a book to the shopping cart
+![Messages and Interaction With Users](docs/messages/book-added.png)
+
+- Update the shopping cart
+![Messages and Interaction With Users](docs/messages/book-update.png)
+
+- Remove a book from the shopping cart
+![Messages and Interaction With Users](docs/messages/book-removed.png)
+
+- Comment a blog post
+![Messages and Interaction With Users](docs/messages/comment.png)
 
 </details>
 
@@ -525,6 +559,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality.
 - [Ignore X-Frame headers](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe/related)
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/download.php?lang=en&token=jIR86oYCsiIVTzYSP6sF8FlsimURJVCo#)
 - [Stripe](https://stripe.com/ie)
+- [ElephantSQL](https://customer.elephantsql.com/)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -733,7 +768,7 @@ User stories covered: 13.
 
 Implemented in the blog application.
 Contains a list of blog posts published by the site admins, where users can add comments & likes.
-Users cannot edit or delete comments, also cannot undo likes without contactig the admins: please see [Further Developments](#further-development)
+Users are informed that cannot edit or delete comments without contactig the admins: please see [Further Developments](#further-development)
 Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
 User stories covered: 20.
 
@@ -907,6 +942,7 @@ Testing user stories:
 | 404 Custom Page not displayed 500 Error instead | delete views & url for the 404 error, keep 404.html |
 | Post likes cannot be added, Extending the user model: SimpleLazyObject error | use the profile when you check/add/remove likes |
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
+| Post likes are not removed on click after user added a like | |
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -997,6 +1033,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - Update timezone from <a href="https://stackoverflow.com/questions/29311354/how-to-set-the-timezone-in-django">Stackoverflow</a>
 
+- Fix remove likes on clicking the like icon after adding a like <a href="https://stackoverflow.com/questions/65557334/like-button-is-working-but-not-changing-to-unlike-in-django">Stackoverflow</a>
+
 ### Media
 
 - Favicon from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
@@ -1035,8 +1073,6 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 - Add functionalities to add,update & delete all users'post comments from the website without using django admin by superusers.
   
 - Add functionalities to add,update & delete user's own post comments.
-
-- Undo post like when clicking on the like icon.
   
 - Add additional product app where the items listed for sale would be related to the book store(complementary sales), however with different details than books usually have, for example bookmarks or reading torches, HiStory t-shirts and other gadgets etc.
   

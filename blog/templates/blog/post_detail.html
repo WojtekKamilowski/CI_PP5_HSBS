@@ -20,13 +20,11 @@
             <div class="my-5 contain-pst-img">
                 {% if post.post_image %}
                 <a href="{{ post.post_image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid contain-pst-img" src="{{ post.post_image.url }}"
-                        alt="{{ post.post_title }}">
+                    <img class="card-img-top img-fluid contain-pst-img" src="{{ post.post_image.url }}" alt="{{ post.post_title }}">
                 </a>
                 {% else %}
                 <a href="">
-                    <img class="card-img-top img-fluid contain-bk-img" src="{{ MEDIA_URL }}noimage.png"
-                        alt="{{ post.post_title }}">
+                    <img class="card-img-top img-fluid contain-bk-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.post_title }}">
                 </a>
                 {% endif %}
             </div>
@@ -45,12 +43,10 @@
                                 {% if user.is_authenticated %}
                                 <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                     {% csrf_token %}
-                                    {% if liked %}
-                                    <button type="submit" name="blogpost_id" value="{{post.slug}}"
-                                        class="btn main-clr-thm"><i class="fas fa-heart"></i></button>
+                                    {% if request.user not in post.likes.all %}
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn main-clr-thm"><i class="fas fa-heart"></i></button>
                                     {% else %}
-                                    <button type="submit" name="blogpost_id" value="{{post.slug}}"
-                                        class="btn main-clr-thm"><i class="far fa-heart"></i></button>
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn main-clr-thm"><i class="far fa-heart"></i></button>
                                     {% endif %}
                                 </form>
                                 {% else %}
@@ -99,9 +95,7 @@
                     </div>
                     <div class="mt-5">
                         <p>
-                            Did you like post like this? Follow us on <a
-                                href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61550506871142"
-                                rel="nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a> to find similar
+                            Did you like post like this? Follow us on <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61550506871142" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a> to find similar
                             content but in a
                             bit shorter form.
                         </p>
@@ -138,7 +132,7 @@
     * Brings back to the top of the books list
     */
     $('.btt-link').click(function (e) {
-        window.scrollTo(0, 0);
+        window.scrollTo(0,0);
     });
 </script>
 {% endblock %}

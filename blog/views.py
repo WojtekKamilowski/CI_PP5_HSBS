@@ -85,12 +85,17 @@ class PostLike(View):
 
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
-        user = request.user
-        profile = user.userprofile
+        user = request.user.userprofile
 
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(profile)
+        if request.user.userprofile in post.likes.all():
+            post.likes.remove(request.user.userprofile)
+            liked = False
+            messages.success(request,
+                             'You removed like')
         else:
-            post.likes.add(profile)
+            post.likes.add(request.user.userprofile)
+            liked = True
+            messages.success(request,
+                             'You added like')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
