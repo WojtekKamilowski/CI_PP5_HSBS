@@ -19,6 +19,7 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
+
 /* From Code Institue's "Boutique Ado" Walkthrough Project */
 .text-black {
     color: #000 !important;
@@ -49,6 +50,10 @@ header {
     background-color: #FAFAFA;
 }
 
+.second-nav {
+    min-width: 100%;
+}
+
 /* From Code Institue's "Boutique Ado" Walkthrough Project */
 .overlay {
     height: 100%;
@@ -63,7 +68,6 @@ header {
 .cst-h-tag {
     font-size: 100%;
 }
-
 
 .error-page {
     height: 100%;
@@ -179,7 +183,6 @@ header {
     cursor: pointer;
 }
 
-
 /* Based on Codersblock */
 .cart-in {
     color: #FAFAFA;
@@ -206,7 +209,6 @@ footer {
     color: #000;
     border: 1px solid #000;
 }
-
 
 /* Based on Code Institue's "Boutique Ado" Walkthrough Project */
 #loading-overlay {

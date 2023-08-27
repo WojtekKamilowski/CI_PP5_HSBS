@@ -134,9 +134,19 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="d-none d-md-block d-lg-none">
+                    <a href="{% url 'home' %}" class="nav-link">
+                        <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
+                    </a>
+                </div>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
+            {% if request.user.is_authenticated %}
+            <div class="d-xl-none">
+                <p class="text-black ml-2">Logged-in as: {{ user.username }}</p>
+            </div>
+            {% endif %}
         </div>
         <div id="delivery-banner" class="row text-center pb-3">
             <div class="cst-prpl col">

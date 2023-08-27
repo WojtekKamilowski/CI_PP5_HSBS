@@ -1,19 +1,17 @@
 <!-- Based on Code Institue's "Boutique Ado" Walkthrough Project -->
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li id="home-tab" class="nav-item d-block">
+        <li id="home-tab" class="nav-item d-md-none">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books'%}" id="all-books-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books'%}" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Books
             </a>
             <div class="dropdown-menu border-0 dropright" aria-labelledby="all-books-link">
-                <a href="{% url 'books' %}?sort=price" class="dropdown-item" id="price-link" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                <a href="{% url 'books' %}?sort=price" class="dropdown-item" id="price-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     By Price
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="price-link">
@@ -32,29 +30,25 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?era=ancient"
-                id="ancient-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?era=ancient" id="ancient-link">
                 Ancient Times
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?era=medieval"
-                id="medieval-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?era=medieval" id="medieval-link">
                 Medieval
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=renaissance"
-                id="renaissance-link">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=renaissance" id="renaissance-link">
                 Renaissance
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=industrial"
-                id="industrial-link">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=industrial" id="industrial-link">
                 Early Industrial Revolution & Modern Era
             </a>
         </li>
