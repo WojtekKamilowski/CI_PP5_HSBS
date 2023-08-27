@@ -160,7 +160,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+# Updated to Europe/Dublin from Stachoverflow
+TIME_ZONE = 'Europe/Dublin'
 
 USE_I18N = True
 

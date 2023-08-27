@@ -74,7 +74,7 @@
                                     {% if book.era %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted" href="{% url 'books' %}?era={{ book.era.name }}">
-                                            <i class="fa-solid fa-hourglass-half"></i> {{ book.era.friendly_name }}
+                                            <i class="fa-solid fa-hourglass-half small-era"></i> {{ book.era.friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}

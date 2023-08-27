@@ -882,7 +882,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - Adding comments bug fix from <a href="https://stackoverflow.com/questions/71892594/integrityerror-exception-value-with-db-relations-in-django-on-form-submission">Stackoverflow</a>
 
-  
+- Update timezone from <a href="https://stackoverflow.com/questions/29311354/how-to-set-the-timezone-in-django">Stackoverflow</a>
 
 ### Media
 

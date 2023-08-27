@@ -99,6 +99,10 @@ header {
     font-size: 200%;
 }
 
+.small-era {
+    font-size: 100%;
+}
+
 .blog-card {
     height: 620px;
 }
