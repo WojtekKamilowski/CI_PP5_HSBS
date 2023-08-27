@@ -25,8 +25,8 @@ class ContactMessage(View):
     relevant fields.
     """
 
-    template_name = "contact/contact.html"
-    success_message = "Your message has been sent."
+    template_name = 'contact/contact.html'
+    success_message = 'Your message has been sent.'
 
     def get(self, request, *args, **kwargs):
         """
@@ -35,10 +35,10 @@ class ContactMessage(View):
         if request.user.is_authenticated:
             email = request.user.email
             name = request.user.username
-            form = ContactForm(initial={"email": email, "name": name})
+            form = ContactForm(initial={'email': email, 'name': name})
         else:
             form = ContactForm()
-        return render(request, "contact/contact.html", {"form": form})
+        return render(request, 'contact/contact.html', {'form': form})
 
     def post(self, request):
         """
@@ -50,8 +50,7 @@ class ContactMessage(View):
         if form.is_valid():
             contact = form.save(commit=False)
             contact.save()
-            messages.success(request, "Your message has been sent")
-            return render(request, "contact/received.html")
+            messages.success(request, 'Contact form submitted successfully')
+            return render(request, 'contact/received.html')
 
-        return render(request, "contact/contact.html", {"form": form})
-    
+        return render(request, 'contact/contact.html', {"form": form})

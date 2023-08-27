@@ -91,11 +91,11 @@ class PostLike(View):
             post.likes.remove(request.user.userprofile)
             liked = False
             messages.success(request,
-                             'You removed like')
+                             'You removed post like')
         else:
             post.likes.add(request.user.userprofile)
             liked = True
             messages.success(request,
-                             'You added like')
+                             'You added post like')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))

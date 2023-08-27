@@ -520,14 +520,32 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 - Add a book to the shopping cart
 ![Messages and Interaction With Users](docs/messages/book-added.png)
 
+- Add a a new book to the offer
+![Messages and Interaction With Users](docs/messages/new-book.png)
+
 - Update the shopping cart
 ![Messages and Interaction With Users](docs/messages/book-update.png)
 
 - Remove a book from the shopping cart
 ![Messages and Interaction With Users](docs/messages/book-removed.png)
 
+- Order processed successfully
+![Messages and Interaction With Users](docs/messages/order.png)
+
+- Previous order confirmation from profile's order history
+![Messages and Interaction With Users](docs/messages/previous-order.png)
+
+- Profil updated
+![Messages and Interaction With Users](docs/messages/profile-update.png)
+
 - Comment a blog post
 ![Messages and Interaction With Users](docs/messages/comment.png)
+
+- Post like
+![Messages and Interaction With Users](docs/messages/like.png)
+
+- Post unlike
+![Messages and Interaction With Users](docs/messages/unlike.png)
 
 </details>
 
@@ -942,7 +960,7 @@ Testing user stories:
 | 404 Custom Page not displayed 500 Error instead | delete views & url for the 404 error, keep 404.html |
 | Post likes cannot be added, Extending the user model: SimpleLazyObject error | use the profile when you check/add/remove likes |
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
-| Post likes are not removed on click after user added a like | |
+| Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():'  |
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -1059,6 +1077,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Image for US blog post <a href="https://www.pexels.com/photo/the-statue-of-liberty-69205/">Pexels</a>
 - Image for Roman blog post <a href="https://www.pexels.com/photo/administration-ancient-arches-architecture-356966/">Pexels</a>
 - Image for China blog post <a href="https://www.pexels.com/photo/gazebo-near-trees-during-day-3018977/">Pexels</a>
+- Image for Ramzes II book <a href="https://www.pexels.com/photo/gold-tutankhamun-statue-33571/">Pexels</a>
 
 
 [Back to Table Of Contents](#table-of-contents)

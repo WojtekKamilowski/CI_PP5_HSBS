@@ -7,5 +7,5 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('body',)
         labels = {
-            'body': '***Please be mindful as posted comment cannot be changed or deleted without contacting the administration. Inappropriate comments will be removed.***',
+            'body': '***Please be mindful as posted comment cannot be changed or deleted. Inappropriate comments are to be removed by the administration.***',
         }
