@@ -60,6 +60,11 @@ header {
     z-index: -1;
 }
 
+.cst-h-tag {
+    font-size: 100%;
+}
+
+
 .error-page {
     height: 100%;
     width: 100%;

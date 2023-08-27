@@ -10,13 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Kamil Wojciechowski">
-    <meta name="description"
-        content="Online history books e-commerce store offering selection of literature positions from ancient times to modern history. Shop now to find your next story to read about.">
-    <meta name="keywords"
-        content="Hi Story, History, Ancient Times, Medieval, Renaissance, Modern Times, Inudstrial Revolution, First World War, Great War, Second World War, WW2, XX Century, Early XXI Century, gifts for history passionate, History Reading">
+    <meta name="description" content="Online history books e-commerce store offering selection of literature positions from ancient times to modern history. Shop now to find your next story to read about.">
+    <meta name="keywords" content="Hi Story, History, Ancient Times, Medieval, Renaissance, Modern Times, Inudstrial Revolution, First World War, Great War, Second World War, WW2, XX Century, Early XXI Century, gifts for history passionate, History Reading">
     <meta property="og:title" content="HiStory| History Books Store">
-    <meta property="og:description"
-        content="Online history books e-commerce store offering selection of literature positions from ancient times to modern history.">
+    <meta property="og:description" content="Online history books e-commerce store offering selection of literature positions from ancient times to modern history.">
     <!--Favicon-->
     <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon.ico' %}">
 
@@ -29,8 +26,7 @@
 
     {% block corecss %}
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -46,11 +42,8 @@
     <!-- Font Awesont kit-->
     <script src="https://kit.fontawesome.com/3af9543e24.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -65,18 +58,16 @@
             <!-- Nav logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link">
-                    <h2 class="cst-prpl my-0"><strong>Hi</strong>Story</h2>
+                    <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
                 </a>
             </div>
             <!-- Nav center for links-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'books' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search our site" aria-label="Search our books input">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site" aria-label="Search our books input">
                         <div class="input-group-append">
-                            <button class="form-control btn main-clr-thm border border-black rounded-0" type="submit"
-                                aria-label="Search our books">
+                            <button class="form-control btn main-clr-thm border border-black rounded-0" type="submit" aria-label="Search our books">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -94,8 +85,7 @@
                     </li>
                     {% endif %}
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="#" id="dt-user-options" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link" href="#" id="dt-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 {% if request.user.is_authenticated %}
                                 <div><i class="fas fa-user fa-lg cst-prpl"></i></div>
@@ -123,8 +113,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} nav-link"
-                            href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} nav-link" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
                                 <p class="my-0">
@@ -142,8 +131,7 @@
         </div>
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -152,8 +140,8 @@
         </div>
         <div id="delivery-banner" class="row text-center pb-3">
             <div class="cst-prpl col">
-                <h4 class="my-1 ">The greatest deal in the HiStory: <strong>free delivery</strong> on orders over $
-                    {{ free_delivery_threshold }}!</h4>
+                <h1 class="my-1 cst-h-tag">The greatest deal in the HiStory: <strong>free delivery</strong> on orders over $
+                    {{ free_delivery_threshold }}!</h1>
             </div>
         </div>
     </header>
@@ -207,15 +195,11 @@
                         <li>
                             <h5 class="text-center"><strong>Check Our Profiles on:</strong></h5>
                         </li>
-                        <li class="text-center"><a href="https://www.pinterest.ie/" rel="nofollow"
-                                target="_blank">Pinterest</a>
+                        <li class="text-center"><a href="https://www.pinterest.ie/" rel="nofollow" target="_blank">Pinterest</a>
                         </li>
-                        <li class="text-center"><a href="https://www.youtube.com/" rel="nofollow"
-                                target="_blank">YouTube</a>
+                        <li class="text-center"><a href="https://www.youtube.com/" rel="nofollow" target="_blank">YouTube</a>
                         </li>
-                        <li class="text-center"><a
-                                href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61550506871142"
-                                rel="nofollow" target="_blank">Facebook</a>
+                        <li class="text-center"><a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61550506871142" rel="nofollow" target="_blank">Facebook</a>
                         </li>
                     </ul>
                 </div>
