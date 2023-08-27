@@ -19,7 +19,7 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     post_image = models.ImageField(null=True, blank=True)
-    blog_excerpt = models.TextField(blank=True)
+    blog_excerpt = models.TextField(max_length=200, blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     likes = models.ManyToManyField(UserProfile,
                                    related_name='blogpost_like',
