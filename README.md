@@ -568,9 +568,9 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 
 ## Admin Panel/Superuser
 
-On Admin Panel, admin/ superuser has full access to CRUD functionality.
+Django administration in use.
 
-![Admin Panel/Superuser](docs/admin/admin.png)
+![Admin Panel/Superuser](docs/admin.png)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -827,6 +827,16 @@ User stories covered: 18.
 [Back to Table Of Contents](#table-of-contents)
 
 ## Search Engine Optimization
+
+All pages on the site can be reached by a link from another findable page.
+Meta tags included for SEO:
+![SEO](docs/meta.png)
+Site title:
+![SEO](docs/title.png)
+Links relationships defined:
+![SEO](docs/nofollow.png)
+
+To allow search engine bot crawling there is sitemap.xml included & robots.txt file to control search engine bot crawling.
 
 ## Validation
 
