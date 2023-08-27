@@ -930,6 +930,9 @@ The website was also tested using Google Chrome Developer Tools, Toggle Device T
 
 Following browsers were used to test the website:
 
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
 
 [Back to Table Of Contents](#table-of-contents)
 
