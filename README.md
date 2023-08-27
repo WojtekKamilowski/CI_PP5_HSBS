@@ -520,8 +520,20 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 - Add a book to the shopping cart
 ![Messages and Interaction With Users](docs/messages/book-added.png)
 
+- Standard user attempting to access books management options
+![Messages and Interaction With Users](docs/messages/restricted.png)
+
 - Add a a new book to the offer
 ![Messages and Interaction With Users](docs/messages/new-book.png)
+
+- Commence editting book details
+![Messages and Interaction With Users](docs/messages/edit-book.png)
+
+- Update book details
+![Messages and Interaction With Users](docs/messages/update-book.png)
+
+- Delete book from the offer
+![Messages and Interaction With Users](docs/messages/delete-book.png)
 
 - Update the shopping cart
 ![Messages and Interaction With Users](docs/messages/book-update.png)
@@ -537,6 +549,9 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 
 - Profil updated
 ![Messages and Interaction With Users](docs/messages/profile-update.png)
+
+- Contact form submitted
+![Messages and Interaction With Users](docs/messages/contact.png)
 
 - Comment a blog post
 ![Messages and Interaction With Users](docs/messages/comment.png)
