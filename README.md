@@ -38,7 +38,7 @@ Store specialized selling history books where passionates & proffessionals can f
     - [Fonts](#fonts)
     - [Structure](#structure)
     - [Wireframes](#wireframes)
-  - [Database Diagrams](#database-diagrams)
+  - [Models Diagrams](#models-diagrams)
   - [Messages and Interaction With Users](#messages-and-interaction-with-users)
   - [Admin Panel/Superuser](#admin-panelsuperuser)
   - [Technologies Used](#technologies-used)
@@ -426,16 +426,16 @@ User can categorize books list by:
 
 [Back to Table Of Contents](#table-of-contents)
 
-## Database Diagrams
+## Models Diagrams
 
 <details>
     <summary>Books</summary> 
 
 Diagram:
-![Diagrams](docs/database/books-models-diagram.png)
+![Diagrams](docs/models/books-models-diagram.png)
 
 Implemented models as per diagram:
-![Diagrams](docs/database/books-models.png)
+![Diagrams](docs/models/books-models.png)
 
 </details>
 
@@ -443,11 +443,11 @@ Implemented models as per diagram:
     <summary>Checkout</summary>
 
 Diagram:
-![Diagrams](docs/database/checkout-models-diagram.png)
+![Diagrams](docs/models/checkout-models-diagram.png)
 
 Implemented models as per diagram:
-![Diagrams](docs/database/checkout-models-1.png)
-![Diagrams](docs/database/checkout-models-2.png)
+![Diagrams](docs/models/checkout-models-1.png)
+![Diagrams](docs/models/checkout-models-2.png)
 
 </details>
 
@@ -455,10 +455,10 @@ Implemented models as per diagram:
     <summary>Profiles</summary>
 
 Diagram:
-![Diagrams](docs/database/profiles-models-diagram.png)
+![Diagrams](docs/models/profiles-models-diagram.png)
 
 Implemented models as per diagram:
-![Diagrams](docs/database/profiles-models.png)
+![Diagrams](docs/models/profiles-models.png)
 
 </details>
 
@@ -466,10 +466,22 @@ Implemented models as per diagram:
     <summary>Contact</summary>
 
 Diagram:
-![Diagrams](docs/database/contact-models-diagram.png)
+![Diagrams](docs/models/contact-models-diagram.png)
 
 Implemented models as per diagram:
-![Diagrams](docs/database/contact-models.png)
+![Diagrams](docs/models/contact-models.png)
+
+</details>
+
+<details>
+    <summary>Blog</summary>
+
+Diagram:
+![Diagrams](docs/models/blog-models-diagram.png)
+
+Implemented models as per diagram:
+![Diagrams](docs/models/blog-models-1.png)
+![Diagrams](docs/models/blog-models-2.png)
 
 </details>
 
