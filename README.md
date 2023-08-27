@@ -38,7 +38,7 @@ Store specialized selling history books where passionates & proffessionals can f
     - [Fonts](#fonts)
     - [Structure](#structure)
     - [Wireframes](#wireframes)
-  - [Database Diagram](#database-diagram)
+  - [Database Diagrams](#database-diagrams)
   - [Messages and Interaction With Users](#messages-and-interaction-with-users)
   - [Admin Panel/Superuser](#admin-panelsuperuser)
   - [Technologies Used](#technologies-used)
@@ -310,7 +310,7 @@ The website consists of seven django applications:
 2. books
 3. cart
 4. checkout
-5. profile
+5. profiles
 6. contact
 7. blog
 
@@ -426,17 +426,54 @@ User can categorize books list by:
 
 [Back to Table Of Contents](#table-of-contents)
 
-## Database Diagram
+## Database Diagrams
 
-- Books:
+<details>
+    <summary>Books</summary> 
 
 Diagram:
-
-![Database Diagram](docs/database/books.png)
+![Diagrams](docs/database/books-models-diagram.png)
 
 Implemented models as per diagram:
+![Diagrams](docs/database/books-models.png)
 
-![Database Diagram](docs/database/books-model.png)
+</details>
+
+<details>
+    <summary>Checkout</summary>
+
+Diagram:
+![Diagrams](docs/database/checkout-models-diagram.png)
+
+Implemented models as per diagram:
+![Diagrams](docs/database/checkout-models-1.png)
+![Diagrams](docs/database/checkout-models-2.png)
+
+</details>
+
+<details>
+    <summary>Profiles</summary>
+
+Diagram:
+![Diagrams](docs/database/profiles-models-diagram.png)
+
+Implemented models as per diagram:
+![Diagrams](docs/database/profiles-models.png)
+
+</details>
+
+<details>
+    <summary>Contact</summary>
+
+Diagram:
+![Diagrams](docs/database/contact-models-diagram.png)
+
+Implemented models as per diagram:
+![Diagrams](docs/database/contact-models.png)
+
+</details>
+
+[Back to Table Of Contents](#table-of-contents)
 
 ## Messages and Interaction With Users
 
