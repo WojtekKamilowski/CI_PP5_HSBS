@@ -921,10 +921,12 @@ Example of warnings removed:
 
 ### CSS Validation
 
-<details>
-    <summary>To validate style.css <a href="https://jigsaw.w3.org/css-validator/?fbclid=IwAR2zBUIZHTXAGa9KEvR__gsTkB05ZifTcd-us-pR0Kud0bLVaIPET-V-Hi4#validate_by_upload">the W3C Jigsaw CSS Validation Service</a> was used.</summary>
+To validate style.css <a href="https://jigsaw.w3.org/css-validator/?fbclid=IwAR2zBUIZHTXAGa9KEvR__gsTkB05ZifTcd-us-pR0Kud0bLVaIPET-V-Hi4#validate_by_upload">the W3C Jigsaw CSS Validation Service</a> was used.
 
-![CSS Validation](docs/validation/css/style.png)
+<details>
+    <summary>CSS Validation</summary>
+
+![CSS Validation](docs/validation/css/base.png)
 
 </details>
 

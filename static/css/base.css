@@ -28,10 +28,6 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
-.fa-hourglass-half {
-    font-size: 200%;
-}
-
 /* Colors */
 /* Text black from Code Institue's "Boutique Ado" Walkthrough Project */
 .text-black {
@@ -172,6 +168,11 @@ a {
     height: 500px;
     border: 1px solid #000;
     object-fit: contain;
+}
+
+/* Hourglass icon  */
+.fa-hourglass-half {
+    font-size: 200%;
 }
 
 /* Small era name for individual book */
