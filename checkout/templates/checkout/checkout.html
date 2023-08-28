@@ -33,9 +33,7 @@
                 <div class="col-2 mb-1">
                     <a href="{% url 'book_detail' item.book.id %}">
                         {% if item.book.image %}
-                        <img class="w-100" src="{{ item.book.image.url }}" alt="{{ book.name }}">
-                        {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                        <img class="w-100" src="{{ item.book.image.url }}" alt="{{ item.book.name }}">
                         {% endif %}
                     </a>
                 </div>
@@ -131,11 +129,11 @@
     </div>
 </div>
 <div id="loading-overlay">
-    <h1 class="text-light logo-font loading-spinner">
+    <h2 class="text-light logo-font loading-spinner" aria-label="Loading spinner">
         <span class="icon">
             <i class="fas fa-3x fa-sync-alt fa-spin"></i>
         </span>
-    </h1>
+    </h2>
 </div>
 {% endblock %}
 

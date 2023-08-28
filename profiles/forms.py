@@ -44,6 +44,7 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address1': 'Delivery street address 1 of the user',
             'default_street_address2': 'Delivery street address 2 of the user',
             'default_county': 'Delivery county, state, or locality of the user',
+            'default_country': 'Delivery country of the user',
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True

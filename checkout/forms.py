@@ -45,6 +45,18 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Street Address (additional info)',
             'county': 'County, State or Locality',
         }
+        # Based on Teetime
+        aria_labels = {
+            'full_name': 'Full Name of the customer',
+            'email': 'Email Address of the customer',
+            'phone_number': 'Phone Number of the customer',
+            'postcode': 'Postal Code of the customer',
+            'town_or_city': 'Town or City of the customer',
+            'street_address1': 'Street Address (house number, street name) of the customer',
+            'street_address2': 'Street Address (additional info) of the customer',
+            'county': 'County, State or Locality of the customer',
+            'country': 'Country of the customer',
+        }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
@@ -54,5 +66,8 @@ class OrderForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['aria-label'] = aria_labels[
+                field
+            ]
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
