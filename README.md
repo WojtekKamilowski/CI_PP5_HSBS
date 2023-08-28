@@ -843,18 +843,24 @@ To allow search engine bot crawling there is sitemap.xml included & robots.txt f
 
 ### HTML Validation
 
-<details>
-    <summary>To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37NqVmxg37_tfuFOF4BJoyH8h_H-2n-Ed-64KJpoP1nEgLduNPO227mvE">the W3C Markup Validation Service</a> was used.</summary>
+To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37NqVmxg37_tfuFOF4BJoyH8h_H-2n-Ed-64KJpoP1nEgLduNPO227mvE">the W3C Markup Validation Service</a> was used.
 
-- home
+<details>
+    <summary>Home</summary>
+
+
 ![HTML Validation](docs/validation/html/home.png)
 
-    *2 warnings removed as per Rocketvalidator regardning type attribute on mailchimp scripts:
-    ![HTML Validation](docs/validation/html/type-warning.png)
+*2 warnings removed as per Rocketvalidator regardning type attribute on mailchimp scripts:
+![HTML Validation](docs/validation/html/type-warning.png)
 
-    *Dedicated h1 logo for medium screens was removed & small logo h1 was replaced by one mobile h1 logo for small & medium screens to remove below h1 warning:
-    ![HTML Validation](docs/validation/html/h1-warning.png)
+*Dedicated h1 logo for medium screens was removed & small logo h1 was replaced by one mobile h1 logo for both small & medium screens to remove below h1 warning:
+![HTML Validation](docs/validation/html/h1-warning.png)
 
+</details>
+
+<details>
+    <summary>Authentication</summary>
 
 
 </details>
