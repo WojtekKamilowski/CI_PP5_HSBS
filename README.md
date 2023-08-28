@@ -594,6 +594,7 @@ Django administration in use.
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/download.php?lang=en&token=jIR86oYCsiIVTzYSP6sF8FlsimURJVCo#)
 - [Stripe](https://stripe.com/ie)
 - [ElephantSQL](https://customer.elephantsql.com/)
+- [XML-Sitemaps](https://www.xml-sitemaps.com/)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -906,6 +907,11 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 ![Accessibility](docs/accessibility/wave-signup.png)
 ![Accessibility](docs/accessibility/wave-about.png)
 ![Accessibility](docs/accessibility/wave-club.png)
+![Accessibility](docs/accessibility/wave-post.png)
+![Accessibility](docs/accessibility/wave-contact.png)
+![Accessibility](docs/accessibility/wave-privacy.png)
+![Accessibility](docs/accessibility/wave-delivery.png)
+![Accessibility](docs/accessibility/wave-reset.png)
 Alerts on the above relate to underlines of links which is design choice for this project.
 ![Accessibility](docs/accessibility/wave-all-books.png)
 ![Accessibility](docs/accessibility/wave-all-books-alert.png)
@@ -917,6 +923,7 @@ Alerts on the above relate to:
 ![Accessibility](docs/accessibility/wave-book-details.png)
 Alerts on the above relate to underlines of links & possible heading for the price paragraphs, design choice.
 ![Accessibility](docs/accessibility/wave-cart.png)
+![Accessibility](docs/accessibility/wave-blog.png)
 Alerts on the above relate to underlines of links & skipped heading level, which are part of the chosen design.
 
 </details>

@@ -15,17 +15,17 @@
             <p class="text-muted m-0">by {{ post.author }} | {{ post.created_on }}</p>
         </div>
     </div>
+    {% if post.post_image %}
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
             <div class="my-5 contain-pst-img">
-                {% if post.post_image %}
                 <a href="{{ post.post_image.url }}" target="_blank">
                     <img class="card-img-top img-fluid contain-pst-img" src="{{ post.post_image.url }}" alt="{{ post.post_title }}">
                 </a>
-                {% endif %}
             </div>
         </div>
     </div>
+    {% endif %}
     <div class="container">
         <div class="row">
             <div class="col card mb-4  mt-3 left  top">
