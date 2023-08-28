@@ -23,7 +23,9 @@
             {% for post in post_list %}
             <div class="col-xs-12 col-md-4">
                 <div class="card my-3 blog-card">
-                    <img class="card-img-top" src=" {{ post.post_image.url }}" alt="{{ post.post_title }} post image" style="height: 300px;">
+                    {% if post.post_image %}
+                    <img class="card-img-top" src=" {{ post.post_image.url }}" alt="{{ post.post_title }}" style="height: 300px;">
+                    {% endif %}
                     <div class="card-body">
                         <a href="{% url 'post_detail' post.slug %}">
                             <h4 class="card-title">{{ post.post_title }}</h4>
