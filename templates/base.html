@@ -134,27 +134,21 @@
                 </ul>
             </div>
         </div>
-        <!-- Navigation bar row -->
+        <!-- Navigation bar -->
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <!-- Nav burger menu -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Logo for medium screens -->
-                <div class="d-none d-md-block d-lg-none" id="logo-medium">
-                    <a href="{% url 'home' %}" class="text-decoration-none">
-                        <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
-                    </a>
-                </div>
                 <!-- Includes main-nav & mobile-top-header -->
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <!-- Logo for small screens -->
+        <!-- Logo for small & medium screens -->
         <div class="row text-center pb-3">
-            <div class="col d-md-none" id="logo-small">
+            <div class="col d-lg-none" id="mobile-logo">
                 <a href="{% url 'home' %}" class="text-decoration-none">
                     <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
                 </a>

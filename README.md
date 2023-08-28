@@ -847,7 +847,15 @@ To allow search engine bot crawling there is sitemap.xml included & robots.txt f
     <summary>To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37NqVmxg37_tfuFOF4BJoyH8h_H-2n-Ed-64KJpoP1nEgLduNPO227mvE">the W3C Markup Validation Service</a> was used.</summary>
 
 - home
-![HTML Validation](docs/validation/html/html-home.png)
+![HTML Validation](docs/validation/html/home.png)
+
+    *2 warnings removed as per Rocketvalidator regardning type attribute on mailchimp scripts:
+    ![HTML Validation](docs/validation/html/type-warning.png)
+
+    *Dedicated h1 logo for medium screens was removed & small logo h1 was replaced by one mobile h1 logo for small & medium screens to remove below h1 warning:
+    ![HTML Validation](docs/validation/html/h1-warning.png)
+
+
 
 </details>
 
@@ -1081,6 +1089,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Update timezone from <a href="https://stackoverflow.com/questions/29311354/how-to-set-the-timezone-in-django">Stackoverflow</a>
 
 - Fix remove likes on clicking the like icon after adding a like <a href="https://stackoverflow.com/questions/65557334/like-button-is-working-but-not-changing-to-unlike-in-django">Stackoverflow</a>
+
+- Remove html validation warnings regarding script type attribute <a href="https://rocketvalidator.com/html-validation/the-type-attribute-is-unnecessary-for-javascript-resources">Rocketvalidator</a>
 
 ### Media
 
