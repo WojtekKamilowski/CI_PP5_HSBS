@@ -1,11 +1,11 @@
-<script type="text/javascript">
+<script>
     /* 
     * From Code Institue's "Boutique Ado" Walkthrough Project
     * Disable +/- buttons outside 1-99 range.
     * If no size is passed to the function, the parameter will have a value of undefined by default,
     * which prevents any errors 
     */
-    function handleEnableDisable(itemId, size) {
+    function handleEnableDisable(itemId,size) {
         if (size) {
             var currentValue = parseInt($(`.size_${itemId}_${size}`).val());
         } else {
@@ -16,11 +16,11 @@
         var plusDisabled = currentValue > 98;
 
         if (size) {
-            $(`.decrement-size_${itemId}_${size}`).prop('disabled', minusDisabled);
-            $(`.increment-size_${itemId}_${size}`).prop('disabled', plusDisabled);
+            $(`.decrement-size_${itemId}_${size}`).prop('disabled',minusDisabled);
+            $(`.increment-size_${itemId}_${size}`).prop('disabled',plusDisabled);
         } else {
-            $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-            $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
+            $(`.decrement-qty_${itemId}`).prop('disabled',minusDisabled);
+            $(`.increment-qty_${itemId}`).prop('disabled',plusDisabled);
         }
     }
 
@@ -32,7 +32,7 @@
     for (var i = 0; i < allQtyInputs.length; i++) {
         var itemId = $(allQtyInputs[i]).data('item_id');
         var size = $(allQtyInputs[i]).data('size');
-        handleEnableDisable(itemId, size);
+        handleEnableDisable(itemId,size);
     }
 
     /*
@@ -42,7 +42,7 @@
     $('.qty_input').change(function () {
         var itemId = $(this).data('item_id');
         var size = $(this).data('size');
-        handleEnableDisable(itemId, size);
+        handleEnableDisable(itemId,size);
     });
 
     /*
@@ -61,7 +61,7 @@
         }
         var currentValue = parseInt($(closestInput).val());
         $(allQuantityInputs).val(currentValue + 1);
-        handleEnableDisable(itemId, size);
+        handleEnableDisable(itemId,size);
     });
 
 
@@ -81,7 +81,7 @@
         }
         var currentValue = parseInt($(closestInput).val());
         $(allQuantityInputs).val(currentValue - 1);
-        handleEnableDisable(itemId, size);
+        handleEnableDisable(itemId,size);
     });
 
 </script>
