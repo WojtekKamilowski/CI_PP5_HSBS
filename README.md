@@ -900,7 +900,8 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 <details>
     <summary>WAVE</summary> 
 
-![Accessibility](docs/accessibility/wave-404.png)
+![Accessibility](docs/accessibility/wave-login.png)
+![Accessibility](docs/accessibility/wave-signup.png)
 
 </details>
 

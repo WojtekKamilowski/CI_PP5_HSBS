@@ -69,8 +69,8 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="mb-0">{{ book.name }} | {{ book.author }} {{ book.published }}</p>
-                                    <p class="lead mb-0 text-left font-weight-bold">${{ book.price }}</p>
+                                    <p class="mb-0 fs-3">{{ book.name }} | {{ book.author }} {{ book.published }}</p>
+                                    <p class="mb-0">${{ book.price }}</p>
                                     {% if book.era %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted" href="{% url 'books' %}?era={{ book.era.name }}">
