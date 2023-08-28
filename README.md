@@ -904,15 +904,15 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 ![Accessibility](docs/accessibility/wave-home.png)
 ![Accessibility](docs/accessibility/wave-login.png)
 ![Accessibility](docs/accessibility/wave-signup.png)
-Alerts on the above relte to underlines of links which is design choice for this project.
+Alerts on the above relate to underlines of links which is design choice for this project.
 ![Accessibility](docs/accessibility/wave-all-books.png)
 ![Accessibility](docs/accessibility/wave-all-books-alert.png)
-Alerts on the above relte to:
+Alerts on the above relate to:
 1. Reduntant links for page navigation buttons, design choice to help navigate when there is more pages.
 2. Possible heading for the price paragraphs, design choice to highlight important for users information. It alignes with the business strategy as the store wants to highlight the value as an indicator of the quality. 
-3. 
-4. 
-
+![Accessibility](docs/accessibility/wave-all-book-details.png)
+Alerts on the above relate to underlines of links & possible heading for the price paragraphs, design choice.
+![Accessibility](docs/accessibility/wave-cart.png)
 
 </details>
 

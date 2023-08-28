@@ -27,7 +27,7 @@
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
                         <tr>
-                            <th scope="col"></th>
+                            <th scope="col" aria-label="Cart item image"></th>
                             <th scope="col">Description:</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
@@ -38,11 +38,9 @@
                     <tr>
                         <td class="p-3 w-25 cart-img">
                             {% if item.book.image %}
-                            <img class="img-fluid rounded ct-img" src="{{ item.book.image.url }}"
-                                alt="{{ item.book.name }}">
+                            <img class="img-fluid rounded ct-img" src="{{ item.book.image.url }}" alt="{{ item.book.name }}">
                             {% else %}
-                            <img class="img-fluid rounded ct-img" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ item.book.name }}">
+                            <img class="img-fluid rounded ct-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.book.name }}">
                             {% endif %}
                         </td>
                         <td class="py-3">
