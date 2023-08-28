@@ -28,7 +28,7 @@
     <li class="list-inline-item dropdown">
         <!-- Username info -->
         {% if request.user.is_authenticated %}
-        <p class="text-black ml-2">Logged-in as: {{ user.username }}</p>
+        <p class="text-black ml-2 d-block d-lg-none">Logged-in as: {{ user.username }}</p>
         {% endif %}
         <!-- Profile icon to dropdown -->
         <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
