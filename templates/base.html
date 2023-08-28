@@ -5,7 +5,7 @@
 
 <head>
     {% block meta %}
-    <!--Required Meta Tags-->
+    <!-- Required Meta Tags -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
     <meta name="keywords" content="Hi Story, History, Ancient Times, Medieval, Renaissance, Modern Times, Inudstrial Revolution, First World War, Great War, Second World War, WW2, XX Century, Early XXI Century, gifts for history passionate, History Reading">
     <meta property="og:title" content="HiStory| History Books Store">
     <meta property="og:description" content="Online history books e-commerce store offering selection of literature positions from ancient times to modern history.">
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon.ico' %}">
 
     {% endblock %}
@@ -32,16 +32,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <!--Mailchimp CSS-->
+    <!-- Mailchimp CSS-->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block corejs %}
-    <!--Stripe-->
+    <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-    <!-- Font Awesont kit-->
+    <!-- Font Awesont kit -->
     <script src="https://kit.fontawesome.com/3af9543e24.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap Scripts-->
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     {% endblock %}
@@ -52,16 +52,17 @@
 </head>
 
 <body>
-    <!-- Header Nav bar-->
+    <!-- Header -->
     <header class="container-fluid">
+        <!-- Top navigation for desktop -->
         <div id="topnav" class="row nav-bg-color pt-lg-2 d-none d-lg-flex">
-            <!-- Nav logo-->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link">
+            <!-- Logo for large screens -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left" id="logo-large">
+                <a href="{% url 'home' %}" class="text-decoration-none">
                     <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
                 </a>
             </div>
-            <!-- Nav center for links-->
+            <!-- Search queries form -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'books' %}">
                     <div class="input-group w-100">
@@ -77,15 +78,12 @@
                 </form>
             </div>
             <div class="col-12 col-lg-4 my-auto pt-2">
-                <!-- Col for account and cart options-->
+                <!-- Profile and cart -->
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    {% if request.user.is_authenticated %}
-                    <li>
-                        <p class="text-black">Logged-in as: {{ user.username }}</p>
-                    </li>
-                    {% endif %}
+                    <!-- Profile icon & dropdowns -->
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="#" id="dt-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- Profile icon -->
+                        <a class="text-decoration-none" href="#" id="dt-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 {% if request.user.is_authenticated %}
                                 <div><i class="fas fa-user fa-lg cst-prpl"></i></div>
@@ -96,6 +94,7 @@
                                 {% endif %}
                             </div>
                         </a>
+                        <!-- Droppeddown profile links -->
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if user.is_superadmin %}
@@ -112,10 +111,12 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Cart icon -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} nav-link" href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} text-decoration-none" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
+                                <!-- Cart grand total value pre-view -->
                                 <p class="my-0">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
@@ -129,33 +130,47 @@
                 </ul>
             </div>
         </div>
+        <!-- Navigation bar row -->
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <!-- Nav burger menu -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="d-none d-md-block d-lg-none">
-                    <a href="{% url 'home' %}" class="nav-link">
+                <!-- Logo for medium screens -->
+                <div class="d-none d-md-block d-lg-none" id="logo-medium">
+                    <a href="{% url 'home' %}" class="text-decoration-none">
                         <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
                     </a>
                 </div>
+                <!-- Includes main-nav & mobile-top-header -->
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
+            <!-- Username info -->
             {% if request.user.is_authenticated %}
             <div class="d-xl-none">
                 <p class="text-black ml-2">Logged-in as: {{ user.username }}</p>
             </div>
             {% endif %}
         </div>
+        <!-- Logo for small screens -->
+        <div class="row text-center pb-3">
+            <div class="col d-md-none" id="logo-small">
+                <a href="{% url 'home' %}" class="text-decoration-none">
+                    <h1 class="cst-prpl my-0"><strong>Hi</strong>Story</h1>
+                </a>
+            </div>
+        </div>
+        <!-- Free delivery threshold info -->
         <div id="delivery-banner" class="row text-center pb-3">
             <div class="cst-prpl col">
-                <h1 class="my-1 cst-h-tag">The greatest deal in the HiStory: <strong>free delivery</strong> on orders over $
-                    {{ free_delivery_threshold }}!</h1>
+                <h2 class="my-1">The greatest deal in the HiStory: <strong>free delivery</strong> on orders over $
+                    {{ free_delivery_threshold }}!</h2>
             </div>
         </div>
     </header>
-
+    <!-- Messages -->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
@@ -174,36 +189,40 @@
     </div>
     {% endif %}
 
+    <!-- Page header block -->
     {% block page_header %}
     {% endblock %}
 
+    <!-- Page content block -->
     {% block content %}
     {% endblock %}
 
+    <!-- Page postloadjs block -->
     {% block postloadjs %}
     <script>
         $('.toast').toast('show');
     </script>
-
     {% endblock %}
+
     <!-- Footer -->
     <footer>
-        <!-- About, Social, Pages & Contact -->
         <div class="container">
             <div class="row">
+                <!-- About -->
                 <div class="col-md-3 col-xs-12">
                     <ul class="p-0">
                         <li>
-                            <h5 class="text-center"><strong>About Us:</strong></h5>
+                            <h3 class="text-center"><strong>About Us:</strong></h3>
                         </li>
                         <li class="text-center"><a href="{% url 'about' %}">Who We Are</a></li>
                         <li class="text-center"><a href="{% url 'club' %}">HiStory Club</a></li>
                     </ul>
                 </div>
+                <!-- Social media links -->
                 <div class="col-md-3 col-xs-12">
                     <ul class="p-0">
                         <li>
-                            <h5 class="text-center"><strong>Check Our Profiles on:</strong></h5>
+                            <h3 class="text-center"><strong>Check Our Profiles on:</strong></h3>
                         </li>
                         <li class="text-center"><a href="https://www.pinterest.ie/" rel="nofollow" target="_blank">Pinterest</a>
                         </li>
@@ -213,19 +232,21 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Website exploration links -->
                 <div class="col-md-3 col-xs-12">
                     <ul class="p-0">
                         <li>
-                            <h5 class="text-center"><strong>Explore Our Website:</strong></h5>
+                            <h3 class="text-center"><strong>Explore Our Website:</strong></h3>
                         </li>
                         <li class="text-center"><a href="{% url 'books' %}">Books</a></li>
                         <li class=" text-center"><a href="{% url 'blog' %}">Blog</a></li>
                     </ul>
                 </div>
+                <!-- Contact -->
                 <div class="col-md-3 col-xs-12">
                     <ul class="p-0">
                         <li>
-                            <h5 class="text-center"><strong>Contact:</strong></h5>
+                            <h3 class="text-center"><strong>Contact:</strong></h3>
                         </li>
                         <li class="text-center">
                             <u><a href="{% url 'contact' %}">Contact us using our form</a></u>, or by:

@@ -1,15 +1,17 @@
-<!-- Based on Code Institue's "Boutique Ado" Walkthrough Project -->
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li id="home-tab" class="nav-item d-md-none">
+        <!-- Home for <= medium screens -->
+        <li id="home-tab" class="nav-item d-md-block">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
+        <!-- Books dropdowns -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books'%}" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Books
             </a>
+            <!-- Sort by price dropdowns -->
             <div class="dropdown-menu border-0 dropright" aria-labelledby="all-books-link">
                 <a href="{% url 'books' %}?sort=price" class="dropdown-item" id="price-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     By Price
@@ -22,48 +24,45 @@
                         Highest
                     </a>
                 </div>
+                <!-- Sort by rating link -->
                 <a href="{% url 'books' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <!-- Sort by era links -->
                 <a href="{% url 'books' %}?sort=era&direction=asc" class="dropdown-item ">Oldest Times</a>
                 <a href="{% url 'books' %}?sort=era&direction=desc" class="dropdown-item ">Newest Times</a>
+                <!-- All Books link -->
                 <a href="{% url 'books'%}" class="dropdown-item">All Books</a>
             </div>
         </li>
-
-        <li class="nav-item dropdown">
+        <!-- Eras from oldest to newest times  -->
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?era=ancient" id="ancient-link">
                 Ancient Times
             </a>
         </li>
-
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?era=medieval" id="medieval-link">
                 Medieval
             </a>
         </li>
-
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=renaissance" id="renaissance-link">
                 Renaissance
             </a>
         </li>
-
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=industrial" id="industrial-link">
                 Early Industrial Revolution & Modern Era
             </a>
         </li>
-
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=xxc" id="xxc-link">
                 XX Century
             </a>
         </li>
-
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'books' %}?era=xxic" id="xxic-link">
                 Early XXI Century
             </a>
         </li>
-
     </ul>
 </div>

@@ -1,5 +1,6 @@
-<!-- Based on Code Institue's "Boutique Ado" Walkthrough Project -->
+<!-- Top navigation for mobile -->
 <ul class="list-inline mt-3">
+    <!-- Dropdown button for search queries form -->
     <li class="list-inline-item">
         <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Search our books">
             <div class="text-center">
@@ -7,6 +8,7 @@
                 <p class="my-0">Search</p>
             </div>
         </a>
+        <!-- Droppeddown search queries form -->
         <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="{% url 'books' %}">
                 <div class="input-group w-100">
@@ -22,8 +24,9 @@
             </form>
         </div>
     </li>
-
+    <!-- Profile icon & dropdowns -->
     <li class="list-inline-item dropdown">
+        <!-- Profile icon to dropdown -->
         <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 {% if request.user.is_authenticated %}
@@ -31,10 +34,11 @@
                 <p class="my-0">My Account</p>
                 {% else %}
                 <div><i class="fas fa-user fa-lg cst-prpl"></i></div>
-                <p class="my-0 cst-prpl">Log/Reg</p>
+                <p class="my-0 cst-prpl">Login/Register</p>
                 {% endif %}
             </div>
         </a>
+        <!-- Profile droppeddown links -->
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
@@ -48,11 +52,12 @@
             {% endif %}
         </div>
     </li>
-
+    <!-- Cart icon -->
     <li class="list-inline-item">
         <a class="{% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
             <div class="text-center">
                 <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
+                <!-- Cart grand total value pre-view -->
                 <p class="my-0">
                     {% if grand_total %}
                     ${{ grand_total|floatformat:2 }}

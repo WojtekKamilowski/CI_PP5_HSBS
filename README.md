@@ -632,9 +632,10 @@ Django administration in use.
 <summary>Header</summary>
 
 It is included on all pages. Contains: website name that is clickable link to Home page which is a common feature on many websites so users expect it.
-There is search queries form, navigation bar, Authentication & Cart icons.
-Header is responsive: the website name, nav-bar and search queries form are not displayed for smaller screens.
-Instead of the clickable website name there is Home link included in the drop-down burger menu which also contains the navigation links.
+There is search queries form, navigation bar, user profile & shopping cart icons.
+Header is responsive: For medium & smaller screens navigation items are displayed from a drop-down burger menu where a Home link also appears to assist users navigating to the home page in a more ergonomic way than only using the link from the logo, a useful addition when browsing the website on tablet or mobile screens.
+The extra home link from the is especially helpful for mobile screen users as the search queries form dropdowns from the search icon for medium & smaller than devices, on mobile screens the website logo is covered when the form is droppedown from the icon.
+
 Search queries form is displayed after clicking the magnifying glass icon & the Authentication icon has shorter under-description.
 User stories covered: 1, 2, 3, 4, 5, 6, 7.
 
