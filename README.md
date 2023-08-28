@@ -850,20 +850,70 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 <details>
     <summary>Home</summary>
 
-
 ![HTML Validation](docs/validation/html/home.png)
+![HTML Validation](docs/validation/html/html-about.png)
+![HTML Validation](docs/validation/html/html-club.png)
+![HTML Validation](docs/validation/html/html-delivery.png)
 
+Example of warnings removed:
 *2 warnings removed as per Rocketvalidator regardning type attribute on mailchimp scripts:
 ![HTML Validation](docs/validation/html/type-warning.png)
-
 *Dedicated h1 logo for medium screens was removed & small logo h1 was replaced by one mobile h1 logo for both small & medium screens to remove below h1 warning:
 ![HTML Validation](docs/validation/html/h1-warning.png)
 
 </details>
 
 <details>
-    <summary>Authentication</summary>
+    <summary>Books</summary>
 
+![HTML Validation](docs/validation/html/html-books.png)
+![HTML Validation](docs/validation/html/html-sort.png)
+![HTML Validation](docs/validation/html/html-search.png)
+![HTML Validation](docs/validation/html/html-category.png)
+![HTML Validation](docs/validation/html/html-details.png)
+![HTML Validation](docs/validation/html/html-add.png)
+![HTML Validation](docs/validation/html/html-edit.png)
+![HTML Validation](docs/validation/html/html-delete.png)
+
+</details>
+
+<details>
+    <summary>Cart</summary>
+
+![HTML Validation](docs/validation/html/html-cart.png)
+
+</details>
+
+<details>
+    <summary>Checkout</summary>
+
+![HTML Validation](docs/validation/html/html-checkout.png)
+![HTML Validation](docs/validation/html/html-order.png)
+
+</details>
+
+<details>
+    <summary>Profiles</summary>
+
+![HTML Validation](docs/validation/html/html-profile.png)
+![HTML Validation](docs/validation/html/signup.png)
+![HTML Validation](docs/validation/html/login.png)
+
+</details>
+
+<details>
+    <summary>Blog</summary>
+
+![HTML Validation](docs/validation/html/html-blog.png)
+![HTML Validation](docs/validation/html/html-blog-2.png)
+![HTML Validation](docs/validation/html/html-post.png)
+
+</details>
+
+<details>
+    <summary>Contact</summary>
+    
+![HTML Validation](docs/validation/html/html-contact.png)
 
 </details>
 
@@ -912,6 +962,11 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 ![Accessibility](docs/accessibility/wave-privacy.png)
 ![Accessibility](docs/accessibility/wave-delivery.png)
 ![Accessibility](docs/accessibility/wave-reset.png)
+![Accessibility](docs/accessibility/wave-profile.png)
+![Accessibility](docs/accessibility/wave-order.png)
+![Accessibility](docs/accessibility/wave-message.png)
+![Accessibility](docs/accessibility/wave-new-book.png)
+![Accessibility](docs/accessibility/wave-edit.png)
 Alerts on the above relate to underlines of links which is design choice for this project.
 ![Accessibility](docs/accessibility/wave-all-books.png)
 ![Accessibility](docs/accessibility/wave-all-books-alert.png)
@@ -925,6 +980,12 @@ Alerts on the above relate to underlines of links & possible heading for the pri
 ![Accessibility](docs/accessibility/wave-cart.png)
 ![Accessibility](docs/accessibility/wave-blog.png)
 Alerts on the above relate to underlines of links & skipped heading level, which are part of the chosen design.
+![Accessibility](docs/accessibility/wave-checkout.png)
+Alerts on the above relate to:
+1. Underlines of links which is a part of the chosen design.
+2. Form control does not have a lable, aria-labels added in forms.py
+
+
 
 </details>
 
