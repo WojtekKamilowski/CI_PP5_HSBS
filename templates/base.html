@@ -116,8 +116,8 @@
                         </div>
                     </li>
                     <!-- Cart icon -->
-                    <li class="list-inline-item mr-2">
-                        <a class="{% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} text-decoration-none" href="{% url 'view_cart' %}">
+                    <li class="list-inline-item mr-3 {% if grand_total %}cart-in font-weight-bold{% else %}cst-prpl{% endif %} p-2">
+                        <a class="text-decoration-none {% if grand_total %}text-light{% endif %}" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
                                 <!-- Cart grand total value pre-view -->

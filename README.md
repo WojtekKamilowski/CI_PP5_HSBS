@@ -74,6 +74,7 @@ Store specialized selling history books where passionates & proffessionals can f
 The business is a B2C e-commerce platform with the main goal of selling tangible product: books listed online on the website.
 The store is dedicated to sell history books so the primary customer the business targets are people interested in history, 
 but also people who would like to start reading history books or maybe buy them as a gift for someone. 
+The business aims at customers who expect high quality of the offered positions, matching the store's theme.
 The payment type employed is: SINGLE PAYMENT
 The transaction is finished & delivery order is created once a single payment is made. 
 The available payment option is payment by card, implemented using <a href="https://stripe.com/ie">Stripe</a>
@@ -900,8 +901,18 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 <details>
     <summary>WAVE</summary> 
 
+![Accessibility](docs/accessibility/wave-home.png)
 ![Accessibility](docs/accessibility/wave-login.png)
 ![Accessibility](docs/accessibility/wave-signup.png)
+Alerts on the above relte to underlines of links which is design choice for this project.
+![Accessibility](docs/accessibility/wave-all-books.png)
+![Accessibility](docs/accessibility/wave-all-books-alert.png)
+Alerts on the above relte to:
+1. Reduntant links for page navigation buttons, design choice to help navigate when there is more pages.
+2. Possible heading for the price paragraphs, design choice to highlight important for users information. It alignes with the business strategy as the store wants to highlight the value as an indicator of the quality. 
+3. 
+4. 
+
 
 </details>
 
@@ -1086,8 +1097,6 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
   
 - Dropright main-nav submenu for sorting by lowest & highest price based on <a href="https://getbootstrap.com/docs/4.6/components/dropdowns/">Bootstrap</a>
-
-- Shadowed shopping cart with items in it from <a href="https://codersblock.com/blog/creating-glow-effects-with-css/">Codersblock</a>
 
 - Post likes bug fix from <a href="https://stackoverflow.com/questions/44458764/extending-the-user-model-simplelazyobject-error-when-using-user-is-authenticate">Stackoverflow</a>
 
