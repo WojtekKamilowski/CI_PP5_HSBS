@@ -28,8 +28,12 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
+.fa-hourglass-half {
+    font-size: 200%;
+}
+
 /* Colors */
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
+/* Text black from Code Institue's "Boutique Ado" Walkthrough Project */
 .text-black {
     color: #000 !important;
 }
@@ -49,7 +53,17 @@ h5 {
     color: #0F3860;
 }
 
-/* Lists & links */
+#id_default_phone_number,
+#id_default_street_address1,
+#id_default_street_address2,
+#id_default_town_or_city,
+#id_default_county,
+#id_default_postcode,
+#id_default_country {
+    color: #0F3860;
+}
+
+/* Lists, links & buttons */
 li {
     list-style-type: none;
 }
@@ -62,83 +76,34 @@ a {
     color: #505;
 }
 
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+/* Pointer cursor from Code Institue's "Boutique Ado" Walkthrough Project */
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
+/* Arrow-up button for back to the top from Code Institue's "Boutique Ado" Walkthrough Project */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cart-in {
+    color: #FAFAFA;
+    background-color: #505;
+}
+
+/* Button hovers */
 .btn:hover,
 .cart-in:hover {
     color: #FFF642;
 }
 
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
-
-.bg-delivery {
-    background-color: #30d5c8;
-}
-
-/* From Stackoverflow */
-.contain-bk-img {
-    width: 400px;
-    height: 500px;
-    border: 1px solid #000;
-    object-fit: contain;
-}
-
-.fa-hourglass-half {
-    font-size: 200%;
-}
-
-.small-era {
-    font-size: 100%;
-}
-
-/* Blog */
-.blog-card {
-    height: 600px;
-    overflow: scroll;
-}
-
-.card-title {
-    height: 120px;
-}
-
-.contain-pst-img {
-    width: 600px;
-    height: 300px;
-    border: 1px solid #000;
-    object-fit: contain;
-}
-
-.ct-img {
-    width: 100%;
-    height: 180px;
-}
-
-/* Inspired by Code Institue's "Boutique Ado" Walkthrough Project */
-.custom-toast {
-    max-height: 80vh;
-    overflow: scroll;
-}
-
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
-.toast-capper {
-    height: 2px;
-}
-
+/* Containers */
 .book-details-container,
 .contact-container {
     min-height: 70vh;
@@ -161,29 +126,80 @@ a {
     min-height: 40vh;
 }
 
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
-.btt-button {
-    height: 42px;
-    width: 42px;
+/* Message container from Code Institue's "Boutique Ado" Walkthrough Project */
+.message-container {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
 }
 
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
+/* Toast inspired by Code Institue's "Boutique Ado" Walkthrough Project */
+.custom-toast {
+    max-height: 80vh;
+    overflow: scroll;
 }
 
-.cart-in {
-    color: #FAFAFA;
-    background-color: #505;
+/* Toast capper from Code Institue's "Boutique Ado" Walkthrough Project */
+.toast-capper {
+    height: 2px;
 }
 
+/* Toast free delivery info */
+.bg-delivery {
+    background-color: #30d5c8;
+}
+
+/* Signup input */
 .signup input {
     width: 45%;
+}
+
+/* Overlay from Code Institue's "Boutique Ado" Walkthrough Project */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+/* Contain book image from Stackoverflow */
+.contain-bk-img {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    object-fit: contain;
+}
+
+/* Small era name for individual book */
+.small-era {
+    font-size: 100%;
+}
+
+/* Blog */
+.blog-card {
+    height: 600px;
+    overflow: scroll;
+}
+
+.card-title {
+    height: 120px;
+}
+
+.contain-pst-img {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #000;
+    object-fit: contain;
+}
+
+/* Shopping cart image */
+.ct-img {
+    width: 100%;
+    height: 180px;
 }
 
 /* Checkout from Code Institue's "Boutique Ado" Walkthrough Project */
@@ -193,7 +209,7 @@ a {
     border: 1px solid #000;
 }
 
-/* Based on Code Institue's "Boutique Ado" Walkthrough Project */
+/* Checkout loading overlay based on Code Institue's "Boutique Ado" Walkthrough Project */
 #loading-overlay {
     display: none;
     position: fixed;
@@ -206,7 +222,7 @@ a {
     opacity: 0.5;
 }
 
-/* From Code Institue's "Boutique Ado" Walkthrough Project */
+/* Checkout loading spinner from Code Institue's "Boutique Ado" Walkthrough Project */
 .loading-spinner {
     display: flex;
     align-items: center;
@@ -215,17 +231,7 @@ a {
     height: 100%;
 }
 
-#id_default_phone_number,
-#id_default_street_address1,
-#id_default_street_address2,
-#id_default_town_or_city,
-#id_default_county,
-#id_default_postcode,
-#id_default_country {
-    color: #0F3860;
-}
-
-/* Based on Code Institue's "Boutique Ado" Walkthrough Project */
+/* Order history based on Code Institue's "Boutique Ado" Walkthrough Project */
 .order-history {
     max-height: 40vh;
     overflow: scroll;
@@ -245,6 +251,7 @@ a {
     color: #294A08 !important;
 }
 
+/* Mailchimp refferal_badge */
 .refferal_badge {
     max-width: 100%;
 }
@@ -261,7 +268,6 @@ a {
 }
 
 /* Media queries */
-
 @media (min-width: 992px) {
     #home-tab {
         display: none !important;
@@ -291,14 +297,12 @@ a {
     }
 }
 
-/* Smaller h3 for small screens */
 @media (max-width: 360px) {
     .era-badge-name {
         font-size: 130%;
     }
 }
 
-/* Smaller h3 for extra small screens */
 @media (max-width: 230px) {
     .era-badge-name {
         font-size: 90%;

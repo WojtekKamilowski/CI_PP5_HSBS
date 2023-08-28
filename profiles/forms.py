@@ -55,8 +55,8 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['aria-label'] = aria_labels[
-                field
-            ]
             else:
                 self.fields[field].label = False
+                self.fields[field].widget.attrs['aria-label'] = aria_labels[
+                    field
+                ]
