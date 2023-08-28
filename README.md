@@ -40,7 +40,7 @@ Store specialized selling history books where passionates & proffessionals can f
     - [Wireframes](#wireframes)
   - [Models Diagrams](#models-diagrams)
   - [Amazon Web Services](#amazon-web-services)
-  - [Messages and Interaction With Users](#messages-and-interaction-with-users)
+  - [Messages and Interaction with Users](#messages-and-interaction-with-users)
   - [Admin Panel/Superuser](#admin-panelsuperuser)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
@@ -498,7 +498,7 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 
 [Back to Table Of Contents](#table-of-contents)
 
-## Messages and Interaction With Users
+## Messages and Interaction with Users
 
 <details>
     <summary>Messages updating the user on interactions status.</summary> 

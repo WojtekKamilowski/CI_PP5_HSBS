@@ -1,207 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/cart/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=price</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=price&amp;direction=desc</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=rating&amp;direction=desc</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=era&amp;direction=asc</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=era&amp;direction=desc</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=ancient</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=medieval</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=renaissance</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=industrial</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=xxc</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=xxic</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/about/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/club/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/blog/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/contact/contact/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/privacy/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/delivery/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/22/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/2/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/12/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/7/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/1/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/8/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/3/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/5/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?page=1</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?page=2</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/4/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/9/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/11/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/6/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/10/</loc>
-  <lastmod>2023-08-22T20:56:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/accounts/signup/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/accounts/login/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/cart/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=price</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=price&amp;direction=asc</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=price&amp;direction=desc</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=rating&amp;direction=desc</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=era&amp;direction=asc</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?sort=era&amp;direction=desc</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=ancient</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=medieval</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=renaissance</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=industrial</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=xxc</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?era=xxic</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/about/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/club/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/blog/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/contact/contact/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/privacy/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/delivery/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/accounts/password/reset/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/22/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/2/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/12/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/7/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/1/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/8/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/3/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/5/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?page=1</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/?page=2</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/4/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/9/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/11/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/6/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://hi-story-book-store-5899052efb65.herokuapp.com/books/10/</loc>
+        <lastmod>2023-08-22T20:56:04+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
 
 
 </urlset>
