@@ -26,14 +26,16 @@
     </li>
     <!-- Profile icon & dropdowns -->
     <li class="list-inline-item dropdown">
+        <!-- Username info -->
+        {% if request.user.is_authenticated %}
+        <p class="text-black ml-2">Logged-in as: {{ user.username }}</p>
+        {% endif %}
         <!-- Profile icon to dropdown -->
         <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 {% if request.user.is_authenticated %}
                 <div><i class="fas fa-user fa-lg"></i></div>
                 <p class="my-0">My Profile</p>
-                <!-- Username info -->
-                <p class="text-black ml-2">Logged-in as: {{ user.username }}</p>
                 {% else %}
                 <div><i class="fas fa-user fa-lg cst-prpl"></i></div>
                 <p class="my-0 cst-prpl">Login/Register</p>
