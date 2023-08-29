@@ -495,10 +495,11 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 
 ![Amazon](docs/aws.png)
 
-
 [Back to Table Of Contents](#table-of-contents)
 
 ## Messages and Interaction with Users
+
+Implemented using toast, for success toast there is data-delay="30000" attribute set for a considerable time for the user to have enough time to read the message especially when it is in relation to adding books to the shopping cart.
 
 <details>
     <summary>Messages updating the user on interactions status.</summary> 
@@ -936,7 +937,39 @@ To validate style.css <a href="https://jigsaw.w3.org/css-validator/?fbclid=IwAR2
 
 <a href="https://jshint.com/">JSHint</a> JS Validation Serviced was used to validate the Javascript code for the website.
 
-![JavaScript Validation](docs/validation/js/js.png)
+<details>
+    <summary>cart_script</summary>
+
+One undefined variable message appears for jQuery $ sign:
+![JavaScript Validation](docs/validation/js/cart-script.png)
+
+</details>
+
+<details>
+    <summary>Mailchimp script</summary>
+
+The array literal notation [] is preferable two warnings. Three undefined variables & one unused variable messages.
+![JavaScript Validation](docs/validation/js/mailchimp-script.png)
+Warnings removed:
+![JavaScript Validation](docs/validation/js/mailchimp-script-fixed.png)
+
+</details>
+
+<details>
+    <summary>Back to Top</summary>
+
+One undefined variable message appears for jQuery $ sign:
+![JavaScript Validation](docs/validation/js/top-script.png)
+
+</details>
+
+<details>
+    <summary>quantity_input_script</summary>
+
+One undefined variable message appears for jQuery $ sign:
+![JavaScript Validation](docs/validation/js/quantity-script.png)
+
+</details>
 
 ### PEP8 Validation
 
@@ -1090,7 +1123,9 @@ Testing user stories:
 | 404 Custom Page not displayed 500 Error instead | delete views & url for the 404 error, keep 404.html |
 | Post likes cannot be added, Extending the user model: SimpleLazyObject error | use the profile when you check/add/remove likes |
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
-| Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():'  |
+| Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():' |
+| The array literal notation [] is preferrable jshint warning on Mailchimp script | Replace window.fnames = new Array(); & window.ftypes = new Array(); 
+with window.fnames = []; & window.ftypes = []; |
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -1149,7 +1184,9 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 - Parts of code based on <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
-- JavaScript code to update quantity on click & move the screen back to the top of the books list from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
+- JavaScript code to Ensure proper enabling/disabling of all inputs on page load, check enable/disable every time the input is changed on quantity_input_script & move the screen back to the top of the books list from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
+
+- Disable +/- buttons outside 1-99 range, increment quantity & decrement quantity on quantity_input_script based on <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
 - .overlay, .text-black, #payment-form, .form-control & #card-element & .loading-spinner CSS from <a href="https://github.com/Code-Institute-Solutions/boutique_ado_v1">Code Institue's "Boutique Ado" Walkthrough Project</a>
 
@@ -1182,6 +1219,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Fix remove likes on clicking the like icon after adding a like <a href="https://stackoverflow.com/questions/65557334/like-button-is-working-but-not-changing-to-unlike-in-django">Stackoverflow</a>
 
 - Remove html validation warnings regarding script type attribute <a href="https://rocketvalidator.com/html-validation/the-type-attribute-is-unnecessary-for-javascript-resources">Rocketvalidator</a>
+
+- The array literal notation [] is preferrable JavaScript validation error fix for the mailchimp script <a href="http://linterrors.com/js/the-array-literal-notation-is-preferrable">Linterrors</a>
 
 ### Media
 

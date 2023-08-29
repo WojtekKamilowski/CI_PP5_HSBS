@@ -245,6 +245,7 @@ a {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 100%;
+    overflow: auto;
 }
 
 /* Mailchimp customised success response for accessibility */
