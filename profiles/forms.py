@@ -53,8 +53,8 @@ class UserProfileForm(forms.ModelForm):
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
             'default_town_or_city': 'Town or City',
-            'default_street_address1': 'Street Address (house, street)',
-            'default_street_address2': 'Street Address (additional info)',
+            'default_address1': 'Street Address (house, street)',
+            'default_address2': 'Street Address (additional info)',
             'default_county': 'County, State or Locality',
         }
         # Based on Teetime
@@ -62,8 +62,8 @@ class UserProfileForm(forms.ModelForm):
             'default_phone_number': 'Delivery phone number of the user',
             'default_postcode': 'Delivery postal code of the user',
             'default_town_or_city': 'Delivery town or city of the user',
-            'default_street_address1': 'Delivery street address 1 of the user',
-            'default_street_address2': 'Delivery street address 2 of the user',
+            'default_address1': 'Delivery street address 1 of the user',
+            'default_address2': 'Delivery street address 2 of the user',
             'default_county': 'Delivery county, or locality of the user',
             'default_country': 'Delivery country of the user',
         }

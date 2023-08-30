@@ -969,6 +969,8 @@ One undefined variable message appears for jQuery $ sign:
 One undefined variable message appears for jQuery $ sign:
 ![JavaScript Validation](docs/validation/js/quantity-script.png)
 
+</details>
+
 <details>
     <summary>stripe_elements</summary>
 
