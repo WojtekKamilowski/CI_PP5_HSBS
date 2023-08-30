@@ -20,6 +20,7 @@ class Posts(generic.ListView):
 class PostDetail(View):
     """
     Returns post details page
+    Posts comments
     """
 
     def get(self, request, slug, *args, **kwargs):
@@ -42,9 +43,6 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-        """
-        Posts comment
-        """
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by("-created_on")

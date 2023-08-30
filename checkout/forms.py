@@ -8,19 +8,43 @@ from .models import Order
 class OrderForm(forms.ModelForm):
     # From Stackoverflow
     full_name = forms.CharField(required=True, widget=forms.TextInput(
-        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 50}))
+        attrs={
+            'class': 'form-control',
+            'autocomplete': 'off',
+            'pattern': '[A-Za-z ]+',
+            'title': 'Enter characters only',
+            'maxlength': 50
+        }))
 
     # Based on Stackoverflow
     phone_number = forms.CharField(required=True, widget=forms.TextInput(
-        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[0-9]+', 'title': 'Enter digits only', 'maxlength': 20}))
+        attrs={
+            'class': 'form-control',
+            'autocomplete': 'off',
+            'pattern': '[0-9]+',
+            'title': 'Enter digits only',
+            'maxlength': 20
+        }))
 
     # Based on Stackoverflow
     town_or_city = forms.CharField(required=True, widget=forms.TextInput(
-        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 40}))
+        attrs={
+            'class': 'form-control',
+            'autocomplete': 'off',
+            'pattern': '[A-Za-z ]+',
+            'title': 'Enter characters only',
+            'maxlength': 40
+        }))
 
     # Based on Stackoverflow
     county = forms.CharField(required=False, widget=forms.TextInput(
-        attrs={'class': 'form-control', 'autocomplete': 'off', 'pattern': '[A-Za-z ]+', 'title': 'Enter characters only', 'maxlength': 80}))
+        attrs={
+            'class': 'form-control',
+            'autocomplete': 'off',
+            'pattern': '[A-Za-z ]+',
+            'title': 'Enter characters only',
+            'maxlength': 80
+        }))
 
     class Meta:
         model = Order
@@ -52,8 +76,8 @@ class OrderForm(forms.ModelForm):
             'phone_number': 'Phone Number of the customer',
             'postcode': 'Postal Code of the customer',
             'town_or_city': 'Town or City of the customer',
-            'street_address1': 'Street Address (house number, street name) of the customer',
-            'street_address2': 'Street Address (additional info) of the customer',
+            'street_address1': 'Street Address (house number, street name)',
+            'street_address2': 'Street Address (additional info) for delivery',
             'county': 'County, State or Locality of the customer',
             'country': 'Country of the customer',
         }

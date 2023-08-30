@@ -82,7 +82,8 @@ def checkout(request):
 
             # Save the details to the user's profile if all is OK
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             messages.error(request, ('There was an error with your form. '
                                      'Please double check your information.'))

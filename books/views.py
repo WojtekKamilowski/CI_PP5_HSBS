@@ -96,7 +96,7 @@ def add_book(request):
     """
     if not request.user.is_superuser:
         messages.error(
-            request, 'Sorry, it is restricted option for store administration.')
+            request, 'Sorry, it is restricted option for the administration.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -127,7 +127,7 @@ def edit_book(request, book_id):
     """
     if not request.user.is_superuser:
         messages.error(
-            request, 'Sorry, it is restricted option for store administration.')
+            request, 'Sorry, it is restricted option for the administration.')
         return redirect(reverse('home'))
 
     book = get_object_or_404(Book, pk=book_id)
@@ -161,7 +161,7 @@ def delete_book(request, book_id):
     """
     if not request.user.is_superuser:
         messages.error(
-            request, 'Sorry, it is restricted option for store administration.')
+            request, 'Sorry, it is restricted option for the administration.')
         return redirect(reverse('home'))
 
     book = get_object_or_404(Book, pk=book_id)

@@ -3,7 +3,7 @@
 
 ![Mockup image](docs/responsive.png)
 
-<a href="https://hi-story-book-store-5899052efb65.herokuapp.com/" target="_blank">LIVE WEBPAGE</a>
+[LIVE WEBPAGE](https://hi-story-book-store-5899052efb65.herokuapp.com/)
 
 ## About 
 
@@ -969,14 +969,162 @@ One undefined variable message appears for jQuery $ sign:
 One undefined variable message appears for jQuery $ sign:
 ![JavaScript Validation](docs/validation/js/quantity-script.png)
 
+<details>
+    <summary>stripe_elements</summary>
+
+![JavaScript Validation](docs/validation/js/stripe.png)
+
 </details>
 
 ### PEP8 Validation
 
-<details>
-    <summary><a href="https://pep8ci.herokuapp.com">CI Python Linter</a> was used to perform the check if the code meets PEP8 requirements:</summary>
+<a href="https://pep8ci.herokuapp.com">CI Python Linter</a> was used to perform the PEP8 requirements validation:
 
+<details>
+    <summary>HSBS</summary>
+
+- asgi.py
+![PEP8 Validation](docs/validation/pep8/hsbs-asgi.png)
+- settings.py
+![PEP8 Validation](docs/validation/pep8/hsbs-settings.png)
 - urls.py
+![PEP8 Validation](docs/validation/pep8/hsbs-urls.png)
+- wsgi.py
+![PEP8 Validation](docs/validation/pep8/hsbs-wsgi.png)
+
+</details>
+
+<details>
+    <summary>Home</summary>
+
+- apps.py
+![PEP8 Validation](docs/validation/pep8/home-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/home-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/home-views.png)
+
+</details>
+
+<details>
+    <summary>Books</summary>
+
+- admin.py
+![PEP8 Validation](docs/validation/pep8/books-admin.png)
+ forms.py
+![PEP8 Validation](docs/validation/pep8/books-forms.png)
+- apps.py
+![PEP8 Validation](docs/validation/pep8/books-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/books-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/books-views.png)
+- models.py
+![PEP8 Validation](docs/validation/pep8/books-models.png)
+
+</details>
+
+<details>
+    <summary>Cart</summary>
+
+- cart_tools.py
+![PEP8 Validation](docs/validation/pep8/cart-tools.png)
+- apps.py
+![PEP8 Validation](docs/validation/pep8/cart-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/cart-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/cart-views.png)
+- contexts.py
+![PEP8 Validation](docs/validation/pep8/cart-contexts.png)
+
+</details>
+
+<details>
+    <summary>Checkout</summary>
+
+- apps.py
+![PEP8 Validation](docs/validation/pep8/checkout-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/checkout-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/checkout-views.png)
+- admin.py
+![PEP8 Validation](docs/validation/pep8/checkout-admin.png)
+- forms.py
+![PEP8 Validation](docs/validation/pep8/checkout-forms.png)
+- models.py
+![PEP8 Validation](docs/validation/pep8/checkout-models.png)
+- signals.py
+![PEP8 Validation](docs/validation/pep8/checkout-signals.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/checkout-views.png)
+- webhook_handler.py
+![PEP8 Validation](docs/validation/pep8/checkout-handler.png)
+- webhooks.py
+![PEP8 Validation](docs/validation/pep8/checkout-webhooks.png)
+
+</details>
+
+<details>
+    <summary>Profiles</summary>
+
+- apps.py
+![PEP8 Validation](docs/validation/pep8/profiles-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/profiles-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/profiles-views.png)
+- forms.py
+![PEP8 Validation](docs/validation/pep8/profiles-forms.png)
+- models.py
+![PEP8 Validation](docs/validation/pep8/profiles-models.png)
+
+</details>
+
+<details>
+    <summary>Contact</summary>
+
+- apps.py
+![PEP8 Validation](docs/validation/pep8/contact-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/contact-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/contact-views.png)
+- admin.py
+![PEP8 Validation](docs/validation/pep8/contact-admin.png)
+- forms.py
+![PEP8 Validation](docs/validation/pep8/contact-forms.png)
+- models.py
+![PEP8 Validation](docs/validation/pep8/contact-models.png)
+
+</details>
+
+<details>
+    <summary>Blog</summary>
+
+- apps.py
+![PEP8 Validation](docs/validation/pep8/blog-apps.png)
+- urls.py
+![PEP8 Validation](docs/validation/pep8/blog-urls.png)
+- views.py
+![PEP8 Validation](docs/validation/pep8/blog-views.png)
+- admin.py
+![PEP8 Validation](docs/validation/pep8/blog-admin.png)
+- forms.py
+![PEP8 Validation](docs/validation/pep8/blog-admin.png)
+- models.py
+![PEP8 Validation](docs/validation/pep8/blog-models.png)
+
+</details>
+
+<details>
+    <summary>root</summary>
+
+- custom_storages.py
+![PEP8 Validation](docs/validation/pep8/custom-storages.png)
+- manage.py
+![PEP8 Validation](docs/validation/pep8/manage.png)
 
 </details>
 
