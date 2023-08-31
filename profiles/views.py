@@ -29,7 +29,7 @@ def profile(request):
                             'the form is valid & try again.'))
     else:
         form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+    orders = profile.orders.all().order_by('-date')
 
     template = 'profiles/profile.html'
     context = {

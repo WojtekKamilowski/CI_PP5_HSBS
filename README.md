@@ -1409,8 +1409,7 @@ Oldest to newest times example:
 | Post likes cannot be added, Extending the user model: SimpleLazyObject error | use the profile when you check/add/remove likes |
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
 | Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():' |
-| The array literal notation [] is preferrable jshint warning on Mailchimp script | Replace window.fnames = new Array(); & window.ftypes = new Array(); 
-with window.fnames = []; & window.ftypes = []; |
+| The array literal notation [] is preferrable jshint warning on Mailchimp script | Replace new Array() with [] |
 
 [Back to Table Of Contents](#table-of-contents)
 

@@ -112,7 +112,8 @@ a {
 .received-container,
 .delivery-container,
 .about-container,
-.blog-container {
+.blog-container,
+.checkout-container {
     min-height: 60vh;
 }
 
