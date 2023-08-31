@@ -1292,21 +1292,80 @@ Testing user stories:
 | ------- | ------- | --------------- | ------------- |
 | Books | From Books page click on book's the name/author&publication date paragraph or book's image | Book details page is loaded and full details including book's description displayed | Works as expected |
 
+![Manual Testing](docs/testing/manual/4.png)
+
 5. As a User I want to search for a book so that I can find book I am looking for without checking the entire list
 
-![Manual Testing](docs/testing/manual/4.png)
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Header | Fill out the search our site input with desired search query related to the book the user is looking for, click on the magnifying glass icon | Books page is loaded with found results | Works as expected  |
+| Books | Scroll through the search results if any found or continue search using other words | User informed how many books found for the search query & list of related books is displayed if any found | Works as expected |
+
+![Manual Testing](docs/testing/manual/5-a.png)
+![Manual Testing](docs/testing/manual/5-b.png)
+
+6. As a User I want to access categorized catalogue of books so that only books from a required category are displayed.
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-|  |  |  |  |
+| Header | Click on any of the eras' links as desired | Era page is loaded | Works as expected |
+| Books | View books from to the selected era | Era name is displayed & the list of books match it | Works as expected  |
 
-![Manual Testing](docs/testing/manual/4.png)
+![Manual Testing](docs/testing/manual/6.png)
+
+7. As a User I want to sort books so that I see books sorted in a required order.
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-|  |  |  |  |
+| Header | Click on All Books link, select one of the options, excluding All Books from the drop-down menu | The books page is loaded | Works as expected |
+| Books | Scroll through the page | Books List is displayed in an order corresponding to the selected option | Works as expected |
+
+Oldest to newest times example:
+![Manual Testing](docs/testing/manual/7.png)
+
+8. As a User I want to add books to shopping cart so that I can have all books I wish to buy listed together.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Books | On a book details page adjust quantity as desired & click on the ADD TO SHOPPING CART button | Success message appears: 'Added book.name to your shopping cart' & a summary of the shopping cart items is displayed with a link to the shopping cart underneath | Works as expected |
+| Cart | Load the cart page, for example using the trolley icon button or link from the success message items summary | Page is loaded with a list of items & their details added to the shopping cart & Shopping Cart summary  | Works as expected |
+
+![Manual Testing](docs/testing/manual/8-a.png)
+![Manual Testing](docs/testing/manual/8-b.png)
+
+9. As a User I want to update the list of items in my shopping cart so that the correct list is ready for checkout.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Cart | Review & adjust items quantities using the minus or plus or quantity input then click 'Update' | A success message appears with updated summary | Works as expected |
+
+![Manual Testing](docs/testing/manual/9.png)
+
+10. As a User I want to remove items from the shopping cart so that the shopping cart matches my final purchase decission.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Cart | Review & adjust items quantities using the quantity input set to 0 or click 'Remove' | A success message appears with updated summary | Works as expected |
+
+![Manual Testing](docs/testing/manual/10.png)
+
+11. As a User I want to check-out so that I can finalize the purchase of my items.
+    
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Checkout | Open the checkout page by clicking 'SECURE CHECKOUT' button, fill up the form, review order summary, click on the Complete Order button | Loading spinner is displayed when the action is being processed, checkout success page is loaded with the order summary, user receives email with the confirmation email as informed | Works as expected |
+
+![Manual Testing](docs/testing/manual/11-a.png)
+![Manual Testing](docs/testing/manual/11-b.png)
+
+~~~~~~~~~
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+|  |  |  | Works as expected |
 
 ![Manual Testing](docs/testing/manual/1.png)
+~~~~~~~~~
 
 </details>
 
