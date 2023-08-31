@@ -1358,6 +1358,32 @@ Oldest to newest times example:
 ![Manual Testing](docs/testing/manual/11-a.png)
 ![Manual Testing](docs/testing/manual/11-b.png)
 
+12. As a User I want to see the list of all books offered paginated so that I can easier review the offer
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Books | Open Home All Books page scroll to the very bottom navigate through different pages | Chosen pages are loaded after clicking, page number is correctly displayed | Works as expected |
+
+![Manual Testing](docs/testing/manual/12-a.png)
+![Manual Testing](docs/testing/manual/12-b.png)
+
+13. As a User I want to contact site admins so that I can communicate feedback/complaints/suggestions.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Footer | From the Contact section in the footer click on the link: 'Contact us using our form' | Contact page with a contact form is loaded, if user is logged in, fields: Name & Email are pre-populated | Works as expected |
+| Contact | fill up the form & click on the submit your message button | Page with confirmation is loaded, success message is displayed | Works as expected |
+
+![Manual Testing](docs/testing/manual/13.png)
+
+14. As a User I want to read about the website so that I know who offers me the products for sale.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Footer | From the About Us section in the footer click on the link: 'Who We Are' | the about page is loaded | Works as expected |
+| About | Read the information if the user wants to know some extra information about other activity related to the business click on the 'more here' link to navigate to HiStory Club page | User can read the text, the link to HiStory Club page works | Works as expected |
+
+![Manual Testing](docs/testing/manual/14.png)
 ~~~~~~~~~
 
 | Feature | Action  | Expected Result | Actual Result |
