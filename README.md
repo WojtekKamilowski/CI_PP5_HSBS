@@ -1182,6 +1182,10 @@ Alerts on the above relate to:
 
 - home
 ![Performance](docs/performance/home-desktop.png)
+- about
+![Performance](docs/performance/about-desktop.png)
+- club
+![Performance](docs/performance/club-desktop.png)
 - books
 ![Performance](docs/performance/books-desktop.png)
 - book details
@@ -1191,6 +1195,18 @@ There is no 100 score for the SEO as it detects update-link as no crawlable, it 
 Cart pages are disallowed for crawling in robots.txt
 ![Performance](docs/performance/cart-desktop.png)
 ![Performance](docs/performance/cart-seo.png)
+- checkout
+![Performance](docs/performance/checkout-desktop.png)
+- profiles
+![Performance](docs/performance/profiles-desktop.png)
+- contact
+![Performance](docs/performance/contact-desktop.png)
+- blog
+![Performance](docs/performance/blog-desktop.png)
+- post
+![Performance](docs/performance/post-desktop.png)
+![Performance](docs/performance/post-seo.png)
+There is no 100 score for the SEO as it detects the arrow-up as no crawlable, it is only an a tag to for back to the top, not a link to a different page.
 
 </details>
 
@@ -1199,6 +1215,10 @@ Cart pages are disallowed for crawling in robots.txt
 
 - home
 ![Performance](docs/performance/home-mobile.png)
+- about
+![Performance](docs/performance/about-mobile.png)
+- club
+![Performance](docs/performance/club-mobile.png)
 - books
 ![Performance](docs/performance/books-mobile.png)
 - book details
@@ -1208,6 +1228,18 @@ There is no 100 score for the SEO as it detects update-link as no crawlable, it 
 Cart pages are disallowed for crawling in robots.txt
 ![Performance](docs/performance/cart-mobile.png)
 ![Performance](docs/performance/cart-seo.png)
+- checkout
+![Performance](docs/performance/checkout-mobile.png)
+- profiles
+![Performance](docs/performance/profiles-mobile.png)
+- contact
+![Performance](docs/performance/contact-mobile.png)
+- blog
+![Performance](docs/performance/blog-mobile.png)
+- post
+![Performance](docs/performance/post-mobile.png)
+![Performance](docs/performance/post-seo.png)
+There is no 100 score for the SEO as it detects the arrow-up as no crawlable, it is only an a tag to for back to the top, not a link to a different page.
 
 </details>
 
