@@ -58,7 +58,6 @@ Store specialized selling history books where passionates & proffessionals can f
   - [Device Testing](#device-testing)
   - [Browser compatibility](#browser-compatibility)
   - [Testing](#testing)
-    - [Automated Testing](#automated-testing)
     - [Manual Testing](#manual-testing)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
@@ -227,6 +226,7 @@ As an Admin I want to:
 ![Kanban](docs/agile/kanban-7.png)
 ![Kanban](docs/agile/kanban-8.png)
 ![Kanban](docs/agile/kanban-9.png)
+![Kanban](docs/agile/kanban-10.png)
 
 </details>
 
@@ -1159,8 +1159,8 @@ Alerts on the above relate to underlines of links which is design choice for thi
 Alerts on the above relate to:
 1. Reduntant links for page navigation buttons, design choice to help navigate when there is more pages.
 2. Possible heading for the price paragraphs, design choice to highlight important for users information. It alignes with the business strategy as the store wants to highlight the value as an indicator of the quality. 
-![Accessibility](docs/accessibility/wave-all-books-category.png)
-![Accessibility](docs/accessibility/wave-all-books-search.png)
+![Accessibility](docs/accessibility/wave-books-category.png)
+![Accessibility](docs/accessibility/wave-books-search.png)
 ![Accessibility](docs/accessibility/wave-book-details.png)
 Alerts on the above relate to underlines of links & possible heading for the price paragraphs, design choice.
 ![Accessibility](docs/accessibility/wave-cart.png)
@@ -1170,8 +1170,6 @@ Alerts on the above relate to underlines of links & skipped heading level, which
 Alerts on the above relate to:
 1. Underlines of links which is a part of the chosen design.
 2. Form control does not have a lable, aria-labels added in forms.py
-
-
 
 </details>
 
@@ -1183,15 +1181,15 @@ Alerts on the above relate to:
     <summary>Desktop</summary> 
 
 - home
-![Performance](docs/performance/desktop-home.png)
+![Performance](docs/performance/home-desktop.png)
 - books
-![Performance](docs/performance/desktop-books.png)
+![Performance](docs/performance/books-desktop.png)
 - book details
-![Performance](docs/performance/desktop-details.png)
+![Performance](docs/performance/details-desktop.png)
 - cart
 There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a link to a different page.
 Cart pages are disallowed for crawling in robots.txt
-![Performance](docs/performance/desktop-cart.png)
+![Performance](docs/performance/cart-desktop.png)
 ![Performance](docs/performance/cart-seo.png)
 
 </details>
@@ -1200,15 +1198,15 @@ Cart pages are disallowed for crawling in robots.txt
     <summary>Mobile</summary> 
 
 - home
-![Performance](docs/performance/mobile-home.png)
+![Performance](docs/performance/home-mobile.png)
 - books
-![Performance](docs/performance/mobile-books.png)
+![Performance](docs/performance/books-mobile.png)
 - book details
-![Performance](docs/performance/mobile-details.png)
+![Performance](docs/performance/details-mobile.png)
 - cart
 There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a link to a different page.
 Cart pages are disallowed for crawling in robots.txt
-![Performance](docs/performance/mobile-cart.png)
+![Performance](docs/performance/cart-mobile.png)
 ![Performance](docs/performance/cart-seo.png)
 
 </details>
@@ -1238,17 +1236,6 @@ Following browsers were used to test the website:
 
 ## Testing
 
-### Automated Testing
-
-<details>
-
-<summary>Automated Testing</summary>
-
-- stocklist.test_models.py
-![Automated Testing](docs/testing/auto/test_models.png)
-
-</details>
-
 ### Manual Testing
 
 <details>
@@ -1256,6 +1243,10 @@ Following browsers were used to test the website:
 <summary>Manual Testing</summary>
 
 ---------------------------------------------------------------
+
+Python & JavaScript tested manually.
+No errors or warnings logged to the console:
+![Manual Testing](docs/testing/manual/console.png)
 
 Testing user stories:
 
