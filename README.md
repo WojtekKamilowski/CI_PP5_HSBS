@@ -684,7 +684,7 @@ User stories covered: 21.
 
 From Allauth.
 Includes customised signup, signin, email confirmation & password reset pages that display on dektop, laptop, tablet & mobile screens as intended. 
-User stories covered: 1, 2.
+User stories covered: 1, 2, 15.
 
 ![Features](docs/features/signup.png)
 ![Features](docs/features/signin.png)
@@ -728,7 +728,7 @@ Displays a paginated All Books list. Allows users to search, sort & categorize b
 Includes page with book details for each offered position. 
 Site admins access books management section to add, delete & update the offered books on the store.
 Feature is responsive & displays on dektop, laptop, tablet & mobile screens.
-User stories covered: 3, 4, 5, 6, 7, 8, 12, 15, 16, 17.
+User stories covered: 3, 4, 5, 6, 7, 8, 12, 16, 17.
 
 ![Features](docs/features/all-books.png)
 ![Features](docs/features/book-details.png)
@@ -1384,14 +1384,73 @@ Oldest to newest times example:
 | About | Read the information if the user wants to know some extra information about other activity related to the business click on the 'more here' link to navigate to HiStory Club page | User can read the text, the link to HiStory Club page works | Works as expected |
 
 ![Manual Testing](docs/testing/manual/14.png)
-~~~~~~~~~
+
+15. As an Admin I want to add books to the store offer so that the store can sell online the new books available in the store.
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-|  |  |  | Works as expected |
+| Authentication | Using a superuser account sign up via the sign up page. Click on the My Profile icon and choose 'Add New Book' option from the dropdown menu, fill up and submit the form | A new book with the details from the submitted form is added, its book details page loads & a success message is displayed | Works as expected |
 
-![Manual Testing](docs/testing/manual/1.png)
-~~~~~~~~~
+![Manual Testing](docs/testing/manual/15.png)
+
+16. As an Admin I want to edit book details so that user can see books offered by the store with up to date details.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Books | Logged in as a superuser from the books or book details page click on the Edit link, apply changes to the form as required & click 'Update Book Details' | Book details are updated as editted, the book details page is loaded with the new details & a success message appears | Works as expected |
+
+![Manual Testing](docs/testing/manual/16-a.png)
+![Manual Testing](docs/testing/manual/16.png)
+
+17. As an Admin I want to delete books from the store's offer so that users cannot see books that are no longer available for sale.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Books | From the books or book details page click Delete & confirm deleting by clicking on 'Confirm & Return to Books List' button | The chosen book is deleted from the store's offer & a success message informs that the book has been deleted | Works as expected |
+
+
+![Manual Testing](docs/testing/manual/17.png)
+
+18. As an Admin I want to set up a custom 404 page so that users can be easily redirected to the books list from a non-existing page, increasing their offer viewing time and the likely-hood of buying a book.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Customised 404 page | After the website urls add anything that is not a findable page e.g. '/aaa' | 404 error is informed to the user, explaining that the page was not found. FIND YOUR BOOK NOW button is displayed that links to All Books page | Works as expected |
+
+![Manual Testing](docs/testing/manual/18.png)
+
+19. As an Admin I want to invite users to related non-profit group to engage outside the web so that it helps to build brand and supports the growth of regular customers base.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Footer | From the About Us section in the footer click on the link: 'HiStory Club' | the club page is loaded | Works as expected |
+| HiStory Club | Read the content, if a user decides that would like to join the voluneer organization may click on 'our contact form' link | Information are displayed, the link to the contact page works | Works as expected |
+
+![Manual Testing](docs/testing/manual/19.png)
+
+20. As an Admin I want to offer users looking for more content a blog section so that they can access more engaging content related to the potential users' hobbies sot that they can be possibly retained longer on the website increasing the chance of making some extra purchase than originally intended by a user.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Footer | From the Explore Our Website section in the footer click on the link: 'Blog' | the blog page is loaded | Works as expected |
+| Blog | Click on one of the blog posts, read the content, add a like if user wants or undo if changed user's mind. Add a comment if user wants | the post detail page is loaded, conten is readible, like is added on the first click & removed on the following click with corresponding success messages. Comment is added to the blog post & a success message appears | Works as expected |
+
+![Manual Testing](docs/testing/manual/20-a.png)
+![Manual Testing](docs/testing/manual/20-b.png)
+![Manual Testing](docs/testing/manual/20-c.png)
+![Manual Testing](docs/testing/manual/20-d.png)
+![Manual Testing](docs/testing/manual/20-e.png)
+
+21. As an Admin I want to collect email addresses from users who want to subscribe for newsletter so that I can use them for informing the subscribers about sales etc
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Newsletter Signup Form | On the home page add email address to the input of the Subscribe for Newsletter form & click on the subscribe button |
+Mailchinmp's Thank you for subscribing! response appears & the email address is added to Mailchimp's all contacts audience list | Works as expected |
+
+![Manual Testing](docs/testing/manual/21-a.png)
+![Manual Testing](docs/testing/manual/21-b.png)
+![Manual Testing](docs/testing/manual/21-c.png)
 
 </details>
 
@@ -1448,11 +1507,11 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 14. Search for the repository name and click the connect button
 15. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 ![Deployment](docs/deployment/auto-manual.png)
-1.  Choose a branch to deploy: main
-2.  Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
+16.  Choose a branch to deploy: main
+17.  Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
 ![Deployment](docs/deployment/manual.png)
 ![Deployment](docs/deployment/deployed.png)
-1.  For Automatic deploys click on Enable Automatic Deploys button
+18.  For Automatic deploys click on Enable Automatic Deploys button
 ![Deployment](docs/deployment/auto.png)
 
 </details>
@@ -1530,6 +1589,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Image for Roman blog post <a href="https://www.pexels.com/photo/administration-ancient-arches-architecture-356966/">Pexels</a>
 - Image for China blog post <a href="https://www.pexels.com/photo/gazebo-near-trees-during-day-3018977/">Pexels</a>
 - Image for Ramzes II book <a href="https://www.pexels.com/photo/gold-tutankhamun-statue-33571/">Pexels</a>
+- Image for Napoleon book <a href="https://www.pexels.com/photo/man-people-festival-music-16721221/">Pexels</a>
 
 
 [Back to Table Of Contents](#table-of-contents)
