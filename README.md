@@ -1290,6 +1290,14 @@ Testing user stories:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
+| Books | From Books page click on book's the name/author&publication date paragraph or book's image | Book details page is loaded and full details including book's description displayed | Works as expected |
+
+5. As a User I want to search for a book so that I can find book I am looking for without checking the entire list
+
+![Manual Testing](docs/testing/manual/4.png)
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
 |  |  |  |  |
 
 ![Manual Testing](docs/testing/manual/4.png)
