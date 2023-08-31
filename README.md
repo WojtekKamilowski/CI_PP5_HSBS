@@ -1183,6 +1183,14 @@ Alerts on the above relate to:
 
 - home
 ![Performance](docs/performance/desktop-home.png)
+- books
+![Performance](docs/performance/desktop-books.png)
+- book details
+![Performance](docs/performance/desktop-details.png)
+- cart
+There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a real link
+![Performance](docs/performance/desktop-cart.png)
+![Performance](docs/performance/cart-seo.png)
 
 </details>
 
@@ -1191,10 +1199,14 @@ Alerts on the above relate to:
 
 - home
 ![Performance](docs/performance/mobile-home.png)
-- signup
-![Performance](docs/performance/mobile-signup.png)
-- login
-![Performance](docs/performance/mobile-login.png)
+- books
+![Performance](docs/performance/mobile-books.png)
+- book details
+![Performance](docs/performance/mobile-details.png)
+- cart
+There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a real link
+![Performance](docs/performance/mobile-cart.png)
+![Performance](docs/performance/cart-seo.png)
 
 </details>
 
