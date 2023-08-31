@@ -1478,40 +1478,83 @@ Mailchinmp's Thank you for subscribing! response appears & the email address is 
 
 <summary>This site was deployed using Heroku in following steps:</summary>
 
-Before deployment remember to set DEBUG = False & ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
+Pre deployment steps for AWS & Stripe:
+
+1. To Set up an AWS S3 Bucket sign in to <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Feu-north-1.console.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26region%3Deu-north-1%26state%3DhashArgsFromTB_eu-north-1_c0ccf0eb8e5a9f52&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=1QLf1BdX-tBkIzNlTlRMe7a281HIMkbkoiBG1o2KBho&code_challenge_method=SHA-256">Amazon Web Services</a>
+![Deployment](docs/deployment/amazon.png)
+
+2. Search & open the S3 Service, click on the Create bucket button.
+![Deployment](docs/deployment/bucket.png)
+3. Create a unique bucket name - project name is advised & the location region.
+4. Configure as needed, set up permissions, e.g. ACLs ENABLED, set settings, property tab: index.html & error.html - > save, CORS.
+5. Generate & copy policy to Bucket Policy Editor.
+6. Create policy & attach policy to group.
+7. Retrieve AWS access keys
+8. From the workspace console: pip3 install boto3 & pip3 install django-storages  pip3 freeze > requirements.txt
+9. Add AWS keys remove COLLECT_STATICFILES from Heroku 
+![Deployment](docs/deployment/keys.png)
+10. Add custom_storages.py 
+![Deployment](docs/deployment/storages.png)   
+11.  Add cache control
+![Deployment](docs/deployment/cache.png)   
+12.   Create a media folder & upload images to the bucket.
+![Deployment](docs/deployment/upload.png)
+13.   Add Stripe Endpoint:
+    1.  Login to <a href="https://dashboard.stripe.com/dashboard">Stripe</a>
+    2.  Retrieve the publishable & secret keys
+    3.  ![Deployment](docs/deployment/stripe-keys.png)
+    4.  Create STRIPE_PUBLIC_KEY & STRIPE_SECRET_KEY environmental variables to local env & on Heroku.
+    5.  Go to Webhooks tab from Stripe Developers section & add endpoint with the website URL
+    6.  ![Deployment](docs/deployment/webhooks.png)
+    7.  Save the key generated & create with it STRIPE_WH_SECRET environment variable.
+
+Before Heroku deployment remember to:
+
+1. Install Django and gunicorn: pip3 install 'django<4' gunicorn
+2. Install supporting libraries: pip3 install dj_database_url==0.5.0 psycopg2
+3. Migrate Changes: python3 manage.py migrate
+4. Create a new external database:
+   1. Log in to <a href="https://customer.elephantsql.com/">ElephantSQL</a>
+   2. Create New Instance.
+   3. ![Deployment](docs/deployment/instance.png)
+   4. Set up your plan: Name (usually the name of the project) with the Tiny Turtle (Free) plan.
+   5. Select Region: Select a data center near you.
+   6. Review & Create instance.
+   7. Click on the database instance name.
+   8. Copy ElephantSQL database URL
+
+5. Create a Procfile with: web: gunicorn hi_story_book_store.wsgi:application
+6.  set DEBUG = False
+7.  Ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
 
 ![Deployment](docs/deployment/debug.png)
 ![Deployment](docs/deployment/requirements.png)
 
 1. Log in to Heroku or create an account
-![Deployment](docs/deployment/heroku-login.png)
-2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create new app
-![Deployment](docs/deployment/new.png)
-3. You must enter a unique app name
-4. Next select your region
-5. Click on the Create App button
+2. ![Deployment](docs/deployment/heroku-login.png)
+3. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create new app
+4. ![Deployment](docs/deployment/new.png)
+5. You must enter a unique app name
+6. Next select your region
+7. Click on the Create App button
 ![Deployment](docs/deployment/create.png)
-6. Go to the Settings tab
-7. Click Reveal Config Vars and add a new record with the SECRET_KEY
-8. Add another record to Config Vars with the DATABASE_URL
-![Deployment](docs/deployment/database-1.png)
-![Deployment](docs/deployment/database-2.png)
-9. Add another record to Config Vars with PORT = 8000
+8. Go to the Settings tab
+9. Click Reveal Config Vars and add:
 ![Deployment](docs/deployment/vars.png)
-10. Below Config Vars in Buildpacks make sure python is selected
+    *PORT = 8000
+10.  Below Config Vars in Buildpacks make sure python is selected
 ![Deployment](docs/deployment/buildpack.png)
-![Deployment](docs/deployment/python.png)
-11. Go to the Deploy Tab
-12. Choose Deployment method GitHub and click Save Changes
-13. Confirm you want to connect to GitHub
-14. Search for the repository name and click the connect button
-15. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
+11.  Go to the Deploy Tab
+12.  Choose Deployment method GitHub and click Save Changes
+13.  Confirm you want to connect to GitHub
+14.  Search for the repository name and click the connect button
+15.  Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 ![Deployment](docs/deployment/auto-manual.png)
-16.  Choose a branch to deploy: main
-17.  Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
-![Deployment](docs/deployment/manual.png)
+16.    Choose a branch to deploy: main
+17.   Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
+18. ![Deployment](docs/deployment/manual.png)
 ![Deployment](docs/deployment/deployed.png)
-18.  For Automatic deploys click on Enable Automatic Deploys button
+19.    For Automatic deploys click on Enable Automatic Deploys button
 ![Deployment](docs/deployment/auto.png)
 
 </details>
