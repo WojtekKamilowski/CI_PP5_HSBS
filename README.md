@@ -640,7 +640,7 @@ Header is responsive: For medium & smaller screens navigation items are displaye
 The extra home link from the is especially helpful for mobile screen users as the search queries form dropdowns from the search icon for medium & smaller than devices, on mobile screens the website logo is covered when the form is droppedown from the icon.
 
 Search queries form is displayed after clicking the magnifying glass icon & the Authentication icon has shorter under-description.
-User stories covered: 1, 2, 3, 4, 5, 6, 7.
+User stories covered: 1, 2, 3, 5, 6, 7.
 
 ![Features](docs/features/header.png)
 
@@ -841,6 +841,7 @@ Links relationships defined:
 ![SEO](docs/nofollow.png)
 
 To allow search engine bot crawling there is sitemap.xml included & robots.txt file to control search engine bot crawling.
+robots.txt dissallow to crawl /accounts/, /profile/, /cart/ & /checkout/ urls. As per <a href="https://tillison.co.uk/blog/robots-txt-for-ecommerce/#:~:text=Furthermore%2C%20eCommerce%20websites%20may%20have,helping%20to%20protect%20customer%20information.">Tillison Consulting</a> these are some of the most popular directives for eCommerce websites. These URLs may contain sensitive information that should not be publicly accessible.
 
 ## Validation
 
@@ -1188,7 +1189,8 @@ Alerts on the above relate to:
 - book details
 ![Performance](docs/performance/desktop-details.png)
 - cart
-There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a real link
+There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a link to a different page.
+Cart pages are disallowed for crawling in robots.txt
 ![Performance](docs/performance/desktop-cart.png)
 ![Performance](docs/performance/cart-seo.png)
 
@@ -1204,7 +1206,8 @@ There is no 100 score for the SEO as it detects update-link as no crawlable, it 
 - book details
 ![Performance](docs/performance/mobile-details.png)
 - cart
-There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a real link
+There is no 100 score for the SEO as it detects update-link as no crawlable, it is only an a tag to update the cart not a link to a different page.
+Cart pages are disallowed for crawling in robots.txt
 ![Performance](docs/performance/mobile-cart.png)
 ![Performance](docs/performance/cart-seo.png)
 
@@ -1260,9 +1263,36 @@ Testing user stories:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| Header | Click on Authentication icon, select Register option from the drop-down menu  | The sign up page is laoded | Works as expected |
-| Sign Up | Fill up the form, click the sign up button, go to your e-mail inbox, click on the link from the email message, click on the confirm button  | Success message is displayed: You have confirmed emailaddress@email.com & the sign in page is loaded | Works as expected |
+| Header | Click on Authentication icon, select Register option from the drop-down menu  | The sign up page is loaded | Works as expected |
+| Authentication | Fill up the sign up form, click the sign up button, go to your e-mail inbox, click on the link from the email message, click on the confirm button | Success message is displayed: You have confirmed emailaddress@email.com & the sign in page is loaded | Works as expected |
 
+![Manual Testing](docs/testing/manual/1.png)
+
+2. As a User I want to login so that I can access my account profile.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Header | Click on Authentication icon, select Login option from the drop-down menu  | The sign in page is loaded | Works as expected |
+| Authentication | Fill up the sign in form, click the sign in button | Success message is displayed: Successfully signed in as username, the home page is loaded, there is 'My Profile' under the authenitcation icon & Logged-in as: username info displayed  | Works as expected |
+
+![Manual Testing](docs/testing/manual/2.png)
+
+3. As a User I want to view books list so that I can see what books the store sales.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Header | Click on All Books link, select All Books option from the drop-down menu | The books page is loaded | Works as expected |
+| Books | Scroll through the page | Books List is displayed | Works as expected |
+
+![Manual Testing](docs/testing/manual/3.png)
+
+4. As a User I want to view book details so that I can check if the book is one that I am looking for.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+|  |  |  |  |
+
+![Manual Testing](docs/testing/manual/4.png)
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
@@ -1380,6 +1410,8 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Remove html validation warnings regarding script type attribute <a href="https://rocketvalidator.com/html-validation/the-type-attribute-is-unnecessary-for-javascript-resources">Rocketvalidator</a>
 
 - The array literal notation [] is preferrable JavaScript validation error fix for the mailchimp script <a href="http://linterrors.com/js/the-array-literal-notation-is-preferrable">Linterrors</a>
+
+- The most popular robots.txt Disallow directives for eCommerce websites from <a href="https://tillison.co.uk/blog/robots-txt-for-ecommerce/#:~:text=Furthermore%2C%20eCommerce%20websites%20may%20have,helping%20to%20protect%20customer%20information.">Tillison Consulting</a>
 
 ### Media
 

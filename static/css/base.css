@@ -43,10 +43,10 @@ h5 {
     color: #505;
 }
 
-.text-navy,
+.update-link,
 .cst-info,
 .checkout-save {
-    color: #0F3860 !important;
+    color: #0F3860;
 }
 
 #id_default_phone_number,
