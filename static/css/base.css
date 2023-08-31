@@ -46,7 +46,7 @@ h5 {
 .text-navy,
 .cst-info,
 .checkout-save {
-    color: #0F3860;
+    color: #0F3860 !important;
 }
 
 #id_default_phone_number,

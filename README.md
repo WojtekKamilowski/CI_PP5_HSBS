@@ -663,7 +663,7 @@ User stories covered: 13, 14, 19, 20.
 
 </details>
 
-details>
+<details>
 
 <summary>Newsletter Signup Form</summary>
 
@@ -1312,28 +1312,25 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 ![Deployment](docs/deployment/create.png)
 6. Go to the Settings tab
 7. Click Reveal Config Vars and add a new record with the SECRET_KEY
-8. Add another record to Config Vars with the CLOUDINARY_URL
-![Deployment](docs/deployment/cloudinary.png)
-9. Add another record to Config Vars with the DATABASE_URL
+8. Add another record to Config Vars with the DATABASE_URL
 ![Deployment](docs/deployment/database-1.png)
 ![Deployment](docs/deployment/database-2.png)
-10. Add another record to Config Vars with PORT = 8000
+9. Add another record to Config Vars with PORT = 8000
 ![Deployment](docs/deployment/vars.png)
-11. Below Config Vars in Buildpacks select python
+10. Below Config Vars in Buildpacks make sure python is selected
 ![Deployment](docs/deployment/buildpack.png)
 ![Deployment](docs/deployment/python.png)
-12. Go to the Deploy Tab
-13. Choose Deployment method GitHub and click Save Changes
-14. Confirm you want to connect to GitHub
-15. Search for the repository name and click the connect button
-![Deployment](docs/deployment/github.png)
-16. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
+11. Go to the Deploy Tab
+12. Choose Deployment method GitHub and click Save Changes
+13. Confirm you want to connect to GitHub
+14. Search for the repository name and click the connect button
+15. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 ![Deployment](docs/deployment/auto-manual.png)
-17. Choose a branch to deploy: main
-18. Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
+1.  Choose a branch to deploy: main
+2.  Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
 ![Deployment](docs/deployment/manual.png)
 ![Deployment](docs/deployment/deployed.png)
-19. For Automatic deploys click on Enable Automatic Deploys button
+1.  For Automatic deploys click on Enable Automatic Deploys button
 ![Deployment](docs/deployment/auto.png)
 
 </details>
