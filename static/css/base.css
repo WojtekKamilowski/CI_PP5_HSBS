@@ -133,7 +133,7 @@ a {
 /* Toast inspired by Code Institue's "Boutique Ado" Walkthrough Project */
 .custom-toast {
     max-height: 80vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* Toast capper from Code Institue's "Boutique Ado" Walkthrough Project */
@@ -183,7 +183,7 @@ a {
 /* Blog */
 .blog-card {
     height: 600px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .card-title {
@@ -235,7 +235,7 @@ a {
 /* Order history based on Code Institue's "Boutique Ado" Walkthrough Project */
 .order-history {
     max-height: 40vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* Mailchimp */
