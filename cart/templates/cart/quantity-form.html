@@ -1,8 +1,10 @@
 <!-- Based on Code Institue's "Boutique Ado" Walkthrough Project -->
+<!-- Quantity cart adjusting form -->
 <form class="form update-form" method="POST" action="{% url 'update_cart' item.item_id %}">
     {% csrf_token %}
     <div class="form-group">
         <div class="input-group input-group-{{ item.item_id }}">
+            <!-- Books quantity decrement -->
             <div class="input-group-prepend">
                 <button class="main-clr-thm decrement-qty btn btn-sm  decrement-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}" aria-label="Books quantity decrement">
                     <span>
@@ -10,7 +12,9 @@
                     </span>
                 </button>
             </div>
+            <!-- Books quantity input -->
             <input class="text-center orm-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" data-size="{{ item.size }}" aria-label="Books quantity input">
+            <!-- Books quantity increment -->
             <div class="input-group-append">
                 <button class="main-clr-thm increment-qty btn btn-sm increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}" aria-label="Books quantity increment">
                     <span>
@@ -21,5 +25,7 @@
         </div>
     </div>
 </form>
+<!-- Update cart item link -->
 <a class="mx-3 update-link"><small>Update</small></a>
+<!-- Remove cart item link -->
 <a class="mx-3 remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
