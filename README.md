@@ -764,7 +764,7 @@ There are <a href="https://stripe.com/docs/webhooks">Stripe Webhooks</a> in plac
 Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
 User stories covered: 11.
 
-![Features](docs/features/chekout.png)
+![Features](docs/features/checkout.png)
 ![Features](docs/features/order.png)
 ![Features](docs/features/order-email.png)
 ![Features](docs/features/webhook.png)
@@ -1276,10 +1276,6 @@ Following browsers were used to test the website:
 
 ---------------------------------------------------------------
 
-Python & JavaScript tested manually.
-No errors or warnings logged to the console:
-![Manual Testing](docs/testing/manual/console.png)
-
 Testing user stories:
 
 1. As a User I want to sign up so that I can login with my own account.
@@ -1474,6 +1470,50 @@ Mailchinmp's Thank you for subscribing! response appears & the email address is 
 ![Manual Testing](docs/testing/manual/21-a.png)
 ![Manual Testing](docs/testing/manual/21-b.png)
 ![Manual Testing](docs/testing/manual/21-c.png)
+
+
+Python & JavaScript tested manually.
+
+1. Add New Book Form:
+![Manual Testing](docs/testing/manual/books-form.png)
+2. Back to the Top Arrow:
+![Manual Testing](docs/testing/manual/arrow.png)
+*clicked
+![Manual Testing](docs/testing/manual/arrow-up.png)
+3. Quantity Input from Book Details & Cart
+*'-' sign diabled for qty < 1
+![Manual Testing](docs/testing/manual/input-1.png)
+![Manual Testing](docs/testing/manual/input-1-a.png)
+*qty > 1 and < 99
+![Manual Testing](docs/testing/manual/input-2.png)
+![Manual Testing](docs/testing/manual/input-2-a.png)
+*qty => 99
+![Manual Testing](docs/testing/manual/input-3.png)
+![Manual Testing](docs/testing/manual/input-3-a.png)
+4. Qty & Update Cart Options:
+*From Shopping Cart set qty to < 1 & click update
+![Manual Testing](docs/testing/manual/input-4.png)
+![Manual Testing](docs/testing/manual/input-4-a.png)
+5. Cart Icon:
+![Manual Testing](docs/testing/manual/cart-icon-mt.png)
+*Book added, cart with added delivery
+![Manual Testing](docs/testing/manual/cart-icon.png)
+*Cart with free delivery, matches total for books
+![Manual Testing](docs/testing/manual/cart-free.png)
+
+6. Cart Remove Option:
+![Manual Testing](docs/testing/manual/cart-remove.png)
+7. Checkout Form
+![Manual Testing](docs/testing/manual/checkout-name.png)
+![Manual Testing](docs/testing/manual/checkout-email.png)
+![Manual Testing](docs/testing/manual/checkout-phone.png)
+![Manual Testing](docs/testing/manual/checkout-city.png)
+![Manual Testing](docs/testing/manual/checkout-county.png)
+![Manual Testing](docs/testing/manual/checkout-passed.png)
+![Manual Testing](docs/testing/manual/checkout-order.png)
+
+No errors or warnings logged to the console:
+![Manual Testing](docs/testing/manual/console.png)
 
 </details>
 
