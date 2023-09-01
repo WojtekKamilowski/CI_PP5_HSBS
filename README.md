@@ -1475,12 +1475,13 @@ Mailchinmp's Thank you for subscribing! response appears & the email address is 
 Python & JavaScript tested manually.
 
 1. Add New Book Form:
+![Manual Testing](docs/testing/manual/books-author.png)
 ![Manual Testing](docs/testing/manual/books-form.png)
-2. Back to the Top Arrow:
+1. Back to the Top Arrow:
 ![Manual Testing](docs/testing/manual/arrow.png)
 *clicked
 ![Manual Testing](docs/testing/manual/arrow-up.png)
-3. Quantity Input from Book Details & Cart
+1. Quantity Input from Book Details & Cart
 *'-' sign diabled for qty < 1
 ![Manual Testing](docs/testing/manual/input-1.png)
 ![Manual Testing](docs/testing/manual/input-1-a.png)
@@ -1490,19 +1491,19 @@ Python & JavaScript tested manually.
 *qty => 99
 ![Manual Testing](docs/testing/manual/input-3.png)
 ![Manual Testing](docs/testing/manual/input-3-a.png)
-4. Qty & Update Cart Options:
+1. Qty & Update Cart Options:
 *From Shopping Cart set qty to < 1 & click update
 ![Manual Testing](docs/testing/manual/input-4.png)
 ![Manual Testing](docs/testing/manual/input-4-a.png)
-5. Cart Icon:
+1. Cart Icon:
 ![Manual Testing](docs/testing/manual/cart-icon-mt.png)
 *Book added, cart with added delivery
 ![Manual Testing](docs/testing/manual/cart-icon.png)
 *Cart with free delivery, matches total for books
 ![Manual Testing](docs/testing/manual/cart-free.png)
-6. Cart Remove Option:
+1. Cart Remove Option:
 ![Manual Testing](docs/testing/manual/cart-remove.png)
-7. Checkout Form
+1. Checkout Form
 ![Manual Testing](docs/testing/manual/checkout-name.png)
 ![Manual Testing](docs/testing/manual/checkout-email.png)
 ![Manual Testing](docs/testing/manual/checkout-phone.png)
@@ -1510,7 +1511,7 @@ Python & JavaScript tested manually.
 ![Manual Testing](docs/testing/manual/checkout-county.png)
 ![Manual Testing](docs/testing/manual/checkout-passed.png)
 ![Manual Testing](docs/testing/manual/checkout-order.png)
-8. Profiles Form
+1. Profiles Form
 ![Manual Testing](docs/testing/manual/profiles-phone.png)
 ![Manual Testing](docs/testing/manual/profiles-city.png)
 ![Manual Testing](docs/testing/manual/profiles-county.png)
