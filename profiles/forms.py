@@ -24,7 +24,7 @@ class UserProfileForm(forms.ModelForm):
                                                    'class': 'form-control',
                                                    'autocomplete': 'off',
                                                    'pattern': '[A-Za-z ]+',
-                                                   'title': 'Characters only',
+                                                   'title': 'Letters only',
                                                    'maxlength': 40
                                                }))
 
@@ -35,7 +35,7 @@ class UserProfileForm(forms.ModelForm):
                                              'class': 'form-control',
                                              'autocomplete': 'off',
                                              'pattern': '[A-Za-z ]+',
-                                             'title': 'Characters only',
+                                             'title': 'Letters only',
                                              'maxlength': 80
                                          }))
 

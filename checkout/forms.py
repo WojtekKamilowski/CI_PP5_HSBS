@@ -12,7 +12,7 @@ class OrderForm(forms.ModelForm):
             'class': 'form-control',
             'autocomplete': 'off',
             'pattern': '[A-Za-z ]+',
-            'title': 'Enter characters only',
+            'title': 'Enter letters only',
             'maxlength': 50
         }))
 
@@ -32,7 +32,7 @@ class OrderForm(forms.ModelForm):
             'class': 'form-control',
             'autocomplete': 'off',
             'pattern': '[A-Za-z ]+',
-            'title': 'Enter characters only',
+            'title': 'Enter letters only',
             'maxlength': 40
         }))
 
@@ -42,7 +42,7 @@ class OrderForm(forms.ModelForm):
             'class': 'form-control',
             'autocomplete': 'off',
             'pattern': '[A-Za-z ]+',
-            'title': 'Enter characters only',
+            'title': 'Enter letters only',
             'maxlength': 80
         }))
 

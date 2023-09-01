@@ -3,26 +3,30 @@
 {% load static %}
 
 {% block content %}
+<!-- Order confirmation -->
 <div class="overlay"></div>
+<!-- Checkout success page header -->
 <div class="col main-clr-thm">
     <h2 class="text-center py-2">Thank You For Your Order</h2>
 </div>
+<!-- Order confirmation container -->
 <div class="container">
     <div class="row">
+        <!-- Order confirmation notice -->
         <p class="text-black mt-3 text-break ml-3">
             Please find information below. Shortly a confirmation email should be
             received in the
             email box: <strong>{{ order.email }}</strong>.
         </p>
         <div class="col-12 col-lg-7">
-
+            <!-- Order confirmation wrapper -->
             <div class="order-confirmation-wrapper p-2 border">
+                <!-- Order details info -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Info:</small>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Order Number</p>
@@ -31,7 +35,6 @@
                         <p class="mb-0">{{ order.order_number }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Order Date</p>
@@ -40,13 +43,11 @@
                         <p class="mb-0">{{ order.date }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Details:</small>
                     </div>
                 </div>
-
                 {% for item in order.lineitems.all %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -58,13 +59,12 @@
                     </div>
                 </div>
                 {% endfor %}
-
+                <!-- Delivery info -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Delivering To:</small>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Full Name</p>
@@ -73,7 +73,6 @@
                         <p class="mb-0">{{ order.full_name }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Address 1</p>
@@ -82,7 +81,6 @@
                         <p class="mb-0">{{ order.street_address1 }}</p>
                     </div>
                 </div>
-
                 {% if order.street_address2 %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -93,7 +91,6 @@
                     </div>
                 </div>
                 {% endif %}
-
                 {% if order.county %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -104,7 +101,6 @@
                     </div>
                 </div>
                 {% endif %}
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Town or City</p>
@@ -113,7 +109,6 @@
                         <p class="mb-0">{{ order.town_or_city }}</p>
                     </div>
                 </div>
-
                 {% if order.postcode %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -124,7 +119,6 @@
                     </div>
                 </div>
                 {% endif %}
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Country</p>
@@ -133,7 +127,6 @@
                         <p class="mb-0">{{ order.country }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Phone Number</p>
@@ -142,13 +135,12 @@
                         <p class="mb-0">{{ order.phone_number }}</p>
                     </div>
                 </div>
-
+                <!-- Billing info -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Billing Info:</small>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Order Total</p>
@@ -157,7 +149,6 @@
                         <p class="mb-0">${{ order.order_total }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Delivery</p>
@@ -166,7 +157,6 @@
                         <p class="mb-0">${{ order.delivery_cost }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Grand Total</p>
@@ -180,6 +170,7 @@
     </div>
     <div class="row">
         <div class="col-12">
+            <!-- Back to profile button for viewing order from user's profile  -->
             {% if from_profile %}
             <a href="{% url 'profile' %}" class="my-4 text-uppercase btn main-clr-thm">
                 <span class="icon mr-2">
@@ -188,6 +179,7 @@
                 <span class="text-uppercase">Back to Profile</span>
             </a>
             {% else %}
+            <!-- Button to All Books page if not from profile -->
             <a href="{% url 'books' %}" class="my-4 text-uppercase btn main-clr-thm">
                 <span>
                     <i class="icon fa-solid fa-book-open"></i> Find your next book now

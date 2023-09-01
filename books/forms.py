@@ -20,7 +20,7 @@ class BookForm(forms.ModelForm):
             "author": forms.TextInput(
                 attrs={'class': 'form-control', 'autocomplete': 'off',
                        'pattern': '[A-Za-z ]+',
-                       'title': 'Enter characters only', 'maxlength': 260}
+                       'title': 'Enter letters only', 'maxlength': 260}
             ),
         }
         labels = {
