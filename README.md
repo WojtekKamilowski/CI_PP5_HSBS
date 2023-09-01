@@ -1536,7 +1536,9 @@ No errors or warnings logged to the console:
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
 | Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():' |
 | The array literal notation [] is preferrable jshint warning on Mailchimp script | Replace new Array() with [] |
-| 500 derror afte adding a default book image andr eleting a test book from the deployed website | It was cached, check Heroku variables, open website in incognito mode, notice it works then, close the browser & open it again, reverse all the changes made in order to identify the error cause e.g. undo img |
+| 500 error after deleting a book from the deployed website | Open website in the incognito mode to clean cache*  |
+*Initially, it was suspected the error was caused by uploading an image for the default book image to the AWS S3 bucket, however, it turned that removing the uploaded image and then redeployment did not fix the issue(commit 0042a9b: 'Undo img'), after trying a few options such reviewing Config Vars, the developer decided to try open it in an incognito mode which worked & the access to the deployed website was restored. Reverse changes commit: a0f188b 'Reverse changes made to check the 500 error reason'
+![Deployment](docs/500.png)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -1695,13 +1697,12 @@ Before Heroku deployment remember to:
 - Early XXI Century Europe book cover image from <a href="https://www.freeimages.com/download/eu-polish-flags-636220">Freeimages</a>
 - Early XXI Century ROW book cover image from <a href="https://pixabay.com/illustrations/bad-business-collage-crisis-19907/">Pixabay</a>
 - Image for egyptian blog post <a href="https://www.pexels.com/photo/egyptian-symbols-3199399/">Pexels</a>
-- Facebook cover photo <a href="https://www.pexels.com/photo/closeup-photography-of-book-page-folding-forming-heart-1083633/">Pexels</a>
+- Facebook cover photo & default book image <a href="https://www.pexels.com/photo/closeup-photography-of-book-page-folding-forming-heart-1083633/">Pexels</a>
 - Image for US blog post <a href="https://www.pexels.com/photo/the-statue-of-liberty-69205/">Pexels</a>
 - Image for Roman blog post <a href="https://www.pexels.com/photo/administration-ancient-arches-architecture-356966/">Pexels</a>
 - Image for China blog post <a href="https://www.pexels.com/photo/gazebo-near-trees-during-day-3018977/">Pexels</a>
 - Image for Ramzes II book <a href="https://www.pexels.com/photo/gold-tutankhamun-statue-33571/">Pexels</a>
 - Image for Napoleon book <a href="https://www.pexels.com/photo/man-people-festival-music-16721221/">Pexels</a>
-
 
 [Back to Table Of Contents](#table-of-contents)
 
