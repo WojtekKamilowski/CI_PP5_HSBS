@@ -1536,6 +1536,7 @@ No errors or warnings logged to the console:
 | IntegrityError when trying to post a comment | add  userprofile to request.user in comment_form.instance.username = request.user |
 | Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():' |
 | The array literal notation [] is preferrable jshint warning on Mailchimp script | Replace new Array() with [] |
+| 500 derror afte adding a default book image andr eleting a test book from the deployed website | It was cached, check Heroku variables, open website in incognito mode, notice it works then, close the browser & open it again, reverse all the changes made in order to identify the error cause e.g. undo img |
 
 [Back to Table Of Contents](#table-of-contents)
 

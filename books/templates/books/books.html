@@ -61,6 +61,11 @@
                         <a href="{% url 'book_detail' book.id %}">
                             <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ book.image.url }}" alt="{{ book.name }}">
                         </a>
+                        {% else %}
+                        <!-- Default book image -->
+                        <a href="{% url 'book_detail' book.id %}">
+                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ MEDIA_URL }}book.jpg" alt="{{ book.name }}">
+                        </a>
                         {% endif %}
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
