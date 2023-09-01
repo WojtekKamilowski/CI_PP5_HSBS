@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
-{% block content %}
-<div class="overlay"></div>
 
+{% block content %}
+<!-- Post detail page -->
+<div class="overlay"></div>
 <div class="container-fluid">
+    <!-- Post title -->
     <div class="row">
         <div class="col text-center mt-3">
             <div class="p-2 mt-2">
@@ -15,6 +17,7 @@
             <p class="text-muted m-0">by {{ post.author }} | {{ post.created_on }}</p>
         </div>
     </div>
+    <!-- Post image -->
     {% if post.post_image %}
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
@@ -30,6 +33,7 @@
         <div class="row">
             <div class="col card mb-4  mt-3 left  top">
                 <div class="card-body">
+                    <!-- Post content -->
                     <div class="card-text">
                         {{ post.content | safe }}
                     </div>
@@ -37,6 +41,7 @@
                         <div class="col-1">
                             <strong>
                                 {% if user.is_authenticated %}
+                                <!-- Post likes form -->
                                 <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                     {% csrf_token %}
                                     {% if request.user.userprofile in post.likes.all %}
@@ -46,11 +51,14 @@
                                     {% endif %}
                                 </form>
                                 {% else %}
+                                <!-- Post likes disable for non-authenticated users -->
                                 <span class="text-secondary"><i class="far fa-heart"></i></span>
                                 {% endif %}
                             </strong>
+                            <!-- Likes counter -->
                             <span>{{post.number_of_likes}}</span>
                         </div>
+                        <!-- Comments counter -->
                         <div class="col-1 ml-5">
                             {% with comments.count as total_comments %}
                             <strong class="text-secondary"><i class="far fa-comments"></i>
@@ -61,16 +69,19 @@
                 </div>
             </div>
         </div>
+        <!-- Hr to separate post content from comments section -->
         <div class="row">
             <div class="col">
                 <hr>
             </div>
         </div>
+        <!-- Comments section -->
         <div class="row">
             <div class="col-md-8 card mb-4  mt-3 ">
                 <h3 class="mt-1">Comments:</h3>
                 <div class="card-body">
                     {% for comment in comments %}
+                    <!-- Posted comments -->
                     <div class="comments" style="padding: 10px;">
                         <p class="font-weight-bold">
                             {{ comment.username }} commented:
@@ -82,6 +93,7 @@
                     </div>
                     <hr>
                     {% endfor %}
+                    <!-- Content suggestions notice -->
                     <div class="text-black">
                         <p>***We hope you enjoy reading our posts & the discussions in the comments section***</p>
                         <p>However, if you have any suggestions related to their content, please let us
@@ -89,6 +101,7 @@
                             <u><a href="{% url 'contact' %}">contact page</a></u>
                         </p>
                     </div>
+                    <!-- Facebook invitation -->
                     <div class="mt-5">
                         <p>
                             Did you like post like this? Follow us on <a href="https://www.facebook.com/profile.php?id=61550506871142" rel="nofollow" target="_blank" aria-label="Link to HiStory Book Store Facebook page"><i class="fa-brands fa-facebook"></i></a> to find similar
@@ -98,7 +111,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 card mb-4  mt-3 ">
+            <!-- Add comment section -->
+            <div class="col-md-4 card mb-4 mt-3">
                 <div class="card-body">
                     {% if user.is_authenticated %}
                     <h3>Comment this post:</h3>
@@ -114,6 +128,7 @@
         </div>
     </div>
 </div>
+<!-- Back to the top arrow -->
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fa-solid fa-up-long text-black mx-auto my-auto"></i>

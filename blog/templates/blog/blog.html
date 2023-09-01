@@ -2,8 +2,10 @@
 {% load static %}
 
 {% block content %}
+<!--Blog page-->
 <div class="overlay"></div>
 <div class="container-fluid">
+    <!--Blog page header -->
     <div class="row main-clr-thm">
         <div class="col text-center mt-3">
             <h2 class="logo-font">HiStory Blog</h2>
@@ -12,17 +14,24 @@
     </div>
     <div class="container blog-container">
         <div class="row">
-            <!--Blog Entries-->
+            <!--Blog post cards -->
             {% for post in post_list %}
             <div class="col-xs-12 col-md-4">
+                <!-- Blog post card -->
                 <div class="card my-3 blog-card d-flex flex-column align-items-baseline justify-content-center">
+                    <!-- Blog post image -->
                     {% if post.post_image %}
-                    <img class="card-img-top" src=" {{ post.post_image.url }}" alt="{{ post.post_title }}" style="height: 300px;">
+                    <img class="card-img-top" src="{{ post.post_image.url }}" alt="{{ post.post_title }}" style="height: 300px;">
+                    {% else %}
+                    <!-- Default blog post image -->
+                    <img class="card-img-top" src="{{ MEDIA_URL }}book.jpg" alt="{{ post.post_title }}" style="height: 300px;">
                     {% endif %}
                     <div class="card-body">
+                        <!-- Blog post title -->
                         <a href="{% url 'post_detail' post.slug %}">
                             <h4 class="card-title">{{ post.post_title }}</h4>
                         </a>
+                        <!-- Blog post short details -->
                         <p class="card-text"><small class="text-muted">{{ post.created_on }}</small></p>
                         <p class="card-text"><small class="text-muted">Author: {{ post.author }}</small></p>
                         <p class="card-text text-black">{{ post.blog_excerpt }}</p>

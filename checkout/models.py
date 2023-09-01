@@ -1,11 +1,10 @@
+# 3rd Party imports
 import uuid
-
 from django.db import models
 from django.db.models import Sum, IntegerField
 from django.conf import settings
-
 from django_countries.fields import CountryField
-
+# Internal imports
 from books.models import Book
 from profiles.models import UserProfile
 

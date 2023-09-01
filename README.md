@@ -919,6 +919,13 @@ Example of warnings removed:
 
 </details>
 
+<details>
+    <summary>404</summary>
+    
+![HTML Validation](docs/validation/html/html-404.png)
+
+</details>
+
 [Back to Table Of Contents](#table-of-contents)
 
 ### CSS Validation
