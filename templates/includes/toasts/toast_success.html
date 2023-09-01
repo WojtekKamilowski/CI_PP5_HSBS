@@ -4,8 +4,7 @@
     <div class="w-100 toast-capper bg-success "></div>
     <div class="py-2 px-2 text-center main-clr-thm">
         <strong>Processed successfully!</strong>
-        <button type="button" class="btn mb-1 main-clr-thm fs-2 border border-white" data-dismiss="toast"
-            aria-label="Close">
+        <button type="button" class="btn mb-1 main-clr-thm fs-2 border border-white" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
@@ -25,8 +24,6 @@
                 <div class="col-3 my-1">
                     {% if item.book.image %}
                     <img class="w-100" src="{{ item.book.image.url }}" alt="{{ item.book.name }}">
-                    {% else %}
-                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.book.name }}">
                     {% endif %}
                 </div>
                 <div class="col-9">
