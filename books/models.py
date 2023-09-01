@@ -3,9 +3,8 @@ from django.db.models import IntegerField, Model
 import datetime
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Inspired by Code Institue's "Boutique Ado" Walkthrough Project
 
-# Model for Books offered by the store
+# Customised model for books offered by the store
 
 
 class Era(models.Model):

@@ -5,7 +5,7 @@ from django.utils.text import slugify
 import datetime
 
 
-# Create your models here.
+# Models for the blog
 
 
 class Post(models.Model):
