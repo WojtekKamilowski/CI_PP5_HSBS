@@ -1,14 +1,17 @@
 # HiStory Book Store
+
 (Developer: Kamil Wojciechowski)
 
 ![Mockup image](docs/responsive.png)
 
+*to open links in new tab: right click+Open link in new tab
+
 [LIVE WEBPAGE](https://hi-story-book-store-5899052efb65.herokuapp.com/)
 
-## About 
+## About
 
 HiStory Book Store - 5th Portfolio Project for Diploma in Full Stack Software Development with Code Institute. E-commerce history book store website built using Django.
-Store specialized selling history books where passionates & proffessionals can find their next HiStory to read. 
+Store specialized selling history books where passionates & professionals can find their next HiStory to read.
 
 ## Table of Contents
 
@@ -71,11 +74,11 @@ Store specialized selling history books where passionates & proffessionals can f
 ### Purpose of the Application
 
 The business is a B2C e-commerce platform with the main goal of selling tangible product: books listed online on the website.
-The store is dedicated to sell history books so the primary customer the business targets are people interested in history, 
-but also people who would like to start reading history books or maybe buy them as a gift for someone. 
+The store is dedicated to sell history books so the primary customer the business targets are people interested in history,
+but also people who would like to start reading history books or maybe buy them as a gift for someone.
 The business aims at customers who expect high quality of the offered positions, matching the store's theme.
 The payment type employed is: SINGLE PAYMENT
-The transaction is finished & delivery order is created once a single payment is made. 
+The transaction is finished & delivery order is created once a single payment is made.
 The available payment option is payment by card, implemented using <a href="https://stripe.com/ie">Stripe</a>
 
 ### Core Business Intents
@@ -84,13 +87,13 @@ The available payment option is payment by card, implemented using <a href="http
 
 ### Marketing Strategies
 
-The main marketing strategy is a mix of both online & offline marketing. 
+The main marketing strategy is a mix of both online & offline marketing.
 
 The online marketing strategy campaign includes regular short posting on social media platform: Facebook, but also to be carried using the contact emails received via the newsletter form thanks to which regular newsletters can be sent to the subscribes informing them about important events, e.g. sales.
 
 The offline marketing strategy is to engage with the users outside the web via the HiStory Book Club, a non-profit organization working to promote history as a hobby.
 
-The strategy was chosen taking into account the store is a new business with limited budget so it must be done at a relatively low cost. Online marketing via Facebook is to be carried out by a staff member who is responsible for the Facebook page activities. 
+The strategy was chosen taking into account the store is a new business with limited budget so it must be done at a relatively low cost. Online marketing via Facebook is to be carried out by a staff member who is responsible for the Facebook page activities.
 
 Offline marketing is based on a non-profit activities that aim to make the brand present during subject-related events and visible for people who could potentially be looking to buy history books. During the events, the participants will be able to support the activities of the HiStory Club by contributing in a voluntary crowd-funding action to organize future events gathering history enthusiasts.
 
@@ -100,7 +103,7 @@ Offline marketing is based on a non-profit activities that aim to make the brand
 
 ### Social Media Platform
 
-HiStory Book Store has its own page on Facebook. 
+HiStory Book Store has its own page on Facebook.
 The content of posts is to address the memory of important history events or figures, often to be related to pieces of culture & pop-culture e.g. movies in historical theme. The goal is to encourage the followers to confront the content of those pieces of culture which picture a history event or figure with the knowledge that can be found in the literature. Sharing links to the blog posts posted on the websites blog. Interacting with the followers in the comments sections under the Facebook posts which would be aimed to drive constructive discussion feeding the algorithm to increase the popularity of the page amongst Facebook users.
 
 <a href="https://www.facebook.com/profile.php?id=61550506871142">Facebook</a>
@@ -112,8 +115,8 @@ The content of posts is to address the memory of important history events or fig
 
 ### Newsletter Signup Form
 
-HiStory Book Store uses Mailchimp to collect email addresses from users who would like to subscribe for store's newsletter. 
-It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. 
+HiStory Book Store uses Mailchimp to collect email addresses from users who would like to subscribe for store's newsletter.
+It is on purpose very simple, just enough that a user enters email address & click on the subscribe button.
 The newsletter content is to inform about sales or new books added to the store available on website.
 
 ![Features](docs/features/newsletter-form.png)
@@ -182,7 +185,7 @@ As a User I want to:
 7. Sort books so that I see books sorted in a required order.
 8. Add books to shopping cart so that I can have all books I wish to buy listed together.
 9. Update the list of items in my shopping cart so that the correct list is ready for checkout.
-10. Remove items from the shopping cart so that the shopping cart matches my final purchase decission.
+10. Remove items from the shopping cart so that the shopping cart matches my final purchase decision.
 11. Check-out so that I can finalize the purchase of my items.
 12. See the list of all books offered paginated so that I can easier review the offer.
 13. Contact site admins so that I can communicate feedback/complaints/suggestions.
@@ -216,7 +219,7 @@ As an Admin I want to:
 
 <details>
     <summary>Kanban</summary>
-    
+
 ![Kanban](docs/agile/kanban-1.png)
 ![Kanban](docs/agile/kanban-2.png)
 ![Kanban](docs/agile/kanban-3.png)
@@ -237,15 +240,16 @@ As an Admin I want to:
 ### Design Choices
 
 The main design choice was to create an open space feeling website with a contemporary approach towards the users.
-The name HiStory was chosen to represent openness, welcoming them to shop on our website by simpy saying 'hi'. The store is dedicated for sales of books store which is why the standard category names were replaced by historical era times.
+The name HiStory was chosen to represent openness, welcoming them to shop on our website by simply saying 'hi'. The store is dedicated for sales of books store which is why the standard category names were replaced by historical era times.
 
 ### Colors
 
-The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is often considered as a simbol of royalty as historically it used to be very scarce & expensive so only wealthy people of high status could afford it. Roles of kings & emperors are often associated with a general history so the main color pallete aimed to match the store's theme.
+The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is often considered as a symbol of royalty as historically it used to be very scarce & expensive so only wealthy people of high status could afford it. Roles of kings & emperors are often associated with a general history so the main color palette aimed to match the store's theme.
 
 - #505 & #FAFAFA from <a href="https://favicon.io/favicon-generator/">Favicon</a>.
+
 <details>
-    <summary>Contrast</summary> 
+    <summary>Contrast</summary>
 
 ![Colors](docs/colors/contrast-1.png)
 
@@ -300,9 +304,7 @@ The main chosen color theme is white & purple (#505 & #FAFAFA). Purple color is 
 'Lato' font from <a href="https://fonts.google.com/specimen/Lato">Google Fonts</a>
 'Playfair Display' font from <a href="https://fonts.google.com/specimen/Playfair+Display?query=playfair">Google Fonts</a>
 
-
 [Back to Table Of Contents](#table-of-contents)
-
 
 ### Structure
 
@@ -316,10 +318,11 @@ The website consists of seven django applications:
 6. contact
 7. blog
 
-The logo is the name of the website placed on the top left corner(desktop only), 
+The logo is the name of the website placed on the top left corner(desktop only),
 In the central part of the header there is a search input so users can easily start shopping, knowing more/less what they are looking for.
-For users who are more interested to view the offer first and see what is available for sale there is a number of ways to view the full, sorted or categorized books list. Such structure is aimed to bring the users as quickly as possible to the offered products increasing the chance of making the purchase. 
+For users who are more interested to view the offer first and see what is available for sale there is a number of ways to view the full, sorted or categorized books list. Such structure is aimed to bring the users as quickly as possible to the offered products increasing the chance of making the purchase.
 User can categorize books list by:
+
 1. Price - lowest or highest. In certain situations it is expected users may want to buy cheaper or more expensive books.
 2. Rating - as default they appear from the higher rating as it is expected that users would be less likely to by books with lower ratings.
 3. Oldest Times & Newest Times - it is expected that some users may be more interest to buy history books describing newer or older period of history.
@@ -329,14 +332,14 @@ User can categorize books list by:
 ### Wireframes
 
 <details>
-    <summary>Facebook Page</summary> 
+    <summary>Facebook Page</summary>
 
 ![Wireframes](docs/wireframes/facebook.png)
 
 </details>
 
 <details>
-    <summary>Desktop</summary> 
+    <summary>Desktop</summary>
 
 ![Wireframes](docs/wireframes/1.a-home-notloggedin-desktop.png)
 ![Wireframes](docs/wireframes/2.b-home-loggedin-desktop.png)
@@ -367,7 +370,7 @@ User can categorize books list by:
 [Back to Table Of Contents](#table-of-contents)
 
 <details>
-    <summary>Tablet</summary> 
+    <summary>Tablet</summary>
 
 ![Wireframes](docs/wireframes/24.y-home-notloggedin-tablet.png)
 ![Wireframes](docs/wireframes/25.z-home-loggedin-tablet.png)
@@ -398,7 +401,7 @@ User can categorize books list by:
 [Back to Table Of Contents](#table-of-contents)
 
 <details>
-    <summary>Mobile</summary> 
+    <summary>Mobile</summary>
 
 ![Wireframes](docs/wireframes/47.ww-home-notloggedin-mobile.png)
 ![Wireframes](docs/wireframes/48.xx-home-loggedin-mobile.png)
@@ -431,7 +434,7 @@ User can categorize books list by:
 ## Models Diagrams
 
 <details>
-    <summary>Books</summary> 
+    <summary>Books</summary>
 
 Diagram:
 ![Diagrams](docs/models/books-models-diagram.png)
@@ -502,7 +505,7 @@ AWS in use for hosting media & static files in a S3 Bucket created for this proj
 Implemented using toast, for success toast there is data-delay="30000" attribute set for a considerable time for the user to have enough time to read the message especially when it is in relation to adding books to the shopping cart.
 
 <details>
-    <summary>Messages updating the user on interactions status.</summary> 
+    <summary>Messages updating the user on interactions status.</summary>
 
 - Sign up: confirmation e-mail sent
 ![Messages and Interaction With Users](docs/messages/confirmation-sent.png)
@@ -528,7 +531,7 @@ Implemented using toast, for success toast there is data-delay="30000" attribute
 - Add a a new book to the offer
 ![Messages and Interaction With Users](docs/messages/new-book.png)
 
-- Commence editting book details
+- Commence editing book details
 ![Messages and Interaction With Users](docs/messages/edit-book.png)
 
 - Update book details
@@ -538,7 +541,7 @@ Implemented using toast, for success toast there is data-delay="30000" attribute
 ![Messages and Interaction With Users](docs/messages/delete-book.png)
 
 - Update the shopping cart
-![Messages and Interaction With Users](docs/messages/book-update.png)
+![Messages and Interaction With Users](docs/messages/book-updated.png)
 
 - Remove a book from the shopping cart
 ![Messages and Interaction With Users](docs/messages/book-removed.png)
@@ -549,7 +552,7 @@ Implemented using toast, for success toast there is data-delay="30000" attribute
 - Previous order confirmation from profile's order history
 ![Messages and Interaction With Users](docs/messages/previous-order.png)
 
-- Profil updated
+- Profile updated
 ![Messages and Interaction With Users](docs/messages/profile-update.png)
 
 - Contact form submitted
@@ -625,7 +628,6 @@ Django administration in use.
 - [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/)*
   *Used for updating phone_number model in checkout.models.py, migrations made & migrated during tests & changed back to CharField to better suit the project needs.
 
-
 [Back to Table Of Contents](#table-of-contents)
 
 ## Features
@@ -637,7 +639,7 @@ Django administration in use.
 It is included on all pages. Contains: website name that is clickable link to Home page which is a common feature on many websites so users expect it.
 There is search queries form, navigation bar, user profile & shopping cart icons.
 Header is responsive: For medium & smaller screens navigation items are displayed from a drop-down burger menu where a Home link also appears to assist users navigating to the home page in a more ergonomic way than only using the link from the logo, a useful addition when browsing the website on tablet or mobile screens.
-The extra home link from the is especially helpful for tablet & mobile screens users as the search queries form dropdowns from the search icon & the website logo is covered when the form is droppedown from the icon.
+The extra home link from the is especially helpful for tablet & mobile screens users as the search queries form dropdowns from the search icon & the website logo is covered when the form is dropped-down from the icon.
 
 Search queries form is displayed after clicking the magnifying glass icon & the Authentication icon has shorter under-description.
 User stories covered: 1, 2, 3, 5, 6, 7.
@@ -645,7 +647,6 @@ User stories covered: 1, 2, 3, 5, 6, 7.
 ![Features](docs/features/header.png)
 
 </details>
-
 
 <details>
 
@@ -656,7 +657,7 @@ About Us included links to Who We Are & HiStory Club pages.
 Check Our Profiles on with links to Pinterest, YouTube & Facebook.
 Explore Our Website links to Books & Blog.
 Contact with contact details and link to the contact page.
-Footer is responsive: the sections are displayed verticaly for mobile screens.
+Footer is responsive: the sections are displayed vertically for mobile screens.
 User stories covered: 13, 14, 19, 20.
 
 ![Features](docs/features/footer.png)
@@ -670,20 +671,19 @@ User stories covered: 13, 14, 19, 20.
 It is included on the home page.
 Collects email addresses from users who want to subscribe for Newsletter.
 It is responsive.
-User stories covered: 21. 
+User stories covered: 21.
 
 ![Features](docs/features/newsletter-form.png)
 ![Features](docs/features/subscribed.png)
 
 </details>
 
-
 <details>
 
 <summary>Authentication</summary>
 
 From Allauth.
-Includes customised signup, signin, email confirmation & password reset pages that display on dektop, laptop, tablet & mobile screens as intended. 
+Includes customised signup, signin, email confirmation & password reset pages that display on desktop, laptop, tablet & mobile screens as intended.
 User stories covered: 1, 2, 15.
 
 ![Features](docs/features/signup.png)
@@ -699,7 +699,7 @@ User stories covered: 1, 2, 15.
 
 Included on the about.html
 Describes the history of the founding of the store, convincing users why to shop from the store & includes a link to HiStory Club.
-Displays on dektop, laptop, tablet & mobile screens as intended.
+Displays on desktop, laptop, tablet & mobile screens as intended.
 User stories covered: 14.
 
 ![Features](docs/features/about.png)
@@ -710,9 +710,9 @@ User stories covered: 14.
 
 <summary>HiStory Club</summary>
 
-Included on the club page. 
+Included on the club page.
 Describes the non-profit organization managed by the store owners & inviting users to join it by expressing their interest via the contact page.
-Displays on dektop, laptop, tablet & mobile screens as intended.
+Displays on desktop, laptop, tablet & mobile screens as intended.
 User stories covered: 19.
 
 ![Features](docs/features/club.png)
@@ -725,9 +725,9 @@ User stories covered: 19.
 
 Implemented in the books application.
 Displays a paginated All Books list. Allows users to search, sort & categorize by era the list of books.
-Includes page with book details for each offered position. 
+Includes page with book details for each offered position.
 Site admins access books management section to add, delete & update the offered books on the store.
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens.
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens.
 User stories covered: 3, 4, 5, 6, 7, 8, 12, 16, 17.
 
 ![Features](docs/features/all-books.png)
@@ -746,8 +746,8 @@ User stories covered: 3, 4, 5, 6, 7, 8, 12, 16, 17.
 <summary>Cart</summary>
 
 Implemented in the cart application.
-Shows list of items added to the shopping cart with all details to be reviews before checkout(price, quanitity etc.).
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens. on mobile screens the books image is hidden.
+Shows list of items added to the shopping cart with all details to be reviews before checkout(price, quantity, etc.).
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens. on mobile screens the books image is hidden.
 User stories covered: 8, 9, 10.
 
 ![Features](docs/features/cart.png)
@@ -761,7 +761,7 @@ User stories covered: 8, 9, 10.
 Part of the checkout application.
 Includes a form to collect delivery details and payment section built using <a href="https://stripe.com/ie">Stripe</a>.
 There are <a href="https://stripe.com/docs/webhooks">Stripe Webhooks</a> in place. Order confirmation email are sent to the user after completing the checkout process.
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens.
 User stories covered: 11.
 
 ![Features](docs/features/checkout.png)
@@ -777,7 +777,7 @@ User stories covered: 11.
 
 Implemented in the profiles application.
 Includes a form to collect default delivery details and a table with order history.
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens.
 User stories covered: 2.
 
 ![Features](docs/features/profile.png)
@@ -790,7 +790,7 @@ User stories covered: 2.
 
 Implemented in the contact application.
 Includes a form to collect name, email & contact message from the contacting user.
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens.
 User stories covered: 13.
 
 ![Features](docs/features/contact.png)
@@ -805,8 +805,8 @@ User stories covered: 13.
 
 Implemented in the blog application.
 Contains a list of blog posts published by the site admins, where users can add comments & likes.
-Users are informed that cannot edit or delete comments without contactig the admins: please see [Further Developments](#further-development)
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+Users are informed that cannot edit or delete comments, please see [Further Developments](#further-developments)
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens.
 User stories covered: 20.
 
 ![Features](docs/features/blog.png)
@@ -821,7 +821,7 @@ User stories covered: 20.
 Code on the 404.html page
 Contains error message displayed on a yellow colour background instantly informing user something is not right.
 To maximise possibility of sales there is FIND YOUR BOOK NOW button linking to all books list
-Feature is responsive & displays on dektop, laptop, tablet & mobile screens. 
+Feature is responsive & displays on desktop, laptop, tablet & mobile screens.
 User stories covered: 18.
 
 ![Features](docs/features/404.png)
@@ -841,7 +841,7 @@ Links relationships defined:
 ![SEO](docs/nofollow.png)
 
 To allow search engine bot crawling there is sitemap.xml included & robots.txt file to control search engine bot crawling.
-robots.txt dissallow to crawl /accounts/, /profile/, /cart/ & /checkout/ urls. As per <a href="https://tillison.co.uk/blog/robots-txt-for-ecommerce/#:~:text=Furthermore%2C%20eCommerce%20websites%20may%20have,helping%20to%20protect%20customer%20information.">Tillison Consulting</a> these are some of the most popular directives for eCommerce websites. These URLs may contain sensitive information that should not be publicly accessible.
+robots.txt disallow: /accounts/, /profile/, /cart/ & /checkout/ urls. As per <a href="https://tillison.co.uk/blog/robots-txt-for-ecommerce/#:~:text=Furthermore%2C%20eCommerce%20websites%20may%20have,helping%20to%20protect%20customer%20information.">Tillison Consulting</a> these are some of the most popular directives for eCommerce websites.
 
 ## Validation
 
@@ -858,7 +858,7 @@ To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37N
 ![HTML Validation](docs/validation/html/html-delivery.png)
 
 Example of warnings removed:
-*2 warnings removed as per Rocketvalidator regardning type attribute on mailchimp scripts:
+*2 warnings removed as per Rocketvalidator regarding type attribute on mailchimp scripts:
 ![HTML Validation](docs/validation/html/type-warning.png)
 *Dedicated h1 logo for medium screens was removed & small logo h1 was replaced by one mobile h1 logo for both small & medium screens to remove below h1 warning:
 ![HTML Validation](docs/validation/html/h1-warning.png)
@@ -914,14 +914,14 @@ Example of warnings removed:
 
 <details>
     <summary>Contact</summary>
-    
+
 ![HTML Validation](docs/validation/html/html-contact.png)
 
 </details>
 
 <details>
     <summary>404</summary>
-    
+
 ![HTML Validation](docs/validation/html/html-404.png)
 
 </details>
@@ -957,9 +957,9 @@ One undefined variable message appears for jQuery $ sign:
     <summary>Mailchimp script</summary>
 
 The array literal notation [] is preferable two warnings. Three undefined variables & one unused variable messages.
-![JavaScript Validation](docs/validation/js/mailchimp-script.png)
 Warnings removed:
 ![JavaScript Validation](docs/validation/js/mailchimp-script-fixed.png)
+![JavaScript Validation](docs/validation/js/mailchimp-script.png)
 
 </details>
 
@@ -1143,7 +1143,7 @@ One undefined variable message appears for jQuery $ sign:
 ## Accessibility
 
 <details>
-    <summary>WAVE</summary> 
+    <summary>WAVE</summary>
 
 ![Accessibility](docs/accessibility/wave-home.png)
 ![Accessibility](docs/accessibility/wave-login.png)
@@ -1164,8 +1164,9 @@ Alerts on the above relate to underlines of links which is design choice for thi
 ![Accessibility](docs/accessibility/wave-all-books.png)
 ![Accessibility](docs/accessibility/wave-all-books-alert.png)
 Alerts on the above relate to:
-1. Reduntant links for page navigation buttons, design choice to help navigate when there is more pages.
-2. Possible heading for the price paragraphs, design choice to highlight important for users information. It alignes with the business strategy as the store wants to highlight the value as an indicator of the quality. 
+
+1. Redundant links for page navigation buttons, design choice to help navigate when there is more pages.
+2. Possible heading for the price paragraphs, design choice to highlight important for users information. It alignes with the business strategy as the store wants to highlight the value as an indicator of the quality.
 ![Accessibility](docs/accessibility/wave-books-category.png)
 ![Accessibility](docs/accessibility/wave-books-search.png)
 ![Accessibility](docs/accessibility/wave-book-details.png)
@@ -1176,7 +1177,7 @@ Alerts on the above relate to underlines of links & skipped heading level, which
 ![Accessibility](docs/accessibility/wave-checkout.png)
 Alerts on the above relate to:
 1. Underlines of links which is a part of the chosen design.
-2. Form control does not have a lable, aria-labels added in forms.py
+2. Form control does not have a label, aria-labels added in forms.py
 
 </details>
 
@@ -1185,7 +1186,7 @@ Alerts on the above relate to:
 ## Performance
 
 <details>
-    <summary>Desktop</summary> 
+    <summary>Desktop</summary>
 
 - home
 ![Performance](docs/performance/home-desktop.png)
@@ -1218,7 +1219,7 @@ There is no 100 score for the SEO as it detects the arrow-up as no crawlable, it
 </details>
 
 <details>
-    <summary>Mobile</summary> 
+    <summary>Mobile</summary>
 
 - home
 ![Performance](docs/performance/home-mobile.png)
@@ -1299,7 +1300,7 @@ Testing user stories:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Header | Click on Authentication icon, select Login option from the drop-down menu  | The sign in page is loaded | Works as expected |
-| Authentication | Fill up the sign in form, click the sign in button | Success message is displayed: Successfully signed in as username, the home page is loaded, there is 'My Profile' under the authenitcation icon & Logged-in as: username info displayed  | Works as expected |
+| Authentication | Fill up the sign in form, click the sign in button | Success message is displayed: Successfully signed in as username, the home page is loaded, there is 'My Profile' under the authentication icon & Logged-in as: username info displayed  | Works as expected |
 
 ![Manual Testing](docs/testing/manual/2.png)
 
@@ -1367,7 +1368,7 @@ Oldest to newest times example:
 
 ![Manual Testing](docs/testing/manual/9.png)
 
-10. As a User I want to remove items from the shopping cart so that the shopping cart matches my final purchase decission.
+10. As a User I want to remove items from the shopping cart so that the shopping cart matches my final purchase decision.
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
@@ -1376,7 +1377,7 @@ Oldest to newest times example:
 ![Manual Testing](docs/testing/manual/10.png)
 
 11. As a User I want to check-out so that I can finalize the purchase of my items.
-    
+
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Checkout | Open the checkout page by clicking 'SECURE CHECKOUT' button, fill up the form, review order summary, click on the Complete Order button | Loading spinner is displayed when the action is being processed, checkout success page is loaded with the order summary, user receives email with the confirmation email as informed | Works as expected |
@@ -1423,7 +1424,7 @@ Oldest to newest times example:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| Books | Logged in as a superuser from the books or book details page click on the Edit link, apply changes to the form as required & click 'Update Book Details' | Book details are updated as editted, the book details page is loaded with the new details & a success message appears | Works as expected |
+| Books | Logged in as a superuser from the books or book details page click on the Edit link, apply changes to the form as required & click 'Update Book Details' | Book details are updated as edited, the book details page is loaded with the new details & a success message appears | Works as expected |
 
 ![Manual Testing](docs/testing/manual/16-a.png)
 ![Manual Testing](docs/testing/manual/16.png)
@@ -1433,7 +1434,6 @@ Oldest to newest times example:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Books | From the books or book details page click Delete & confirm deleting by clicking on 'Confirm & Return to Books List' button | The chosen book is deleted from the store's offer & a success message informs that the book has been deleted | Works as expected |
-
 
 ![Manual Testing](docs/testing/manual/17.png)
 
@@ -1450,7 +1450,7 @@ Oldest to newest times example:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Footer | From the About Us section in the footer click on the link: 'HiStory Club' | the club page is loaded | Works as expected |
-| HiStory Club | Read the content, if a user decides that would like to join the voluneer organization may click on 'our contact form' link | Information are displayed, the link to the contact page works | Works as expected |
+| HiStory Club | Read the content, if a user decides that would like to join the volunteer organization may click on 'our contact form' link | Information are displayed, the link to the contact page works | Works as expected |
 
 ![Manual Testing](docs/testing/manual/19.png)
 
@@ -1459,7 +1459,7 @@ Oldest to newest times example:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Footer | From the Explore Our Website section in the footer click on the link: 'Blog' | the blog page is loaded | Works as expected |
-| Blog | Click on one of the blog posts, read the content, add a like if user wants or undo if changed user's mind. Add a comment if user wants | the post detail page is loaded, conten is readible, like is added on the first click & removed on the following click with corresponding success messages. Comment is added to the blog post & a success message appears | Works as expected |
+| Blog | Click on one of the blog posts, read the content, add a like if user wants or undo if changed user's mind. Add a comment if user wants | the post detail page is loaded, content is readable, like is added on the first click & removed on the following click with corresponding success messages. Comment is added to the blog post & a success message appears | Works as expected |
 
 ![Manual Testing](docs/testing/manual/20-a.png)
 ![Manual Testing](docs/testing/manual/20-b.png)
@@ -1478,7 +1478,6 @@ Mailchinmp's Thank you for subscribing! response appears & the email address is 
 ![Manual Testing](docs/testing/manual/21-b.png)
 ![Manual Testing](docs/testing/manual/21-c.png)
 
-
 Python & JavaScript tested manually.
 
 1. Add New Book Form:
@@ -1489,7 +1488,7 @@ Python & JavaScript tested manually.
 *clicked
 ![Manual Testing](docs/testing/manual/arrow-up.png)
 1. Quantity Input from Book Details & Cart
-*'-' sign diabled for qty < 1
+*'-' sign disabled for qty < 1
 ![Manual Testing](docs/testing/manual/input-1.png)
 ![Manual Testing](docs/testing/manual/input-1-a.png)
 *qty > 1 and < 99
@@ -1544,6 +1543,7 @@ No errors or warnings logged to the console:
 | Post likes are not removed on click after user added a like | Review the if statement & update to 'if request.user.userprofile in post.likes.all():' |
 | The array literal notation [] is preferrable jshint warning on Mailchimp script | Replace new Array() with [] |
 | 500 error after deleting a book from the deployed website | Open website in the incognito mode to clean cache*  |
+
 *Initially, it was suspected the error was caused by uploading an image for the default book image to the AWS S3 bucket, however, it turned that removing the uploaded image and then redeployment did not fix the issue(commit 0042a9b: 'Undo img'), after trying a few options such reviewing Config Vars, the developer decided to try open it in an incognito mode which worked & the access to the deployed website was restored. Reverse changes commit: a0f188b 'Reverse changes made to check the 500 error reason'
 ![Deployment](docs/500.png)
 
@@ -1568,22 +1568,22 @@ Pre deployment steps for AWS & Stripe:
 6. Create policy & attach policy to group.
 7. Retrieve AWS access keys
 8. From the workspace console: pip3 install boto3 & pip3 install django-storages  pip3 freeze > requirements.txt
-9. Add AWS keys remove COLLECT_STATICFILES from Heroku 
+9. Add AWS keys remove COLLECT_STATICFILES from Heroku
 ![Deployment](docs/deployment/keys.png)
-10. Add custom_storages.py 
-![Deployment](docs/deployment/storages.png)   
-11.  Add cache control
-![Deployment](docs/deployment/cache.png)   
-12.   Create a media folder & upload images to the bucket.
+10. Add custom_storages.py
+![Deployment](docs/deployment/storages.png)
+11. Add cache control
+![Deployment](docs/deployment/cache.png)
+12. Create a media folder & upload images to the bucket.
 ![Deployment](docs/deployment/upload.png)
-13.   Add Stripe Endpoint:
-    1.  Login to <a href="https://dashboard.stripe.com/dashboard">Stripe</a>
-    2.  Retrieve the publishable & secret keys
-    3.  ![Deployment](docs/deployment/stripe-keys.png)
-    4.  Create STRIPE_PUBLIC_KEY & STRIPE_SECRET_KEY environmental variables to local env & on Heroku.
-    5.  Go to Webhooks tab from Stripe Developers section & add endpoint with the website URL
-    6.  ![Deployment](docs/deployment/webhooks.png)
-    7.  Save the key generated & create with it STRIPE_WH_SECRET environment variable.
+13. Add Stripe Endpoint:
+    1. Login to <a href="https://dashboard.stripe.com/dashboard">Stripe</a>
+    2. Retrieve the publishable & secret keys
+    3. ![Deployment](docs/deployment/stripe-keys.png)
+    4. Create STRIPE_PUBLIC_KEY & STRIPE_SECRET_KEY environmental variables to local env & on Heroku.
+    5. Go to Webhooks tab from Stripe Developers section & add endpoint with the website URL
+    6. ![Deployment](docs/deployment/webhooks.png)
+    7. Save the key generated & create with it STRIPE_WH_SECRET environment variable.
 
 Before Heroku deployment remember to:
 
@@ -1601,8 +1601,8 @@ Before Heroku deployment remember to:
    8. Copy ElephantSQL database URL
 
 5. Create a Procfile with: web: gunicorn hi_story_book_store.wsgi:application
-6.  set DEBUG = False
-7.  Ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
+6. set DEBUG = False
+7. Ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
 
 ![Deployment](docs/deployment/debug.png)
 ![Deployment](docs/deployment/requirements.png)
@@ -1619,19 +1619,19 @@ Before Heroku deployment remember to:
 9. Click Reveal Config Vars and add:
 ![Deployment](docs/deployment/vars.png)
     *PORT = 8000
-10.  Below Config Vars in Buildpacks make sure python is selected
+10. Below Config Vars in Buildpacks make sure python is selected
 ![Deployment](docs/deployment/buildpack.png)
-11.  Go to the Deploy Tab
-12.  Choose Deployment method GitHub and click Save Changes
-13.  Confirm you want to connect to GitHub
-14.  Search for the repository name and click the connect button
-15.  Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
+11. Go to the Deploy Tab
+12. Choose Deployment method GitHub and click Save Changes
+13. Confirm you want to connect to GitHub
+14. Search for the repository name and click the connect button
+15. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 ![Deployment](docs/deployment/auto-manual.png)
-16.    Choose a branch to deploy: main
-17.   Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
+16. Choose a branch to deploy: main
+17. Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
 18. ![Deployment](docs/deployment/manual.png)
 ![Deployment](docs/deployment/deployed.png)
-19.    For Automatic deploys click on Enable Automatic Deploys button
+19. For Automatic deploys click on Enable Automatic Deploys button
 ![Deployment](docs/deployment/auto.png)
 
 </details>
@@ -1664,7 +1664,7 @@ Before Heroku deployment remember to:
 
 - base.html inspired by <a href="https://github.com/Alan-Bushell/razor-sharp">'Razor Sharp'</a>
 
-- Parts of blog app inspired by <a href="https://github.com/Alan-Bushell/razor-sharp/tree/main/blog">'Razor Sharp'</a> 
+- Parts of blog app inspired by <a href="https://github.com/Alan-Bushell/razor-sharp/tree/main/blog">'Razor Sharp'</a>
   
 - object-fit for book images from <a href="https://stackoverflow.com/questions/61530120/how-to-make-the-images-same-fit-or-same-size">Stackoverflow</a>
   
@@ -1695,15 +1695,15 @@ Before Heroku deployment remember to:
 - Ancient ROW book cover image from <a href="https://www.freepik.com/free-vector/archaeology-cartoon-composition-with-set-digging-tool-icons-ancient-findings-grunge-board-with-text-illustration_21253335.htm#query=mezopotamy%20history%20book%20cover&position=26&from_view=search&track=ais">Freepik</a>.
 - Medieval Europe book cover image from <a href="https://www.pexels.com/photo/black-steel-helmet-near-black-and-gray-handle-sword-161936/">Pexels</a>
 - Medieval ROW book cover image from <a href="https://www.pexels.com/photo/young-mongolian-man-with-eagle-riding-horse-5275516/">Pexels</a>
-- Reneissance Europe book cover image from <a href="https://www.pexels.com/photo/vitruvian-man-drawing-in-close-up-shot-12414385/">Pexels</a>
-- Reneissance ROW book cover image from <a href="https://www.pexels.com/photo/great-wall-of-china-2412603/">Pexels</a>
-- Early Industrial Revolution & Modern Era Europe book cover image from <a href="https://www.freeimages.com/photo/cotton-manufacturing-2424360">Freeimages</a> 
+- Renaissance Europe book cover image from <a href="https://www.pexels.com/photo/vitruvian-man-drawing-in-close-up-shot-12414385/">Pexels</a>
+- Renaissance ROW book cover image from <a href="https://www.pexels.com/photo/great-wall-of-china-2412603/">Pexels</a>
+- Early Industrial Revolution & Modern Era Europe book cover image from <a href="https://www.freeimages.com/photo/cotton-manufacturing-2424360">Freeimages</a>
 - Early Industrial Revolution & Modern Era ROW book cover image from <a href="https://www.pexels.com/photo/paper-map-of-australia-placed-on-wall-6564832/">Pexels</a>  
 - XX Century Europe book cover image from <a href="https://pixabay.com/illustrations/microsoft-windows-window-to-dye-257885/">Pixabay</a>
 - XX Century ROW book cover image from
 - Early XXI Century Europe book cover image from <a href="https://www.freeimages.com/download/eu-polish-flags-636220">Freeimages</a>
 - Early XXI Century ROW book cover image from <a href="https://pixabay.com/illustrations/bad-business-collage-crisis-19907/">Pixabay</a>
-- Image for egyptian blog post <a href="https://www.pexels.com/photo/egyptian-symbols-3199399/">Pexels</a>
+- Image for Egyptian blog post <a href="https://www.pexels.com/photo/egyptian-symbols-3199399/">Pexels</a>
 - Facebook cover photo & default book image <a href="https://www.pexels.com/photo/closeup-photography-of-book-page-folding-forming-heart-1083633/">Pexels</a>
 - Image for US blog post <a href="https://www.pexels.com/photo/the-statue-of-liberty-69205/">Pexels</a>
 - Image for Roman blog post <a href="https://www.pexels.com/photo/administration-ancient-arches-architecture-356966/">Pexels</a>
@@ -1739,7 +1739,9 @@ initial solutions research started on <a href="https://stackoverflow.com/questio
 [Back to Table Of Contents](#table-of-contents)
 
 ## Acknowledgements
+
 I would like to thank those who were a great support and inspiration during writing this project:
+
 - My wife, who supported me during the process of creating this project.
 - My mentor Mo Shami.
 - Code Institute for preparing the materials and providing a wide range of available means of learning for the students.
