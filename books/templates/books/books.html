@@ -3,14 +3,17 @@
 {% load static %}
 
 {% block content %}
+<!-- Books list -->
 <div class="overlay"></div>
 <div class="container-fluid">
+    <!-- Page heading -->
     <div class="row main-clr-thm">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Books</h2>
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <!-- Sub-heading for selected Era -->
     <div class="row">
         <div class="col-12 text-center mt-3">
             {% for e in current_eras %}
@@ -24,8 +27,10 @@
             {% endfor %}
         </div>
     </div>
+    <!-- Books row -->
     <div class="row">
         <div class="book-container col-10 offset-1">
+            <!-- Books number counter -->
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6">
                     <p class="text-muted mt-3 text-center text-md-left">
@@ -46,21 +51,21 @@
                 </div>
             </div>
             <div class="row">
+                <!-- Book cards listing -->
                 {% for book in books_list %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <!-- Book card -->
                     <div class="card h-100 border-0">
+                        <!-- Book image -->
                         {% if book.image %}
                         <a href="{% url 'book_detail' book.id %}">
                             <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ book.image.url }}" alt="{{ book.name }}">
-                        </a>
-                        {% else %}
-                        <a href="{% url 'book_detail' book.id %}">
-                            <img class="card-img-top img-fluid h-85 mb-2 contain-bk-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
                         </a>
                         {% endif %}
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
+                                    <!-- Book details summary -->
                                     <a href="{% url 'book_detail' book.id %}">
                                         <p class="mb-0">
                                             {{ book.name }} | {{ book.author }} {{ book.published }}
@@ -80,6 +85,7 @@
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
+                                    <!-- Admin options -->
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a href="{% url 'edit_book' book.id %}">Edit</a> |
@@ -91,6 +97,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Book cards listing horizontal rules -->
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
@@ -152,6 +159,7 @@
     </ul>
     {% endif %}
 </nav>
+<!-- Back to the top arrow -->
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fa-solid fa-up-long text-black mx-auto my-auto"></i>

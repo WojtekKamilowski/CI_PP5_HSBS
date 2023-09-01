@@ -3,24 +3,23 @@
 {% load static %}
 
 {% block content %}
+<!-- Book details -->
 <div class="overlay"></div>
 <div class="container-fluid book-details-container">
     <div class="row">
         <div class="col-md-6 col-lg-3 offset-lg-2">
+            <!-- Book image -->
             <div class="my-5">
                 {% if book.image %}
                 <a href="{{ book.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid contain-bk-img" src="{{ book.image.url }}" alt="{{ book.name }}">
-                </a>
-                {% else %}
-                <a href="">
-                    <img class="card-img-top img-fluid contain-bk-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
                 </a>
                 {% endif %}
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="mb-5 mt-md-5">
+                <!-- Book details info -->
                 <p class="mb-0">Title: {{ book.name }}</p>
                 <p class="mb-0">Author: {{ book.author }}</p>
                 <p class="mb-0">Published: {{ book.published }}</p>
@@ -40,13 +39,16 @@
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
+                <!-- Admin options -->
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_book' book.id %}">Edit</a> |
                     <a class="text-danger" href="{% url 'delete_book' book.id %}">Delete</a>
                 </small>
                 {% endif %}
+                <!-- Book description -->
                 <p class="mt-3">{{ book.description }}</p>
+                <!-- Add to cart options -->
                 <p class="text-muted">Process your order</p>
                 <form class="form" action="{% url 'add_to_cart' book.id %}" method="POST">
                     {% csrf_token %}
@@ -78,6 +80,7 @@
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
+                    <!-- Button to All Books -->
                     <p class="text-muted mt-2">or</p>
                     <div class="mt-3">
                         <a href="{% url 'books' %}" class="text-uppercase main-clr-thm btn">

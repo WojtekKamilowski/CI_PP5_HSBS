@@ -2,10 +2,13 @@
 {% load static %}
 
 {% block content %}
+<!-- Book delete -->
 <div class="overlay"></div>
+<!-- Page heading -->
 <div>
     <h2 class="main-clr-thm text-center py-2">Books Offer Management</h2>
 </div>
+<!-- Page sub-heading -->
 <div class="row">
     <div class="col text-center mt-3">
         <span class="p-2 mt-2 badge badge-white text-black">
@@ -17,9 +20,11 @@
         </span>
     </div>
 </div>
+<!-- Book delete container -->
 <div class="container delete-container">
     <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-6">
+            <!-- Book deleting confirmation -->
             <form method="POST">
                 {% csrf_token %}
                 {{ form | crispy }}
@@ -32,6 +37,7 @@
                     </button>
                 </div>
             </form>
+            <!-- Cancel button -->
             <div class="d-flex justify-content-center mt-4">
                 <a href="{% url 'books' %}" class="text-decoration-none">
                     <p class="btn main-clr-thm px-3">
