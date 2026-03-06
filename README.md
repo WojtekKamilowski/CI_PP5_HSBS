@@ -4,10 +4,6 @@
 
 ![Mockup image](docs/responsive.png)
 
-*to open links in new tab: right click+Open link in new tab
-
-[LIVE WEBPAGE](https://hi-story-book-store-5899052efb65.herokuapp.com/)
-
 ## About
 
 HiStory Book Store - 5th Portfolio Project for Diploma in Full Stack Software Development with Code Institute. E-commerce history book store website built using Django.
